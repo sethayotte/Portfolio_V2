@@ -5,9 +5,29 @@
   font-weight: 700;
 }
 
-.navLinks {
-  font-family: 'Chakra Petch';
-  font-weight: 500;
+#mainNav {
+  margin-right: 20px;
+
+  .navItem {
+    margin-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .navItem:hover {
+    color: black;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .navLinks {
+    font-family: 'Chakra Petch';
+    font-weight: 500;
+  }
+
+  .activeRoute {
+    color: #2136FF;
+  }
 }
 
 .cardAlignment {
@@ -16,15 +36,20 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  bottom: 0;
+  margin: 0;
 }
 
 #landing {
-
+  flex-direction: column;
 }
 
 #featured {
+  background-color: #0E0E0E;
+  color: white;
+}
 
+.landingMain {
+  position: absolute;
 }
 
 
@@ -38,6 +63,18 @@
   font-family: 'Chakra Petch';
   font-weight: 400;
   font-size: 16pt;
+  color: rgb(61, 61, 61);
+}
+
+.exploreButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80vh;
+
+  #explore {
+    color: #2136FF;
+  }
 }
 
 .sectionText {

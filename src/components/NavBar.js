@@ -11,8 +11,7 @@ import {
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
   } from "react-router-dom";
 
 import Projects from './Projects';
@@ -28,18 +27,18 @@ const NavBar = (props) => {
   return (
     <div>
         <Router>
-      <Navbar color="light" light expand="md">
+      <Navbar color="light" light expand="md" fixed='top'>
         <NavbarBrand href="/">SM</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/Projects" className="navLinks">Projects</NavLink>
+          <Nav className="ml-auto" id="mainNav" navbar>
+            <NavItem className="navItem">
+              <NavLink href="/Projects" className="navLinks" activeClassName="activeRoute">Projects</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="navItem">
               <NavLink href="/Resume" className="navLinks">Resume</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="navItem">
               <NavLink href="/Contact" className="navLinks">Contact</NavLink>
             </NavItem>
           </Nav>
