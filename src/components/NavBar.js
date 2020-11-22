@@ -27,13 +27,13 @@ const NavBar = (props) => {
   return (
     <div>
         <Router>
-      <Navbar color="light" light expand="md" fixed='top'>
-        <NavbarBrand href="/">SM</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+      <Navbar className="navContainer" expand="md" fixed='top'>
+        <NavbarBrand href="/" className="navIcon">SM</NavbarBrand>
+        <NavbarToggler onClick={toggle} className="navbarTogglerIcon" />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" id="mainNav" navbar>
             <NavItem className="navItem">
-              <NavLink href="/Projects" className="navLinks" activeClassName="activeRoute">Projects</NavLink>
+              <NavLink href="/Projects" className="navLinks">Projects</NavLink>
             </NavItem>
             <NavItem className="navItem">
               <NavLink href="/Resume" className="navLinks">Resume</NavLink>
