@@ -1,9 +1,12 @@
 import React from "react";
+import TitleCard from './LandingCards/TitleCard';
+import FeaturedCard from './LandingCards/FeaturedCard';
 
 const Landing = () => {
     return (
       <React.Fragment>
-        <h1 className="pageHeader">Hello!</h1>
+        <TitleCard />
+        <FeaturedCard />
       </React.Fragment>
     );
 }

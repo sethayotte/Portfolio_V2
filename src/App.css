@@ -8,4 +8,48 @@
   font-family: 'Chakra Petch';
   font-weight: 500;
 }
+
+.cardAlignment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  bottom: 0;
+}
+
+.titleHeader {
+  font-family: 'Heebo';
+  font-weight: 700;
+  font-size: 36pt;
+}
+
+.titleSubheader {
+  font-family: 'Chakra Petch';
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+.sectionText {
+  font-family: 'Chakra Petch';
+  font-weight: 400;
+  font-size: 24pt;
+}
+
+.sectionLink {
+  font-family: 'Heebo';
+  font-weight: 700;
+  font-size: 12pt;
+  margin-top: 15px;
+}
+
+#featuredLink {
+  color: #0FBE00;
+}
 /*# sourceMappingURL=App.css.map */
