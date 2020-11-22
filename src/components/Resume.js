@@ -3,7 +3,7 @@ import React from "react";
 const Resume = () => {
     return (
       <React.Fragment>
-        <h1>Resume</h1>
+        <h1 className="pageHeader">Resume</h1>
       </React.Fragment>
     );
 }

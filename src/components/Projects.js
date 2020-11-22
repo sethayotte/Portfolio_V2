@@ -1,11 +1,11 @@
 import React from "react";
 
-const Work = () => {
+const Projects = () => {
     return (
       <React.Fragment>
-        <h1>Work</h1>
+        <h1 className="pageHeader">Projects</h1>
       </React.Fragment>
     );
 }
 
-export default Work;
+export default Projects;

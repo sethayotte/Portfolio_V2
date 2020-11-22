@@ -15,7 +15,7 @@ import {
     Link
   } from "react-router-dom";
 
-import Work from './Work';
+import Projects from './Projects';
 import Contact from './Contact';
 import Resume from './Resume';
 import Landing from './Landing';
@@ -34,26 +34,26 @@ const NavBar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/work">Work</NavLink>
+              <NavLink href="/Projects" className="navLinks">Projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/resume">Resume</NavLink>
+              <NavLink href="/Resume" className="navLinks">Resume</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/contact">Contact</NavLink>
+              <NavLink href="/Contact" className="navLinks">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
 
       <Switch>
-          <Route path='/work'>
-              <Work />
+          <Route path='/Projects'>
+              <Projects />
           </Route>
-          <Route path='/resume'>
+          <Route path='/Resume'>
               <Resume />
           </Route>
-          <Route path='/contact'>
+          <Route path='/Contact'>
               <Contact />
           </Route>
           <Route path='/'>
