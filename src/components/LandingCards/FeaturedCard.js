@@ -14,9 +14,11 @@ const FeaturedCard = () => {
             Driven by good design, <br/>I build easy-to-use tools <br/>that deliver an
             impact.
           </h3>
+          <a href='/Everyday-Portfolio'>
           <h4 className="sectionLink" id="featuredLink">
               Explore the Everyday Porfolio Project &nbsp;<FontAwesomeIcon icon='arrow-circle-right'/>
           </h4>
+          </a>
         </div>
       </section>
     </React.Fragment>

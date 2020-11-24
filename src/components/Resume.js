@@ -2,8 +2,10 @@ import React from "react";
 
 const Resume = () => {
     return (
-      <React.Fragment>
-        <h1 className="pageHeader">Resume</h1>
+        <React.Fragment>
+        <section className="pageContainer">
+          <h1 className="pageHeader">Resume</h1>
+        </section>
       </React.Fragment>
     );
 }

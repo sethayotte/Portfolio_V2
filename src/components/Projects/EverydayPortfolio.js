@@ -1,13 +1,14 @@
 import React from "react";
 
-const Contact = () => {
+const EverydayPortfolio = () => {
     return (
         <React.Fragment>
         <section className="pageContainer">
-          <h1 className="pageHeader">Contact</h1>
+          <h1 className="pageHeader">Everyday Portfolio</h1>
         </section>
       </React.Fragment>
     );
 }
 
-export default Contact;
+export default EverydayPortfolio;
+

@@ -13,11 +13,14 @@ import {
     Switch,
     Route
   } from "react-router-dom";
+import navIcon from '../assets/SM2021.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Projects from './Projects';
 import Contact from './Contact';
 import Resume from './Resume';
 import Landing from './Landing';
+import EverydayPortfolio from './Projects/EverydayPortfolio';
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +30,11 @@ const NavBar = (props) => {
   return (
     <div>
         <Router>
-      <Navbar className="navContainer" expand="md" fixed='top'>
-        <NavbarBrand href="/" className="navIcon">SM</NavbarBrand>
-        <NavbarToggler onClick={toggle} className="navbarTogglerIcon" />
+      <Navbar className="navbar navContainer" expand="md" fixed='top'>
+        <NavbarBrand href="/" className="navIcon"><img src={navIcon} id="navIcon" /></NavbarBrand>
+        <NavbarToggler onClick={toggle} className="navbarTogglerIcon">
+        <FontAwesomeIcon icon='stream' id="navToggle" />
+            </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" id="mainNav" navbar>
             <NavItem className="navItem">
@@ -54,6 +59,9 @@ const NavBar = (props) => {
           </Route>
           <Route path='/Contact'>
               <Contact />
+          </Route>
+          <Route path='/Everyday-Portfolio'>
+              <EverydayPortfolio />
           </Route>
           <Route path='/'>
               <Landing />

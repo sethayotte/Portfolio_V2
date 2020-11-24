@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Heebo:wght@300;400;600;700&display=swap");
+.pageContainer {
+  margin-top: 100px;
+  margin-left: 45px;
+}
+
 .pageHeader {
   font-family: 'Heebo';
   font-weight: 700;
@@ -9,19 +14,33 @@
   background-color: #e3e3e390;
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-  margin: 10px;
+  margin: 20px;
   border-radius: 10px;
+  z-index: 100;
 }
 
-.navIcon {
-  font-family: 'Heebo';
-  font-weight: 500;
-  color: #0E0E0E;
-  margin-left: 20px;
+#navIcon {
+  height: 32px;
+  padding-bottom: 1px;
+  margin-left: 10px;
+}
+
+.navbarTogglerIcon {
+  margin-bottom: 10px;
+  border-width: 0px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbarTogglerIcon #navToggle {
+  border: none;
+  color: #2136FF;
+  font-size: 22px;
 }
 
 #mainNav {
-  margin-right: 10px;
+  margin-right: 0px;
 }
 
 #mainNav .navItem {
@@ -30,16 +49,26 @@
   padding-left: 10px;
 }
 
-#mainNav .navItem:hover {
-  color: black;
-  background-color: #f1f1f1;
-  border-radius: 10px;
+#mainNav .navLinks:hover {
+  color: #2136FF;
 }
 
 #mainNav .navLinks {
-  font-family: 'Chakra Petch';
+  font-family: 'Heebo';
   font-weight: 500;
   color: #0E0E0E;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .cardAlignment {
@@ -73,6 +102,7 @@
 #projects {
   background-color: #6b738d;
   color: white;
+  padding: 50px;
 }
 
 #work {
