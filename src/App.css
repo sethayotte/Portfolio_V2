@@ -114,6 +114,10 @@ a:hover {
   background-color: #ffffff;
 }
 
+#connect {
+  background-color: #f8f8f8;
+}
+
 .landingMain {
   position: absolute;
 }
@@ -206,5 +210,25 @@ a:hover {
 
 #workLink {
   color: #FF8500;
+}
+
+#connectLink {
+  padding: 50px;
+  color: #2136FF;
+}
+
+.connectAlignment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 75px;
+  padding: 15px;
 }
 /*# sourceMappingURL=App.css.map */
