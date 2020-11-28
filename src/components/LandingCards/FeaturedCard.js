@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import epMockup from '../../assets/twoMobile.png';
+import epMockup from '../../assets/EP-Mockup.png';
 
 const FeaturedCard = () => {
   return (
