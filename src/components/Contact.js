@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <React.Fragment>
         <section className="pageContainer">
-          <h1 className="pageHeader">Contact</h1>
+          <h1 className="pageHeader">Let's Connect.</h1>
 
           <p id="connect-copy">Feel free to check out my GitHub & LinkedIn for additional details about my work, or get in touch through email.</p>
 
