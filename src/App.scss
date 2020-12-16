@@ -3,11 +3,24 @@
 .pageContainer {
   margin-top: 100px;
   margin-left: 45px;
+  margin-bottom: 75px;
 }
 .pageHeader {
   font-family: 'Heebo';
   font-weight: 700;
   font-size: 36pt;
+}
+
+.projectHeader {
+  font-family: 'Heebo';
+  font-weight: 700;
+  font-size: 40pt;
+  text-align: center;
+  margin-left: -45px;
+}
+
+#ep {
+  color: #0FBE00;
 }
 
 .navContainer {
@@ -18,6 +31,40 @@
   border-radius: 10px;
   z-index: 100;
 }
+
+@media only screen and (max-width: 767px) {
+  #mobileNav {
+    height: 130px;
+    // background-color: #f1f1f1;
+    background-color: #e3e3e390;
+  backdrop-filter: blur(3px);
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 10px;
+    z-index: 100;
+  }
+
+  #navIcon {
+    height: 32px;
+    margin-top: -10px;
+    display: flex;
+    align-self: center;
+  }
+
+  .navLinks:hover {
+    color: #2136FF;
+  }
+
+  .navLinks {
+    font-family: 'Heebo';
+    font-weight: 700;
+    color: #0E0E0E;
+    text-align: center;
+  }
+}
+
 
 .navSocialContainer {
   height: 45px;
@@ -368,10 +415,15 @@ a:hover {
           flex-direction: column-reverse;
           text-align: left;
 
+          .detail-title {
+            p {
+              line-height: 20px;
+          }
+          }
           .resume-detail {
 
               div:nth-child(2) {
-                  p:first-child {
+                  p {
                       line-height: 20px;
                   }
               }
@@ -433,5 +485,38 @@ a:hover {
               }
           }
       }
+      .proficiencies {
+  
+        .content-block {
+          display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+      }
+  }
+}
+
+#everyday-portfolio {
+  #document-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  
+    #project-proposal, #design-brief, #see-project {
+      background-color: color(nav-bg);
+      border-radius: 15px;
+      height: 43px;
+  
+      p {
+          margin: 0;
+          padding: 10px 20px 10px 20px; 
+          color: color(accent);
+      }
+  
+      a:hover {
+          text-decoration: none;
+      }
+    }
   }
 }

@@ -3,7 +3,7 @@ import React from "react";
 const Resume = () => {
     return (
         <React.Fragment>
-        <section className="pageContainer">
+        <section className="pageContainer" id="resumePage">
           <h1 className="pageHeader">Resume</h1>
 
           <section className="resume-body">

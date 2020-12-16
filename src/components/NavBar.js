@@ -35,7 +35,7 @@ const NavBar = (props) => {
         <NavbarToggler onClick={toggle} className="navbarTogglerIcon">
         <FontAwesomeIcon icon='stream' id="navToggle" />
             </NavbarToggler>
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse isOpen={isOpen} id="mobileNav" navbar>
           <Nav className="ml-auto" id="mainNav" navbar>
             <NavItem className="navItem">
               <NavLink href="/Projects" className="navLinks">Projects</NavLink>
