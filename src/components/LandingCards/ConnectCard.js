@@ -8,6 +8,7 @@ const ConnectCard = () => {
   return (
     <React.Fragment>
       <section className="cardAlignment" id="connect">
+      <div class="mobile-wrapper">
         <div>
           <div className="connectAlignment">
             <img src={resumeIcon} />
@@ -35,6 +36,7 @@ const ConnectCard = () => {
             digital profiles & reach <br />
             out if you’d like to chat.
           </h3>
+        </div>
         </div>
       </section>
     </React.Fragment>

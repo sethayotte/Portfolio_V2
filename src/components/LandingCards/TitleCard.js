@@ -6,6 +6,7 @@ const TitleCard = () => {
   return (
     <React.Fragment>
       <section className="cardAlignment" id="landing">
+      <div class="mobile-wrapper">
         <div className="landingMain">
           <h1 className="titleHeader">Seth Mitchell</h1>
           <h1 className="titleSubheader">
@@ -24,6 +25,7 @@ const TitleCard = () => {
           <FontAwesomeIcon icon='arrow-circle-down' id="explore" />
         </div>
         </Link>
+        </div>
       </section>
     </React.Fragment>
   );

@@ -6,6 +6,7 @@ const WorkCard = () => {
   return (
     <React.Fragment>
       <section className="cardAlignment" id="work">
+      <div class="mobile-wrapper">
         <div className="workImageBlock">
         <img src={workLogos} id="workImage" />
         </div>
@@ -18,6 +19,7 @@ const WorkCard = () => {
               View current & past roles &nbsp;<FontAwesomeIcon icon='arrow-circle-right'/>
           </h4>
           </a>
+        </div>
         </div>
       </section>
     </React.Fragment>

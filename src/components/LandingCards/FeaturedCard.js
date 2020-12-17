@@ -6,6 +6,7 @@ const FeaturedCard = () => {
   return (
     <React.Fragment>
       <section className="cardAlignment" id="featured">
+      <div class="mobile-wrapper">
         <div>
         <img src={epMockup} id="featuredImage" />
         </div>
@@ -19,6 +20,7 @@ const FeaturedCard = () => {
               Explore the Everyday Porfolio Project &nbsp;<FontAwesomeIcon icon='arrow-circle-right'/>
           </h4>
           </a>
+        </div>
         </div>
       </section>
     </React.Fragment>

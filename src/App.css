@@ -144,7 +144,124 @@ a:hover {
   text-decoration: none;
 }
 
-.cardAlignment {
+@media only screen and (max-width: 768px) {
+  #featured .mobile-wrapper {
+    margin-right: 0px;
+  }
+  #featured .mobile-wrapper div:first-child {
+    position: absolute;
+    z-index: 1;
+    padding-left: 75px;
+  }
+  #featured .mobile-wrapper div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 3;
+    background-color: color(nav-bg);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    border-radius: 25px;
+    height: 100vh;
+    width: 1000vw;
+  }
+  #projects .mobile-wrapper, #work-experience .mobile-wrapper, #learn-more .mobile-wrapper {
+    margin-right: 0px;
+  }
+  #projects .mobile-wrapper div:nth-child(3), #work-experience .mobile-wrapper div:nth-child(3), #learn-more .mobile-wrapper div:nth-child(3) {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+  #projects .mobile-wrapper div:nth-child(3) #projectsImage, #work-experience .mobile-wrapper div:nth-child(3) #projectsImage, #learn-more .mobile-wrapper div:nth-child(3) #projectsImage {
+    height: 110vw;
+    margin-left: 50px;
+    margin-right: 160px;
+    max-height: none;
+  }
+  #projects .mobile-wrapper div:nth-child(2), #work-experience .mobile-wrapper div:nth-child(2), #learn-more .mobile-wrapper div:nth-child(2) {
+    display: none;
+  }
+  #projects .mobile-wrapper div:first-child, #work-experience .mobile-wrapper div:first-child, #learn-more .mobile-wrapper div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 3;
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    height: 100vh;
+    width: 100vw;
+    margin-top: -20px;
+    margin-left: -100px;
+  }
+  #projects .mobile-wrapper #projectsText, #work-experience .mobile-wrapper #projectsText, #learn-more .mobile-wrapper #projectsText {
+    background-color: #6b738d98;
+  }
+  #projects .mobile-wrapper .layer1 h3, #work-experience .mobile-wrapper .layer1 h3, #learn-more .mobile-wrapper .layer1 h3 {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #projects .mobile-wrapper .layer1 p, #work-experience .mobile-wrapper .layer1 p, #learn-more .mobile-wrapper .layer1 p {
+    text-shadow: 0px 2px 10px #FFF;
+  }
+  #projects .mobile-wrapper .layer2 img, #work-experience .mobile-wrapper .layer2 img, #learn-more .mobile-wrapper .layer2 img {
+    display: none;
+  }
+  #projects .mobile-wrapper #layer-mobile img, #work-experience .mobile-wrapper #layer-mobile img, #learn-more .mobile-wrapper #layer-mobile img {
+    display: block;
+    height: 500px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+  }
+  #projects .mobile-wrapper #i1, #projects .mobile-wrapper #i2, #work-experience .mobile-wrapper #i1, #work-experience .mobile-wrapper #i2, #learn-more .mobile-wrapper #i1, #learn-more .mobile-wrapper #i2 {
+    display: none;
+  }
+  #projects .mobile-wrapper #lm-text, #work-experience .mobile-wrapper #lm-text, #learn-more .mobile-wrapper #lm-text {
+    display: block;
+    position: absolute;
+    z-index: 3;
+  }
+  #projects .mobile-wrapper #lm-text h3, #work-experience .mobile-wrapper #lm-text h3, #learn-more .mobile-wrapper #lm-text h3 {
+    margin-left: 0px;
+  }
+  #projects .mobile-wrapper #mobile-lm-links, #work-experience .mobile-wrapper #mobile-lm-links, #learn-more .mobile-wrapper #mobile-lm-links {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    margin-top: 125px;
+  }
+  #projects .mobile-wrapper #lm-mobile-hero, #work-experience .mobile-wrapper #lm-mobile-hero, #learn-more .mobile-wrapper #lm-mobile-hero {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+  #projects .mobile-wrapper #lm-mobile-hero img, #work-experience .mobile-wrapper #lm-mobile-hero img, #learn-more .mobile-wrapper #lm-mobile-hero img {
+    height: 550px;
+  }
+}
+
+.cardAlignment .mobile-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,6 +274,10 @@ a:hover {
   height: 100vh;
   width: 100vw;
   margin: 0;
+}
+
+.cardAlignment .mobile-wrapper .mobile-hero {
+  display: none;
 }
 
 #landing {
@@ -251,8 +372,10 @@ a:hover {
 }
 
 #projectsImage {
-  height: 40vh;
+  height: 35vw;
   margin-left: 50px;
+  margin-right: 100px;
+  max-height: 400px;
 }
 
 #projectsLink {

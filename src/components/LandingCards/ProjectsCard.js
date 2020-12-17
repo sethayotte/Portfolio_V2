@@ -1,12 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import technologies from '../../assets/technologies-graphic-02.png';
+import technologiesMobile from '../../assets/Technologies-Mobile-Tile-05.png'
 
 const ProjectsCard = () => {
   return (
     <React.Fragment>
       <section className="cardAlignment" id="projects">
-      <div>
+      <div class="mobile-wrapper">
+      <div id="projectsText">
           <h3 className="sectionText">
           Skilled with modern <br/>front-end frameworks <br/>& continually learning <br/>new technologies.</h3>
           <a href='/Projects'>
@@ -15,8 +17,12 @@ const ProjectsCard = () => {
           </h4>
           </a>
         </div>
-        <div>
+        <div className="desktop-hero">
         <img src={technologies} id="projectsImage" />
+        </div>
+        <div className="mobile-hero">
+        <img src={technologiesMobile} id="projectsImage" />
+        </div>
         </div>
       </section>
     </React.Fragment>
