@@ -670,7 +670,28 @@ a:hover {
         }
       }
   }
+
+  #projectImage {
+    height: 110vw;
+    max-height: none;
+    max-width: none;
+  }
 }
+
+.currentItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+  #projectImage {
+    height: 45vw;
+    max-height: 65vh;
+  }
+}
+
 
 #everyday-portfolio {
   #document-container {

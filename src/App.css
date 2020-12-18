@@ -674,6 +674,34 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  #projectImage {
+    height: 110vw;
+    max-height: none;
+    max-width: none;
+  }
+}
+
+.currentItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.currentItems #projectImage {
+  height: 45vw;
+  max-height: 65vh;
 }
 
 #everyday-portfolio #document-container {
