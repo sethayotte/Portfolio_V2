@@ -7,7 +7,7 @@ import connectMobileCard from '../../assets/Connect-Mobile-Tile.png';
 
 const ConnectCard = () => {
   return (
-    <React.Fragment>
+    <React.Fragment className="landingCard">
       <section className="cardAlignment" id="connect">
       <div class="mobile-wrapper">
         <div>

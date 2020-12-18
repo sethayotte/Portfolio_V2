@@ -4,7 +4,7 @@ import epMockup from '../../assets/EP-Mockup.png';
 
 const FeaturedCard = () => {
   return (
-    <React.Fragment>
+    <React.Fragment className="landingCard">
       <section className="cardAlignment" id="featured">
       <div class="mobile-wrapper">
         <div>

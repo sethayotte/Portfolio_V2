@@ -4,7 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const TitleCard = () => {
   return (
-    <React.Fragment>
+    <React.Fragment className="landingCard">
       <section className="cardAlignment" id="landing">
       <div class="mobile-wrapper">
         <div className="landingMain">

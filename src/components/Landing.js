@@ -7,7 +7,7 @@ import ConnectCard from './LandingCards/ConnectCard';
 
 const Landing = () => {
     return (
-      <React.Fragment>
+      <React.Fragment className="landingBody">
         <TitleCard />
         <FeaturedCard />
         <ProjectsCard />

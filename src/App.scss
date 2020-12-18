@@ -37,7 +37,20 @@ html, body {
   z-index: 100;
 }
 
+.landingBody {
+
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+
+  .landingCard {
+    scroll-snap-align: start;
+  }
+}
+
+
 @media only screen and (max-width: 767px) {
+  
   #mobileNav {
     height: 130px;
     // background-color: #f1f1f1;
@@ -169,8 +182,7 @@ a:hover {
               z-index: 3;
               background-color: color(nav-bg);
               backdrop-filter: blur(7px);
-              border-radius: 25px;
-              height: 100vh;
+              height: 90vh;
               width: 100vw;
           }
       }

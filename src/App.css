@@ -38,6 +38,17 @@ html, body {
   z-index: 100;
 }
 
+.landingBody {
+  margin: 0;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.landingBody .landingCard {
+  scroll-snap-align: start;
+}
+
 @media only screen and (max-width: 767px) {
   #mobileNav {
     height: 130px;
@@ -176,8 +187,7 @@ a:hover {
     background-color: color(nav-bg);
     -webkit-backdrop-filter: blur(7px);
             backdrop-filter: blur(7px);
-    border-radius: 25px;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
   }
   #projects .mobile-wrapper, #work .mobile-wrapper, #connect .mobile-wrapper {

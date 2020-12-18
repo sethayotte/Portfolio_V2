@@ -5,7 +5,7 @@ import technologiesMobile from '../../assets/Technologies-Mobile-Tile-05.png'
 
 const ProjectsCard = () => {
   return (
-    <React.Fragment>
+    <React.Fragment className="landingCard">
       <section className="cardAlignment" id="projects">
       <div class="mobile-wrapper">
       <div id="projectsText">

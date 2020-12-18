@@ -5,7 +5,7 @@ import workMobile from '../../assets/Experience-Mobile-Tile.png';
 
 const WorkCard = () => {
   return (
-    <React.Fragment>
+    <React.Fragment className="landingCard">
       <section className="cardAlignment" id="work">
       <div class="mobile-wrapper">
         <div  className="workTextBlock">
