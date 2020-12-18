@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Heebo:wght@300;400;600;700&display=swap');
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .pageContainer {
   margin-top: 100px;
   margin-left: 45px;
@@ -166,13 +171,13 @@ a:hover {
               backdrop-filter: blur(7px);
               border-radius: 25px;
               height: 100vh;
-              width: 1000vw;
+              width: 100vw;
           }
       }
   }
 
   // update images with mobile-versions: all-projects, work-experience, learn-more
-  #projects, #work-experience, #learn-more {
+  #projects, #work, #connect {
       
       .mobile-wrapper {
           margin-right: 0px;
@@ -201,17 +206,21 @@ a:hover {
               align-items: center;
               z-index: 3;
               backdrop-filter: blur(7px);
-              height: 100vh;
+              height: 90vh;
               width: 100vw;
               margin-top: -20px;
-              margin-left: -100px;
           }
 
           #projectsText {
             background-color: #6b738d98;
+            margin-left: -100px;
           }
 
-          .layer1 {
+
+          .workTextBlock {
+
+            background-color: #ffffff80;
+
               h3 {
                   margin-left: 25px;
                   margin-right: 25px;
@@ -222,7 +231,7 @@ a:hover {
               }
           }
 
-          .layer2 {
+          .workImageBlock {
               img {
                   display: none;
               }
@@ -232,8 +241,7 @@ a:hover {
 
               img {
                   display: block;
-                  height: 500px;
-                  margin-left: 75px;
+                  height: 110vw;
                   margin-bottom: 50px;
               }
           }
@@ -253,11 +261,17 @@ a:hover {
           }
 
           #mobile-lm-links {
-              display: inline-block;
+
               position: absolute;
               z-index: 3;
               text-align: center;
-              margin-top: 125px;
+              margin-top: 200px;
+
+              #connectLink {
+                margin: 0px;
+                padding: 0px;
+                padding-bottom: 10px;
+              }
           }
 
           #lm-mobile-hero {
@@ -392,13 +406,24 @@ a:hover {
   }
 }
 
+#layer-mobile {
+  img {
+    display: none;
+  }
+}
+
 .workImageBlock {
   position: absolute;
   z-index: 1;
 }
 
+#lm-mobile-hero, #mobile-lm-links {
+  display: none;
+}
+
 #workImage {
-  height: 60vh;
+  height: 50vw;
+  max-height: 600px;
 }
 
 #workLink {

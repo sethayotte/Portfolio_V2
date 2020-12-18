@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Heebo:wght@300;400;600;700&display=swap");
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .pageContainer {
   margin-top: 100px;
   margin-left: 45px;
@@ -173,26 +178,26 @@ a:hover {
             backdrop-filter: blur(7px);
     border-radius: 25px;
     height: 100vh;
-    width: 1000vw;
+    width: 100vw;
   }
-  #projects .mobile-wrapper, #work-experience .mobile-wrapper, #learn-more .mobile-wrapper {
+  #projects .mobile-wrapper, #work .mobile-wrapper, #connect .mobile-wrapper {
     margin-right: 0px;
   }
-  #projects .mobile-wrapper div:nth-child(3), #work-experience .mobile-wrapper div:nth-child(3), #learn-more .mobile-wrapper div:nth-child(3) {
+  #projects .mobile-wrapper div:nth-child(3), #work .mobile-wrapper div:nth-child(3), #connect .mobile-wrapper div:nth-child(3) {
     display: block;
     position: absolute;
     z-index: 1;
   }
-  #projects .mobile-wrapper div:nth-child(3) #projectsImage, #work-experience .mobile-wrapper div:nth-child(3) #projectsImage, #learn-more .mobile-wrapper div:nth-child(3) #projectsImage {
+  #projects .mobile-wrapper div:nth-child(3) #projectsImage, #work .mobile-wrapper div:nth-child(3) #projectsImage, #connect .mobile-wrapper div:nth-child(3) #projectsImage {
     height: 110vw;
     margin-left: 50px;
     margin-right: 160px;
     max-height: none;
   }
-  #projects .mobile-wrapper div:nth-child(2), #work-experience .mobile-wrapper div:nth-child(2), #learn-more .mobile-wrapper div:nth-child(2) {
+  #projects .mobile-wrapper div:nth-child(2), #work .mobile-wrapper div:nth-child(2), #connect .mobile-wrapper div:nth-child(2) {
     display: none;
   }
-  #projects .mobile-wrapper div:first-child, #work-experience .mobile-wrapper div:first-child, #learn-more .mobile-wrapper div:first-child {
+  #projects .mobile-wrapper div:first-child, #work .mobile-wrapper div:first-child, #connect .mobile-wrapper div:first-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -209,54 +214,60 @@ a:hover {
     z-index: 3;
     -webkit-backdrop-filter: blur(7px);
             backdrop-filter: blur(7px);
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     margin-top: -20px;
+  }
+  #projects .mobile-wrapper #projectsText, #work .mobile-wrapper #projectsText, #connect .mobile-wrapper #projectsText {
+    background-color: #6b738d98;
     margin-left: -100px;
   }
-  #projects .mobile-wrapper #projectsText, #work-experience .mobile-wrapper #projectsText, #learn-more .mobile-wrapper #projectsText {
-    background-color: #6b738d98;
+  #projects .mobile-wrapper .workTextBlock, #work .mobile-wrapper .workTextBlock, #connect .mobile-wrapper .workTextBlock {
+    background-color: #ffffff80;
   }
-  #projects .mobile-wrapper .layer1 h3, #work-experience .mobile-wrapper .layer1 h3, #learn-more .mobile-wrapper .layer1 h3 {
+  #projects .mobile-wrapper .workTextBlock h3, #work .mobile-wrapper .workTextBlock h3, #connect .mobile-wrapper .workTextBlock h3 {
     margin-left: 25px;
     margin-right: 25px;
   }
-  #projects .mobile-wrapper .layer1 p, #work-experience .mobile-wrapper .layer1 p, #learn-more .mobile-wrapper .layer1 p {
+  #projects .mobile-wrapper .workTextBlock p, #work .mobile-wrapper .workTextBlock p, #connect .mobile-wrapper .workTextBlock p {
     text-shadow: 0px 2px 10px #FFF;
   }
-  #projects .mobile-wrapper .layer2 img, #work-experience .mobile-wrapper .layer2 img, #learn-more .mobile-wrapper .layer2 img {
+  #projects .mobile-wrapper .workImageBlock img, #work .mobile-wrapper .workImageBlock img, #connect .mobile-wrapper .workImageBlock img {
     display: none;
   }
-  #projects .mobile-wrapper #layer-mobile img, #work-experience .mobile-wrapper #layer-mobile img, #learn-more .mobile-wrapper #layer-mobile img {
+  #projects .mobile-wrapper #layer-mobile img, #work .mobile-wrapper #layer-mobile img, #connect .mobile-wrapper #layer-mobile img {
     display: block;
-    height: 500px;
-    margin-left: 75px;
+    height: 110vw;
     margin-bottom: 50px;
   }
-  #projects .mobile-wrapper #i1, #projects .mobile-wrapper #i2, #work-experience .mobile-wrapper #i1, #work-experience .mobile-wrapper #i2, #learn-more .mobile-wrapper #i1, #learn-more .mobile-wrapper #i2 {
+  #projects .mobile-wrapper #i1, #projects .mobile-wrapper #i2, #work .mobile-wrapper #i1, #work .mobile-wrapper #i2, #connect .mobile-wrapper #i1, #connect .mobile-wrapper #i2 {
     display: none;
   }
-  #projects .mobile-wrapper #lm-text, #work-experience .mobile-wrapper #lm-text, #learn-more .mobile-wrapper #lm-text {
+  #projects .mobile-wrapper #lm-text, #work .mobile-wrapper #lm-text, #connect .mobile-wrapper #lm-text {
     display: block;
     position: absolute;
     z-index: 3;
   }
-  #projects .mobile-wrapper #lm-text h3, #work-experience .mobile-wrapper #lm-text h3, #learn-more .mobile-wrapper #lm-text h3 {
+  #projects .mobile-wrapper #lm-text h3, #work .mobile-wrapper #lm-text h3, #connect .mobile-wrapper #lm-text h3 {
     margin-left: 0px;
   }
-  #projects .mobile-wrapper #mobile-lm-links, #work-experience .mobile-wrapper #mobile-lm-links, #learn-more .mobile-wrapper #mobile-lm-links {
-    display: inline-block;
+  #projects .mobile-wrapper #mobile-lm-links, #work .mobile-wrapper #mobile-lm-links, #connect .mobile-wrapper #mobile-lm-links {
     position: absolute;
     z-index: 3;
     text-align: center;
-    margin-top: 125px;
+    margin-top: 200px;
   }
-  #projects .mobile-wrapper #lm-mobile-hero, #work-experience .mobile-wrapper #lm-mobile-hero, #learn-more .mobile-wrapper #lm-mobile-hero {
+  #projects .mobile-wrapper #mobile-lm-links #connectLink, #work .mobile-wrapper #mobile-lm-links #connectLink, #connect .mobile-wrapper #mobile-lm-links #connectLink {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  #projects .mobile-wrapper #lm-mobile-hero, #work .mobile-wrapper #lm-mobile-hero, #connect .mobile-wrapper #lm-mobile-hero {
     display: block;
     position: absolute;
     z-index: 1;
   }
-  #projects .mobile-wrapper #lm-mobile-hero img, #work-experience .mobile-wrapper #lm-mobile-hero img, #learn-more .mobile-wrapper #lm-mobile-hero img {
+  #projects .mobile-wrapper #lm-mobile-hero img, #work .mobile-wrapper #lm-mobile-hero img, #connect .mobile-wrapper #lm-mobile-hero img {
     height: 550px;
   }
 }
@@ -395,13 +406,22 @@ a:hover {
   text-align: center;
 }
 
+#layer-mobile img {
+  display: none;
+}
+
 .workImageBlock {
   position: absolute;
   z-index: 1;
 }
 
+#lm-mobile-hero, #mobile-lm-links {
+  display: none;
+}
+
 #workImage {
-  height: 60vh;
+  height: 50vw;
+  max-height: 600px;
 }
 
 #workLink {
