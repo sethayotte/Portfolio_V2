@@ -10,13 +10,15 @@ const Projects = () => {
         <h1 className="pageHeader">Current Projects</h1>
         <div className="currentItems">
           <div id="EP">
-              <img src={EPHero} id="projectImage" />
+          <a href='/Everyday-Portfolio'>
+              <img src={EPHero} className="projectImage" id="EPImage" />
+          </a>
           </div>
           <div id="Website">
-              <img src={WebsiteHero} id="projectImage" />
+              <img src={WebsiteHero} className="projectImage" id="WebImage" />
           </div>
           <div id="Garage">
-              <img src={GarageHero} id="projectImage" />
+              <img src={GarageHero} className="projectImage" id="GarageImage" />
           </div>
         </div>
         <h1 className="pageHeader">Past Projects</h1>

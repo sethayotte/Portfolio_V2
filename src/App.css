@@ -699,9 +699,32 @@ a:hover {
           align-items: center;
 }
 
-.currentItems #projectImage {
+.currentItems .projectImage {
   height: 45vw;
   max-height: 65vh;
+  background: transparent;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.currentItems .projectImage:hover {
+  height: 47vw;
+  max-height: 67vh;
+}
+
+.currentItems #EPImage:hover {
+  -webkit-filter: drop-shadow(0px 5px 50px #0FBE0088);
+  filter: drop-shadow(0px 5px 50px #0FBE0088);
+}
+
+.currentItems #WebImage:hover {
+  -webkit-filter: drop-shadow(0px 5px 50px #2137ffa1);
+  filter: drop-shadow(0px 5px 50px #2136FFa1);
+}
+
+.currentItems #GarageImage:hover {
+  -webkit-filter: drop-shadow(0px 5px 50px #65fffac0);
+  filter: drop-shadow(0px 5px 50px #65fffac0);
 }
 
 #everyday-portfolio #document-container {

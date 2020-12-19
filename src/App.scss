@@ -677,7 +677,7 @@ a:hover {
     max-width: none;
   }
 }
-
+ 
 .currentItems {
   display: flex;
   flex-direction: row;
@@ -686,12 +686,33 @@ a:hover {
   align-items: center;
 
 
-  #projectImage {
+  .projectImage {
     height: 45vw;
     max-height: 65vh;
+    background: transparent;
+    transition: all 0.5s ease;
+  }
+
+  .projectImage:hover {
+    height: 47vw;
+    max-height: 67vh;
+  }
+
+  #EPImage:hover {
+    -webkit-filter: drop-shadow(0px 5px 50px #0FBE0088);
+    filter: drop-shadow(0px 5px 50px #0FBE0088);
+  }
+
+  #WebImage:hover {
+    -webkit-filter: drop-shadow(0px 5px 50px #2137ffa1);
+    filter: drop-shadow(0px 5px 50px #2136FFa1);
+  }
+
+  #GarageImage:hover {
+    -webkit-filter: drop-shadow(0px 5px 50px #65fffac0);
+    filter: drop-shadow(0px 5px 50px #65fffac0);
   }
 }
-
 
 #everyday-portfolio {
   #document-container {
