@@ -1,5 +1,10 @@
 import React from "react";
 
+import sethHeadshot from '../assets/SethMitchell_Headshot.jpg';
+import connectIcon from "../assets/connect-icon.png";
+import githubIcon from "../assets/github-icon.png";
+import linkedinIcon from "../assets/linkedin-icon.png";
+
 const Resume = () => {
     return (
         <React.Fragment>
@@ -8,39 +13,36 @@ const Resume = () => {
 
           <section className="resume-body">
 
-    {/* <section className="about-me">
+    <section className="about-me">
       <div className="content-block" id="resume-profile">
-        <img src="assets/Profile.jpeg">
+        <img src={sethHeadshot} alt="Seth's Headshot"/>
       </div>
       <div className="content-block">
         <h1>Seth Mitchell</h1>
         <h3>Software Engineering, Design, Systems</h3>
       </div>
       <div className="content-block" id="contact-resume">
-      <div className="section-title">
-        <h2>Contact</h2>
-      </div>
       <div className="connect-blocks">
         <div className="social-buttons">
           <div>
-            <a className="social-icon ml-4" href="https://www.linkedin.com/in/sethayottemitchell/" target="_blank">
-              <img src="assets/github-icon.png" height="30" alt="">
+            <a className="social-icon" href="https://github.com/sethayotte/" target="_blank" rel="noreferrer">
+              <img src={githubIcon} height="30" alt="github" />
             </a>
           </div>
           <div>
-            <a className="social-icon ml-4" href="https://www.linkedin.com/in/sethayottemitchell/" target="_blank">
-              <img src="assets/linkedin-icon.png" height="30" alt="">
+            <a className="social-icon" href="https://www.linkedin.com/in/sethayottemitchell/" target="_blank" rel="noreferrer">
+              <img src={linkedinIcon} height="30" alt="linkedIn" />
             </a>
           </div>
           <div>
-            <a className="social-icon ml-4" href="https://www.linkedin.com/in/sethayottemitchell/" target="_blank">
-              <img src="assets/connect-icon.png" height="30" alt="">
+            <a className="social-icon" href="/Contact">
+              <img src={connectIcon} height="30" alt="connect" />
             </a>
           </div>
         </div>
         </div>
         </div>
-    </section> */}
+    </section>
 
   <section className="education">
     <div className="section-title">
@@ -230,7 +232,7 @@ const Resume = () => {
         <div className="skills-list">
           <ul>
             <li>VS Code</li>
-            <li>Design Thinkin</li>
+            <li>Design Thinking</li>
             <li>Agile</li>
             <li id="indent">Jira</li>
             <li id="indent">Confluence</li>

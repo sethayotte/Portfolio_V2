@@ -13,6 +13,8 @@
 //4-Modules
 
 
+//5-Pages
+@import '5-Pages/resume';
 
 
 #ep {
@@ -438,6 +440,7 @@ a:hover {
   color: #2136FF;
 }
 
+//Connect Card
 .connectAlignment {
   display: flex;
   flex-direction: row;
@@ -446,221 +449,10 @@ a:hover {
   padding: 15px;
 }
 
-// resume styling
-.resume-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 75px;
-  margin-left: -40px;
 
-  section {
-      width: 85%;
-      background-color: #f3f3f3;
-      border-radius: 25px;
-      padding: 30px;
-      margin-bottom: 25px;
-  }
-  
-  .section-title {
-      h2 {
-          font-size: 1rem;
-          font-weight: 500;
-      }
-  }
-  
-  .content-block {
-      display: flex;
-      flex-direction: column;
-      
-      p {
-          font-size: 1.1rem;
-          font-weight: 300;
-          line-height: .5rem;
-      }
-
-      .iblock {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 25px;
-  
-          .resume-detail {
-  
-              .detail-title {
-      
-                  p {
-                      font-weight: 700;
-                  }
-                  
-              }
-          }
-      }
-  
-  
-  }
-
-.about-me {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  #resume-profile {
-      img {
-          width: 200px;
-          border-radius: 10px;
-          margin-right: 25px;
-      }
-  }
-
-  .content-block {
-      h1 {
-          color: color(accent);
-      }
-  }
-
-  #contact-resume {
-      display: flex; 
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-right: 25px;
-      margin-left: 25px;
-
-      .social-buttons {
-          margin-top: 35px;
-          margin-left: 10px;
-          margin-bottom: 0px;
-      }
-  }
-}
-
-
-.proficiencies {
-  
-  .content-block {
-      flex-direction: row;
-      justify-content: space-around;
-  }
-
-  .iblock {
-
-      margin-top: 25px;
-
-      .skills-title {
-          p {
-              font-size: 1.1rem;
-              font-weight: 700;
-          }
-      }
-
-      .skills-list {
-
-
-          li {
-              list-style-type: round($number: 1);
-              font-size: 1.1rem;
-              font-weight: 300;
-              margin-left: -20px;
-          }
-
-          #indent {
-              margin-left: 20px;
-              font-style: italic;
-          }
-      }
-  }
-}
-}
 
 
 @media only screen and (max-width: 850px) {
-    
-  .resume-body {
-      .iblock {
-          display: flex;
-          flex-direction: column-reverse;
-          text-align: left;
-
-          .detail-title {
-            p {
-              line-height: 20px;
-          }
-          }
-          .resume-detail {
-
-              div:nth-child(2) {
-                  p {
-                      line-height: 20px;
-                  }
-              }
-          }
-
-          .resume-date {
-              p {
-                  font-style: italic;
-                  font-size: 16px;
-                  line-height: 18px;
-                  text-align: left;
-              }
-          }
-
-      }
-      .about-me {
-          #resume-profile {
-              display: none;
-          }
-
-          #contact-resume {
-              margin-right: 10px;
-              margin-left: 5px;
-          }
-
-          .section-title {
-              display: none;
-          }
-
-          #connect-social-buttons {
-              a {
-                  background-color: color(nav-bg);
-                  padding: 20px;
-                  border-radius: 60px;
-                  margin-right: 15px;
-                  padding-bottom: 25px;
-              }
-          }
-          .social-buttons {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              padding-bottom: 15px;
-
-              div {
-                  margin-bottom: 25px;
-              }
-              
-              a {
-                  background-color: color(nav-bg);
-                  padding: 10px;
-                  border-radius: 60px;
-                  margin-right: 15px;
-                  padding-bottom: 15px;
-              }
-
-              a:hover {
-                  background-color: color(nav-hover);
-              }
-          }
-      }
-      .proficiencies {
-  
-        .content-block {
-          display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-      }
-  }
 
   #projectImage {
     height: 110vw;
