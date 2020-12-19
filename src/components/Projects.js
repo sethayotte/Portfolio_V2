@@ -11,14 +11,18 @@ const Projects = () => {
         <div className="currentItems">
           <div id="EP">
           <a href='/Everyday-Portfolio'>
-              <img src={EPHero} className="projectImage" id="EPImage" />
+              <img src={EPHero} className="projectImage" id="EPImage" alt="Everyday Portfolio Hero"/>
           </a>
           </div>
           <div id="Website">
-              <img src={WebsiteHero} className="projectImage" id="WebImage" />
+          <a href='/Development-Repository'>
+              <img src={WebsiteHero} className="projectImage" id="WebImage" alt="Development Site Hero"/>
+          </a>
           </div>
           <div id="Garage">
-              <img src={GarageHero} className="projectImage" id="GarageImage" />
+          <a href='/Seths-Garage'>
+              <img src={GarageHero} className="projectImage" id="GarageImage" alt="Seth's Garage Hero"/>
+          </a>
           </div>
         </div>
         <h1 className="pageHeader">Past Projects</h1>

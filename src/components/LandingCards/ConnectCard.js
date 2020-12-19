@@ -12,8 +12,8 @@ const ConnectCard = () => {
       <div class="mobile-wrapper">
         <div>
           <div className="connectAlignment" id="i1">
-            <img src={resumeIcon} />
-            <a href={resume} target="_blank">
+            <img src={resumeIcon} alt="Resume Icon" />
+            <a href={resume} target="_blank" rel="noreferrer">
             <h4 className="sectionLink" id="connectLink">
               View downloadable resume &nbsp;
               <FontAwesomeIcon icon="arrow-circle-right" />
@@ -27,7 +27,7 @@ const ConnectCard = () => {
               <FontAwesomeIcon icon="arrow-circle-right" />
             </h4>
             </a>
-            <img src={contactIcon} />
+            <img src={contactIcon} alt="Contact Icon"/>
           </div>
         </div>
         <div id="lm-text">
@@ -39,7 +39,7 @@ const ConnectCard = () => {
           </h3>
         </div>
         <div id="mobile-lm-links">
-        <a href={resume} target="_blank">
+        <a href={resume} target="_blank" rel="noreferrer">
             <h4 className="sectionLink" id="connectLink">
               View downloadable resume &nbsp;
               <FontAwesomeIcon icon="arrow-circle-right" />
@@ -53,7 +53,7 @@ const ConnectCard = () => {
             </a>
         </div>
         <div id="lm-mobile-hero">
-          <img src={connectMobileCard} />
+          <img src={connectMobileCard} alt="Connect Mobile Icon"/>
         </div>
         </div>
       </section>

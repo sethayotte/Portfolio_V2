@@ -18,10 +18,10 @@ const ProjectsCard = () => {
           </a>
         </div>
         <div className="desktop-hero">
-        <img src={technologies} id="projectsImage" />
+        <img src={technologies} id="projectsImage" alt="Technologies Card"/>
         </div>
         <div className="mobile-hero">
-        <img src={technologiesMobile} id="projectsImage" />
+        <img src={technologiesMobile} id="projectsImage" alt="Technologies Card Mobile"/>
         </div>
         </div>
       </section>

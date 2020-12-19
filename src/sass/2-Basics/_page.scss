@@ -1,0 +1,23 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .pageContainer {
+    margin-top: 100px;
+    margin-left: 45px;
+    margin-bottom: 75px;
+  }
+  .pageHeader {
+    font-family: 'Heebo';
+    font-weight: 700;
+    font-size: 36pt;
+  }
+  
+  .projectHeader {
+    font-family: 'Heebo';
+    font-weight: 700;
+    font-size: 40pt;
+    text-align: center;
+    margin-left: -45px;
+  }

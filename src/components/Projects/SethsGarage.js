@@ -1,10 +1,10 @@
 import React from "react";
 
-const EverydayPortfolio = () => {
+const SethsGarage = () => {
     return (
         <React.Fragment>
         <section className="pageContainer">
-          <h1 className="projectHeader" id="ep">Everyday Portfolio</h1>
+          <h1 className="projectHeader" id="ep">Seth's Garage</h1>
 
           <section id="document-container">
           <div id="project-proposal">
@@ -29,5 +29,5 @@ const EverydayPortfolio = () => {
     );
 }
 
-export default EverydayPortfolio;
+export default SethsGarage;
 

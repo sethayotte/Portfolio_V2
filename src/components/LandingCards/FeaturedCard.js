@@ -8,7 +8,7 @@ const FeaturedCard = () => {
       <section className="cardAlignment" id="featured">
       <div class="mobile-wrapper">
         <div>
-        <img src={epMockup} id="featuredImage" />
+        <img src={epMockup} id="featuredImage" alt="Featured Project"/>
         </div>
         <div>
           <h3 className="sectionText">

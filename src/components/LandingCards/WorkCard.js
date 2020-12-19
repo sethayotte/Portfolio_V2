@@ -19,10 +19,10 @@ const WorkCard = () => {
           </a>
         </div>
         <div className="workImageBlock">
-        <img src={workLogos} id="workImage" />
+        <img src={workLogos} id="workImage" alt="Experience Logos"/>
         </div>
         <div id="layer-mobile">
-          <img src={workMobile} id="workMobileImg" />
+          <img src={workMobile} id="workMobileImg" alt="Experience Logos Mobile"/>
         </div>
         </div>
       </section>

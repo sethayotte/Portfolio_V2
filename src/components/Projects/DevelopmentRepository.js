@@ -1,10 +1,10 @@
 import React from "react";
 
-const EverydayPortfolio = () => {
+const DevelopmentRepository = () => {
     return (
         <React.Fragment>
         <section className="pageContainer">
-          <h1 className="projectHeader" id="ep">Everyday Portfolio</h1>
+          <h1 className="projectHeader" id="ep">Development Repository</h1>
 
           <section id="document-container">
           <div id="project-proposal">
@@ -29,5 +29,5 @@ const EverydayPortfolio = () => {
     );
 }
 
-export default EverydayPortfolio;
+export default DevelopmentRepository;
 

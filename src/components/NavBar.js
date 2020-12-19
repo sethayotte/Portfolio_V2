@@ -21,6 +21,8 @@ import Contact from './Contact';
 import Resume from './Resume';
 import Landing from './Landing';
 import EverydayPortfolio from './Projects/EverydayPortfolio';
+import SethsGarage from './Projects/SethsGarage';
+import DevelopmentRepository from './Projects/DevelopmentRepository';
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,6 +64,12 @@ const NavBar = (props) => {
           </Route>
           <Route path='/Everyday-Portfolio'>
               <EverydayPortfolio />
+          </Route>
+          <Route path='/Seths-Garage'>
+              <SethsGarage />
+          </Route>
+          <Route path='/Development-Repository'>
+              <DevelopmentRepository />
           </Route>
           <Route path='/'>
               <Landing />
