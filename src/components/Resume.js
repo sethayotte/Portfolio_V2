@@ -126,11 +126,11 @@ const Resume = () => {
         </div>
         <div>
           <p>Charlotte, NC</p>
-          <p>Lead Designer, Front-End Engineer</p>
+          <p>Lead Designer, Front-End Developer</p>
         </div>
       </div>
       <div className="resume-date">
-        <p>April 2020 - Present</p>
+        <p>April 2020 - September 2020</p>
       </div>
       </div>
 
@@ -145,7 +145,7 @@ const Resume = () => {
         </div>
       </div>
       <div className="resume-date">
-        <p>September 2019 - October 2019</p>
+        <p>September 2018 - October 2019</p>
       </div>
       </div>
 

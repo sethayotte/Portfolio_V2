@@ -1,0 +1,24 @@
+#epPage {
+        margin: 0;
+}
+
+.epHeaderCard {
+
+    background-color: #0FBE00;
+    padding-top: 100px;
+
+    #ep-header {
+        color: white;
+        font-size: 10vw;
+    }
+
+    #epHeros {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 35vw;
+            margin: 30px;
+        }
+    }
+}

@@ -257,6 +257,34 @@ html, body {
   }
 }
 
+#epPage {
+  margin: 0;
+}
+
+.epHeaderCard {
+  background-color: #0FBE00;
+  padding-top: 100px;
+}
+
+.epHeaderCard #ep-header {
+  color: white;
+  font-size: 10vw;
+}
+
+.epHeaderCard #epHeros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.epHeaderCard #epHeros img {
+  width: 35vw;
+  margin: 30px;
+}
+
 #ep {
   color: #0FBE00;
 }
