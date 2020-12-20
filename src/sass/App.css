@@ -180,7 +180,6 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     z-index: 3;
-    background-color: #e9e8e890;
     -webkit-backdrop-filter: blur(7px);
             backdrop-filter: blur(7px);
     height: 90vh;
@@ -694,10 +693,27 @@ a:hover {
 }
 
 @media only screen and (max-width: 850px) {
-  #projectImage {
-    height: 110vw;
-    max-height: none;
-    max-width: none;
+  .currentItems {
+    margin-top: 30px;
+  }
+  .currentItems .projectImage {
+    height: 90vw;
+    min-height: 375px;
+  }
+  .currentItems #WebImage, .currentItems #GarageImage {
+    min-height: 350px;
+  }
+  .currentItems #EPImage:hover {
+    -webkit-filter: none;
+    filter: none;
+  }
+  .currentItems #WebImage:hover {
+    -webkit-filter: none;
+    filter: none;
+  }
+  .currentItems #GarageImage:hover {
+    -webkit-filter: none;
+    filter: none;
   }
 }
 
@@ -720,7 +736,7 @@ a:hover {
 }
 
 .currentItems .projectImage {
-  height: 45vw;
+  height: 50vw;
   max-height: 65vh;
   background: transparent;
   -webkit-transition: all 0.5s ease;
@@ -749,6 +765,18 @@ a:hover {
 
 #epPage {
   margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #ep-header {
+    display: none;
+  }
+  #ep-header-wrapped {
+    display: inline;
+    color: white;
+    font-size: 10vw;
+    padding-bottom: 50px;
+  }
 }
 
 #everyday-portfolio #document-container {
@@ -792,6 +820,13 @@ a:hover {
   padding-bottom: 50px;
 }
 
+.epHeaderCard #ep-header-wrapped {
+  display: none;
+  color: white;
+  font-size: 10vw;
+  padding-bottom: 50px;
+}
+
 .epHeaderCard #epHeros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,7 +837,21 @@ a:hover {
 }
 
 .epHeaderCard #epHeros img {
-  width: 35vw;
+  height: 45vw;
   margin: 30px;
+  margin-bottom: 0px;
+}
+
+#tagline-resources {
+  background-color: #f4f4f4;
+}
+
+#tagline-resources #ep-tagline {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 700;
+  font-size: 6vw;
+  text-align: center;
+  line-height: 8vw;
+  padding-top: 100px;
 }
 /*# sourceMappingURL=App.css.map */

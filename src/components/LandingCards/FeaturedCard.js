@@ -10,7 +10,7 @@ const FeaturedCard = () => {
         <div>
         <img src={epMockup} id="featuredImage" alt="Featured Project"/>
         </div>
-        <div>
+        <div id="featuredText">
           <h3 className="sectionText">
             Driven by good design, <br/>I build easy-to-use tools <br/>that deliver an
             impact.

@@ -2,6 +2,23 @@
         margin: 0;
 }
 
+@media only screen and (max-width: 768px) {
+
+    #ep-header {
+        display: none;
+    }
+    
+    #ep-header-wrapped {
+        display: inline;
+        color: color(white);
+        font-size: 10vw;
+        padding-bottom: 50px;
+    }
+
+    
+
+}
+
 #everyday-portfolio {
     #document-container {
       display: flex;
@@ -38,14 +55,36 @@
         padding-bottom: 50px;
     }
 
+    #ep-header-wrapped {
+        display: none;
+        color: color(white);
+        font-size: 10vw;
+        padding-bottom: 50px;
+    }
+
     #epHeros {
         display: flex;
         justify-content: center;
 
         img {
-            width: 35vw;
+            height: 45vw;
             margin: 30px;
+            margin-bottom: 0px;
         }
+    }
+}
+
+#tagline-resources {
+
+    background-color: color(nav-bg2);
+
+    #ep-tagline {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 700;
+        font-size: 6vw;
+        text-align: center;
+        line-height: 8vw;
+        padding-top: 100px;
     }
 }
 
