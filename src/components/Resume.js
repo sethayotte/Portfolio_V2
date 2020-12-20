@@ -17,7 +17,7 @@ const Resume = () => {
       <div className="content-block" id="resume-profile">
         <img src={sethHeadshot} alt="Seth's Headshot"/>
       </div>
-      <div className="content-block">
+      <div className="content-block" id="name">
         <h1>Seth Mitchell</h1>
         <h3>Software Engineering, Design, Systems</h3>
       </div>

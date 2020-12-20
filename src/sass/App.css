@@ -24,274 +24,9 @@ html, body {
   margin-left: -45px;
 }
 
-.about-me {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about-me #resume-profile {
-  margin-right: 55px;
-}
-
-.about-me #resume-profile img {
-  height: 250px;
-  border-radius: 10px;
-}
-
-.about-me h1 {
-  font-family: 'Heebo';
-  font-weight: 700;
-  color: #0E0E0E;
-}
-
-.about-me h3 {
-  font-family: 'Chakra Petch';
-  font-weight: 500;
-  font-size: 18pt;
-}
-
-.about-me #contact-resume {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 25px;
-  margin-left: 5px;
-}
-
-.about-me #contact-resume .social-buttons {
-  margin-top: 35px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-}
-
-.about-me #connect-social-buttons a {
-  background-color: color(nav-bg);
-  padding: 20px;
-  border-radius: 60px;
-  margin-right: 15px;
-  padding-bottom: 25px;
-}
-
-.about-me .social-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.about-me .social-buttons div {
-  margin-bottom: 40px;
-}
-
-.about-me .social-buttons a {
-  background-color: #eaeaea;
-  padding: 15px;
-  border-radius: 15px;
-  margin-top: 10px;
-  padding-bottom: 20px;
-}
-
-.about-me .social-buttons a:hover {
-  background-color: #d7d7d7;
-}
-
-.resume-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 75px;
-  margin-left: -40px;
-}
-
-.resume-body section {
-  width: 85%;
-  background-color: #f3f3f3;
-  border-radius: 25px;
-  padding: 30px;
-  margin-bottom: 25px;
-}
-
-.resume-body .section-title h2 {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.resume-body .content-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.resume-body .content-block p {
-  font-size: 1.1rem;
-  font-weight: 300;
-  line-height: .5rem;
-}
-
-.resume-body .content-block .iblock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 25px;
-}
-
-.resume-body .content-block .iblock .resume-detail .detail-title p {
-  font-weight: 700;
-}
-
-.resume-body .proficiencies .content-block {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.resume-body .proficiencies .iblock {
-  margin-top: 25px;
-}
-
-.resume-body .proficiencies .iblock .skills-title p {
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.resume-body .proficiencies .iblock .skills-list li {
-  list-style-type: 1;
-  font-size: 1.1rem;
-  font-weight: 300;
-  margin-left: -20px;
-}
-
-.resume-body .proficiencies .iblock .skills-list #indent {
-  margin-left: 20px;
-  font-style: italic;
-}
-
-@media only screen and (max-width: 850px) {
-  .resume-body .iblock {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    text-align: left;
-  }
-  .resume-body .iblock .detail-title p {
-    line-height: 20px;
-  }
-  .resume-body .iblock .resume-detail div:nth-child(2) p {
-    line-height: 20px;
-  }
-  .resume-body .iblock .resume-date p {
-    font-style: italic;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: left;
-  }
-  .resume-body .about-me #resume-profile {
-    display: none;
-  }
-  .resume-body .about-me #contact-resume {
-    margin-right: 10px;
-    margin-left: 5px;
-  }
-  .resume-body .about-me .section-title {
-    display: none;
-  }
-  .resume-body .proficiencies .content-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-#epPage {
-  margin: 0;
-}
-
-.epHeaderCard {
-  background-color: #0FBE00;
-  padding-top: 100px;
-}
-
-.epHeaderCard #ep-header {
-  color: white;
-  font-size: 10vw;
-}
-
-.epHeaderCard #epHeros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.epHeaderCard #epHeros img {
-  width: 35vw;
-  margin: 30px;
-}
-
-#ep {
-  color: #0FBE00;
-}
-
 .navContainer {
   height: 45px;
-  background-color: #e3e3e390;
+  background-color: #e9e8e890;
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   margin: 20px;
@@ -313,7 +48,7 @@ html, body {
 @media only screen and (max-width: 767px) {
   #mobileNav {
     height: 130px;
-    background-color: #e3e3e390;
+    background-color: #e9e8e890;
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     padding: 5px;
@@ -338,35 +73,9 @@ html, body {
   .navLinks {
     font-family: 'Heebo';
     font-weight: 700;
-    color: #0E0E0E;
+    color: black;
     text-align: center;
   }
-}
-
-.navSocialContainer {
-  height: 45px;
-  width: 175px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #e3e3e390;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  margin: 20px;
-  border-radius: 10px;
-  z-index: 100;
-}
-
-.navSocialContainer .socialNavItem {
-  list-style: none;
-}
-
-.navSocialContainer .socialNavItem .socialNavLinks {
-  height: 30px;
 }
 
 #navIcon {
@@ -406,7 +115,7 @@ html, body {
 #mainNav .navLinks {
   font-family: 'Heebo';
   font-weight: 500;
-  color: #0E0E0E;
+  color: black;
 }
 
 a:link {
@@ -419,6 +128,32 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+}
+
+.navSocialContainer {
+  height: 45px;
+  width: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #e9e8e890;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  margin: 20px;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.navSocialContainer .socialNavItem {
+  list-style: none;
+}
+
+.navSocialContainer .socialNavItem .socialNavLinks {
+  height: 30px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -445,7 +180,7 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     z-index: 3;
-    background-color: color(nav-bg);
+    background-color: #e9e8e890;
     -webkit-backdrop-filter: blur(7px);
             backdrop-filter: blur(7px);
     height: 90vh;
@@ -622,7 +357,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80vh;
+  margin-top: 90vh;
   cursor: pointer;
 }
 
@@ -719,6 +454,245 @@ a:hover {
   padding: 15px;
 }
 
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me #name {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.about-me #resume-profile {
+  margin-right: 20px;
+}
+
+.about-me #resume-profile img {
+  height: 250px;
+  border-radius: 10px;
+}
+
+.about-me h1 {
+  font-family: 'Heebo';
+  font-weight: 700;
+  color: #2136FF;
+}
+
+.about-me h3 {
+  font-family: 'Chakra Petch';
+  font-weight: 400;
+  font-size: 18pt;
+  color: black;
+}
+
+.about-me #contact-resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 25px;
+  margin-left: 5px;
+}
+
+.about-me #contact-resume .social-buttons {
+  margin-top: 35px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.about-me #connect-social-buttons a {
+  background-color: #e9e8e890;
+  padding: 20px;
+  border-radius: 60px;
+  margin-right: 15px;
+  padding-bottom: 25px;
+}
+
+.about-me .social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-me .social-buttons div {
+  margin-bottom: 40px;
+}
+
+.about-me .social-buttons a {
+  background-color: #eaeaea;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.about-me .social-buttons a:hover {
+  background-color: #d7d7d7;
+}
+
+.resume-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 75px;
+  margin-left: -40px;
+}
+
+.resume-body section {
+  width: 85%;
+  background-color: #f3f3f3;
+  border-radius: 25px;
+  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.resume-body .section-title h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.resume-body .content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resume-body .content-block p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: .5rem;
+}
+
+.resume-body .content-block .iblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.resume-body .content-block .iblock .resume-detail .detail-title p {
+  font-weight: 700;
+}
+
+.resume-body .proficiencies .content-block {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.resume-body .proficiencies .iblock {
+  margin-top: 25px;
+}
+
+.resume-body .proficiencies .iblock .skills-title p {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.resume-body .proficiencies .iblock .skills-list li {
+  list-style-type: 1;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-left: -20px;
+}
+
+.resume-body .proficiencies .iblock .skills-list #indent {
+  margin-left: 20px;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 850px) {
+  .resume-body .iblock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: left;
+  }
+  .resume-body .iblock .detail-title p {
+    line-height: 20px;
+  }
+  .resume-body .iblock .resume-detail div:nth-child(2) p {
+    line-height: 20px;
+  }
+  .resume-body .iblock .resume-date p {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+  }
+  .resume-body .about-me #resume-profile {
+    display: none;
+  }
+  .resume-body .about-me #contact-resume {
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  .resume-body .about-me .section-title {
+    display: none;
+  }
+  .resume-body .proficiencies .content-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   #projectImage {
     height: 110vw;
@@ -773,6 +747,10 @@ a:hover {
   filter: drop-shadow(0px 5px 50px #65fffac0);
 }
 
+#epPage {
+  margin: 0;
+}
+
 #everyday-portfolio #document-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -788,7 +766,7 @@ a:hover {
 }
 
 #everyday-portfolio #document-container #project-proposal, #everyday-portfolio #document-container #design-brief, #everyday-portfolio #document-container #see-project {
-  background-color: color(nav-bg);
+  background-color: #e9e8e890;
   border-radius: 15px;
   height: 43px;
 }
@@ -796,10 +774,35 @@ a:hover {
 #everyday-portfolio #document-container #project-proposal p, #everyday-portfolio #document-container #design-brief p, #everyday-portfolio #document-container #see-project p {
   margin: 0;
   padding: 10px 20px 10px 20px;
-  color: color(accent);
+  color: #2136FF;
 }
 
 #everyday-portfolio #document-container #project-proposal a:hover, #everyday-portfolio #document-container #design-brief a:hover, #everyday-portfolio #document-container #see-project a:hover {
   text-decoration: none;
+}
+
+.epHeaderCard {
+  background-color: #0FBE00;
+  padding-top: 150px;
+}
+
+.epHeaderCard #ep-header {
+  color: white;
+  font-size: 10vw;
+  padding-bottom: 50px;
+}
+
+.epHeaderCard #epHeros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.epHeaderCard #epHeros img {
+  width: 35vw;
+  margin: 30px;
 }
 /*# sourceMappingURL=App.css.map */

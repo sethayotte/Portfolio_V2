@@ -2,14 +2,40 @@
         margin: 0;
 }
 
+#everyday-portfolio {
+    #document-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 50px;
+    
+      #project-proposal, #design-brief, #see-project {
+        background-color: color(nav-bg);
+        border-radius: 15px;
+        height: 43px;
+    
+        p {
+            margin: 0;
+            padding: 10px 20px 10px 20px; 
+            color: color(accent);
+        }
+    
+        a:hover {
+            text-decoration: none;
+        }
+      }
+    }
+  }
+
 .epHeaderCard {
 
-    background-color: #0FBE00;
-    padding-top: 100px;
+    background-color: color(ep);
+    padding-top: 150px;
 
     #ep-header {
-        color: white;
+        color: color(white);
         font-size: 10vw;
+        padding-bottom: 50px;
     }
 
     #epHeros {
@@ -22,3 +48,5 @@
         }
     }
 }
+
+

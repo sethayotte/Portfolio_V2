@@ -5,26 +5,33 @@
     justify-content: space-between;
     align-items: center;
 
+    #name {
+        justify-self: start;
+    }
 
     #resume-profile {
+
         img {
             height: 250px;
             border-radius: 10px;
         }
 
-        margin-right: 55px;
+        margin-right: 20px;
+        
     }
 
     h1 {
+        
         font-family: 'Heebo';
         font-weight: 700;
-        color: #0E0E0E;
+        color: color(accent);
     }
 
     h3 {
         font-family: 'Chakra Petch';
-        font-weight: 500;
+        font-weight: 400;
         font-size: 18pt;
+        color: color(black);
     }
   
     #contact-resume {
