@@ -18,21 +18,21 @@ const EverydayPortfolio = () => {
         <section id="tagline-resources">
           <h2 id="ep-tagline">A custom-designed<br />financial utility.</h2>
           <section id="document-container">
-          <div id="project-proposal">
           <a href="assets/SethMitchell_EverydayPortfolioProposal.pdf" target="_blank" rel="noreferrer">
+          <div id="project-proposal">
             <p>View Project Proposal</p>
-          </a>
         </div>
+        </a>
+        <a href="assets/EverydayPortfolio_DesignBrief.pdf" target="_blank" rel="noreferrer">
         <div id="design-brief">
-          <a href="assets/EverydayPortfolio_DesignBrief.pdf" target="_blank" rel="noreferrer">
             <p>View Design Brief</p>
-          </a>
         </div>
+        </a>
+        <a href="https://github.com/sethayotte/Everyday-Portfolio" target="_blank" rel="noreferrer">
         <div id="see-project">
-          <a href="https://github.com/sethayotte/Everyday-Portfolio" target="_blank" rel="noreferrer">
             <p>See Project on GitHub</p>
-          </a>
         </div>
+        </a>
           </section>
           </section>
 

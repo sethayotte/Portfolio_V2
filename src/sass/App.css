@@ -736,7 +736,7 @@ a:hover {
 }
 
 .currentItems .projectImage {
-  height: 50vw;
+  height: 45vw;
   max-height: 65vh;
   background: transparent;
   -webkit-transition: all 0.5s ease;
