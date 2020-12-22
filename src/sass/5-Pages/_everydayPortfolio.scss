@@ -55,9 +55,10 @@
       margin: 20px;
       background-color: color(projectButton);
       padding: 0px 15px;
-      padding-bottom: 0.5px;
+      padding-bottom: 0.3px;
       padding-top: 13px;
       border-radius: 15px;
+      transition: all 0.3s ease-in-out;
 
       p {
         color: color(ep);

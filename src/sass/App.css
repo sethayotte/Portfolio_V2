@@ -853,9 +853,11 @@ a:hover {
   margin: 20px;
   background-color: #e2e2e2;
   padding: 0px 15px;
-  padding-bottom: 0.5px;
+  padding-bottom: 0.3px;
   padding-top: 13px;
   border-radius: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #tagline-resources #document-container div p {
