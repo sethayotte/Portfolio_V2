@@ -27,6 +27,7 @@
       height: 45vw;
       margin: 30px;
       margin-bottom: 0px;
+      max-height: 700px;
     }
   }
 }
@@ -122,9 +123,22 @@
 }
 
 @media only screen and (min-width: 1620px) { 
-    #detailsBody {
-        margin-left: 100px;
+
+    #ep-header {
+        font-size: 50px;
     }
+
+    #projectDescription {
+        justify-content: center;
+        #detailsBody {
+            margin-left: 100px;
+        }
+        
+    }
+    
+    
+
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -182,4 +196,8 @@
       }
     }
 }
+#projectDescription {
+    padding: 40px;
+}
+
 }

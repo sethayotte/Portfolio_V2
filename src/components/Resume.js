@@ -5,6 +5,7 @@ import connectIcon from "../assets/connect-icon.png";
 import githubIcon from "../assets/github-icon.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
 
+
 const Resume = () => {
     return (
         <React.Fragment>

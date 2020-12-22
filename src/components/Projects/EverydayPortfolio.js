@@ -2,6 +2,8 @@ import React from "react";
 import TodayMockup from '../../assets/TodayViewMockup.png';
 import ProfileMockup from '../../assets/ProfileViewMockup.png';
 
+import EPSlider from '../Carousel';
+
 const EverydayPortfolio = () => {
     return (
         <React.Fragment>
@@ -63,6 +65,7 @@ const EverydayPortfolio = () => {
               <p className="tag" id="epTag">Node</p>
               <p className="tag" id="epTag">Express</p>
               <p className="tag" id="epTag">MongoDB</p>
+              <p className="tag" id="epTag">MongoDB Atlas</p>
               <p className="tag" id="epTag">SCSS</p>
               <p className="tag" id="epTag">Sketch</p>
               </div>
@@ -70,7 +73,7 @@ const EverydayPortfolio = () => {
             </div>
             <div id="objectiveBody"> 
             <h4 id="descriptionSubheading">App Images & Video</h4>
-            <p id="descriptionBody">Lorem ipsum.</p>
+            <EPSlider />
             </div>
           </section>
 
