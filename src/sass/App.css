@@ -156,7 +156,7 @@ a:hover {
   height: 30px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   #featured .mobile-wrapper {
     margin-right: 0px;
   }
@@ -686,9 +686,10 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-left: 25px;
   }
 }
 
@@ -767,48 +768,6 @@ a:hover {
   margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
-  #ep-header {
-    display: none;
-  }
-  #ep-header-wrapped {
-    display: inline;
-    color: white;
-    font-size: 10vw;
-    padding-bottom: 50px;
-  }
-}
-
-#everyday-portfolio #document-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 50px;
-}
-
-#everyday-portfolio #document-container #project-proposal, #everyday-portfolio #document-container #design-brief, #everyday-portfolio #document-container #see-project {
-  background-color: #e9e8e890;
-  border-radius: 15px;
-  height: 43px;
-}
-
-#everyday-portfolio #document-container #project-proposal p, #everyday-portfolio #document-container #design-brief p, #everyday-portfolio #document-container #see-project p {
-  margin: 0;
-  padding: 10px 20px 10px 20px;
-  color: #2136FF;
-}
-
-#everyday-portfolio #document-container #project-proposal a:hover, #everyday-portfolio #document-container #design-brief a:hover, #everyday-portfolio #document-container #see-project a:hover {
-  text-decoration: none;
-}
-
 .epHeaderCard {
   background-color: #0FBE00;
   padding-top: 150px;
@@ -844,14 +803,164 @@ a:hover {
 
 #tagline-resources {
   background-color: #f4f4f4;
+  padding-bottom: 75px;
 }
 
 #tagline-resources #ep-tagline {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: 700;
   font-size: 6vw;
   text-align: center;
   line-height: 8vw;
   padding-top: 100px;
+}
+
+#tagline-resources #document-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tagline-resources #document-container div {
+  margin: 20px;
+  background-color: #e2e2e2;
+  padding: 0px 15px;
+  padding-bottom: 0.5px;
+  padding-top: 13px;
+  border-radius: 15px;
+}
+
+#tagline-resources #document-container div p {
+  color: #0FBE00;
+  font-weight: 700;
+}
+
+#tagline-resources #document-container div:hover {
+  background-color: #0FBE00;
+}
+
+#tagline-resources #document-container div:hover p {
+  color: white;
+}
+
+#projectDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: black;
+  padding: 100px;
+}
+
+#projectDescription #objectiveBody #descriptionBody {
+  max-width: 815px;
+}
+
+#projectDescription #descriptionSubheading {
+  color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 22pt;
+  font-weight: 600;
+}
+
+#projectDescription #descriptionBody {
+  color: white;
+  margin-bottom: 50px;
+}
+
+#projectDescription #technology-skills {
+  text-align: left;
+}
+
+#projectDescription .tag {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 50px;
+  font-size: 10pt;
+  font-weight: 600;
+}
+
+#projectDescription #epTag {
+  background-color: #0FBE00;
+}
+
+@media only screen and (min-width: 1620px) {
+  #detailsBody {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .epHeaderCard {
+    width: 100vw;
+    padding-top: 100px;
+  }
+  .epHeaderCard #ep-header {
+    display: none;
+  }
+  .epHeaderCard #ep-header-wrapped {
+    display: block;
+    color: white;
+    font-size: 16vw;
+    padding-bottom: 0px;
+    text-align: center;
+    margin-left: 5px;
+  }
+  .epHeaderCard #epHeros img {
+    height: 85vw;
+    margin: 10px;
+    margin-bottom: 0px;
+  }
+  .epHeaderCard #epHeros #profileView {
+    display: none;
+  }
+  #tagline-resources {
+    padding-bottom: 100px;
+  }
+  #tagline-resources #ep-tagline {
+    font-size: 9vw;
+    line-height: 11vw;
+  }
+  #tagline-resources #document-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #tagline-resources #document-container div {
+    width: 70vw;
+    margin: 10px;
+  }
+  #tagline-resources #document-container div p {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=App.css.map */

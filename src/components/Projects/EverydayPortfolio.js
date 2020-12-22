@@ -10,8 +10,8 @@ const EverydayPortfolio = () => {
           <h1 className="projectHeader" id="ep-header">&nbsp; Everyday Portfolio</h1>
           <h1 className="projectHeader" id="ep-header-wrapped">Everyday<br />Portfolio</h1>
           <div id="epHeros">
-            <img src={TodayMockup} alt="Today View Mockup" />
-            <img src={ProfileMockup} alt="Profile Mockup" />
+            <img id="todayView" src={TodayMockup} alt="Today View Mockup" />
+            <img id="profileView" src={ProfileMockup} alt="Profile Mockup" />
           </div>
           </section>
 
@@ -34,6 +34,44 @@ const EverydayPortfolio = () => {
         </div>
         </a>
           </section>
+          </section>
+
+          <section id="projectDescription">
+            <div id="objectiveBody"> 
+            <h4 id="descriptionSubheading">Project Objective</h4>
+            <p id="descriptionBody">With a strong interest in personal investment and finance, I’m interested in developing tools that can help engage individuals and make their lives easier. Across bank accounts, investment platforms, budget tools - nothing seems to have a simple, easy-to-digest solution to watch your performance on a daily basis.<br /> <br />
+
+                                    While true gains are the culmination of years and decades of time spent in the market, I still like to see how things are moving day to day - as well as read daily news about earnings, announcements, etc. Especially in today’s COVID environment, things can swing significantly day to day.<br /> <br />
+
+                                    The goal of Everyday Portfolio is to give a snapshot of your day in a simple and clean application. I think this will be a good app to develop alongside the NuCamp curriculum since the ideal environment would be a native app. Ideally this would be a project that would continue on into the App Store to give access to everyone.</p>
+            </div>
+            <div id="detailsBody">
+            <h4 id="descriptionSubheading">Project Details</h4>
+            <p id="descriptionBody">
+              <div id="role-timeline">
+              <strong>My Role:&nbsp;&nbsp;&nbsp;&nbsp; </strong> 
+              Personal Project,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Lead Developer & Designer 
+              <br /><br />
+              <strong>Timeline:&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+              August 2020 - Present
+              <br /><br />
+              </div>
+              <div id="technology-skills">
+              <strong>Technologies & Skills Used:</strong><br />
+              <p className="tag" id="epTag">React Native</p>
+              <p className="tag" id="epTag">Node</p>
+              <p className="tag" id="epTag">Express</p>
+              <p className="tag" id="epTag">MongoDB</p>
+              <p className="tag" id="epTag">SCSS</p>
+              <p className="tag" id="epTag">Sketch</p>
+              </div>
+            </p>
+            </div>
+            <div id="objectiveBody"> 
+            <h4 id="descriptionSubheading">App Images & Video</h4>
+            <p id="descriptionBody">Lorem ipsum.</p>
+            </div>
           </section>
 
         </section>
