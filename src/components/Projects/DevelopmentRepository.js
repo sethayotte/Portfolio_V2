@@ -1,29 +1,70 @@
 import React from "react";
 
+import devHero from '../../assets/PortfolioHero.png';
+
 const DevelopmentRepository = () => {
     return (
         <React.Fragment>
-        <section className="pageContainer">
-          <h1 className="projectHeader" id="ep">Development Repository</h1>
-
-          <section id="document-container">
-          <div id="project-proposal">
-          <a href="assets/SethMitchell_EverydayPortfolioProposal.pdf" target="_blank" rel="noreferrer">
-            <p>View Project Proposal</p>
-          </a>
-        </div>
-        <div id="design-brief">
-          <a href="assets/EverydayPortfolio_DesignBrief.pdf" target="_blank" rel="noreferrer">
-            <p>View Design Brief</p>
-          </a>
-        </div>
-        <div id="see-project">
-          <a href="https://github.com/sethayotte/Everyday-Portfolio" target="_blank" rel="noreferrer">
-            <p>See Project on GitHub</p>
-          </a>
-        </div>
+        <section className="pageContainer" id="devPage">
+          <section id="developmentHeader">
+          <h1 className="projectHeader" id="dev">Development Repository</h1>
+          <img id="devHero" src={devHero} alt="Development Hero Mockup" />
           </section>
 
+          <section id="dev-tagline-resources">
+          <h2 id="dev-tagline">A living document of my<br />development experience.</h2>
+          <section id="document-container">
+          <a href="assets/SethMitchell_EverydayPortfolioProposal.pdf" target="_blank" rel="noreferrer">
+          <div id="project-proposal">
+            <p>View GitHub Activity</p>
+          </div>
+          </a>
+          <a href="assets/EverydayPortfolio_DesignBrief.pdf" target="_blank" rel="noreferrer">
+          <div id="design-brief">
+            <p>Explore My Development</p>
+          </div>
+          </a>
+          </section>
+          </section>
+
+          <section className="projectDescription" id="devProject">
+            <div className="objectiveBody"> 
+            <h4 className="descriptionSubheading" id="devSubheading">Project Objective</h4>
+            <p className="descriptionBody" id="devDescription">With a strong interest in personal investment and finance, I’m interested in developing tools that can help engage individuals and make their lives easier. Across bank accounts, investment platforms, budget tools - nothing seems to have a simple, easy-to-digest solution to watch your performance on a daily basis.<br /> <br />
+
+                                    While true gains are the culmination of years and decades of time spent in the market, I still like to see how things are moving day to day - as well as read daily news about earnings, announcements, etc. Especially in today’s COVID environment, things can swing significantly day to day.<br /> <br />
+
+                                    The goal of Everyday Portfolio is to give a snapshot of your day in a simple and clean application. I think this will be a good app to develop alongside the NuCamp curriculum since the ideal environment would be a native app. Ideally this would be a project that would continue on into the App Store to give access to everyone.</p>
+            </div>
+            <div className="detailsBody" id="devDetails">
+            <h4 className="descriptionSubheading" id="devSubheading">Project Details</h4>
+            <p className="descriptionBody" id="devDescription">
+              <div className="role-timeline">
+              <strong>My Role:&nbsp;&nbsp;&nbsp;&nbsp; </strong> 
+              Personal Project,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Lead Developer & Designer 
+              <br /><br />
+              <strong>Timeline:&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+              April 2020 - Present
+              <br /><br />
+              </div>
+              <div className="technology-skills">
+              <strong>Technologies & Skills Used:</strong><br />
+              <p className="tag" id="devTag">React Native</p>
+              <p className="tag" id="devTag">Node</p>
+              <p className="tag" id="devTag">Express</p>
+              <p className="tag" id="devTag">MongoDB</p>
+              <p className="tag" id="devTag">MongoDB Atlas</p>
+              <p className="tag" id="devTag">SCSS</p>
+              <p className="tag" id="devTag">Sketch</p>
+              </div>
+            </p>
+            </div>
+            <div className="objectiveBody"> 
+            <h4 className="descriptionSubheading" id="devSubheading">App Images & Video</h4>
+            </div>
+          </section>
+ 
         </section>
       </React.Fragment>
     );

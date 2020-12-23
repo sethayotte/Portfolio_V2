@@ -38,19 +38,19 @@ const EverydayPortfolio = () => {
           </section>
           </section>
 
-          <section id="projectDescription">
-            <div id="objectiveBody"> 
-            <h4 id="descriptionSubheading">Project Objective</h4>
-            <p id="descriptionBody">With a strong interest in personal investment and finance, I’m interested in developing tools that can help engage individuals and make their lives easier. Across bank accounts, investment platforms, budget tools - nothing seems to have a simple, easy-to-digest solution to watch your performance on a daily basis.<br /> <br />
+          <section className="projectDescription">
+            <div className="objectiveBody"> 
+            <h4 className="descriptionSubheading">Project Objective</h4>
+            <p className="descriptionBody">With a strong interest in personal investment and finance, I’m interested in developing tools that can help engage individuals and make their lives easier. Across bank accounts, investment platforms, budget tools - nothing seems to have a simple, easy-to-digest solution to watch your performance on a daily basis.<br /> <br />
 
                                     While true gains are the culmination of years and decades of time spent in the market, I still like to see how things are moving day to day - as well as read daily news about earnings, announcements, etc. Especially in today’s COVID environment, things can swing significantly day to day.<br /> <br />
 
                                     The goal of Everyday Portfolio is to give a snapshot of your day in a simple and clean application. I think this will be a good app to develop alongside the NuCamp curriculum since the ideal environment would be a native app. Ideally this would be a project that would continue on into the App Store to give access to everyone.</p>
             </div>
-            <div id="detailsBody">
-            <h4 id="descriptionSubheading">Project Details</h4>
-            <p id="descriptionBody">
-              <div id="role-timeline">
+            <div className="detailsBody">
+            <h4 className="descriptionSubheading">Project Details</h4>
+            <p className="descriptionBody">
+              <div className="role-timeline">
               <strong>My Role:&nbsp;&nbsp;&nbsp;&nbsp; </strong> 
               Personal Project,<br />
               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Lead Developer & Designer 
@@ -59,7 +59,7 @@ const EverydayPortfolio = () => {
               August 2020 - Present
               <br /><br />
               </div>
-              <div id="technology-skills">
+              <div className="technology-skills">
               <strong>Technologies & Skills Used:</strong><br />
               <p className="tag" id="epTag">React Native</p>
               <p className="tag" id="epTag">Node</p>
@@ -71,8 +71,8 @@ const EverydayPortfolio = () => {
               </div>
             </p>
             </div>
-            <div id="objectiveBody"> 
-            <h4 id="descriptionSubheading">App Images & Video</h4>
+            <div className="objectiveBody"> 
+            <h4 className="descriptionSubheading">App Images & Video</h4>
             <EPSlider />
             </div>
           </section>

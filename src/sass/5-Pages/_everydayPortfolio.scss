@@ -76,33 +76,33 @@
   }
 }
 
-#projectDescription {
+.projectDescription {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: color(black);
     padding: 100px;
 
-    #objectiveBody {
-        #descriptionBody {
+    .objectiveBody {
+        .descriptionBody {
             max-width: 815px;
         }
         
     }
 
-    #descriptionSubheading {
+    .descriptionSubheading {
         color: color(white);
         font-family: 'Heebo', sans-serif;
         font-size: 22pt;
         font-weight: 600;
     }
 
-    #descriptionBody {
+    .descriptionBody {
         color: color(white);
         margin-bottom: 50px;
     }
 
-    #technology-skills {
+    .technology-skills {
         text-align: left;
       }
 
@@ -129,9 +129,9 @@
         font-size: 50px;
     }
 
-    #projectDescription {
+    .projectDescription {
         justify-content: center;
-        #detailsBody {
+        .detailsBody {
             margin-left: 100px;
         }
         
@@ -197,7 +197,7 @@
       }
     }
 }
-#projectDescription {
+.projectDescription {
     padding: 40px;
 }
 
