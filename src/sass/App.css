@@ -903,6 +903,10 @@ a:hover {
   margin-bottom: 50px;
 }
 
+.projectDescription .detailsBody {
+  max-width: 600px;
+}
+
 .projectDescription .technology-skills {
   text-align: left;
 }
@@ -1101,10 +1105,6 @@ a:hover {
 
 #devProject #devDescription {
   color: black;
-}
-
-#devProject #devDetails {
-  max-width: 600px;
 }
 
 #devProject #devTag {

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import devHero from '../../assets/PortfolioHero.png';
 
@@ -14,16 +15,20 @@ const DevelopmentRepository = () => {
           <section id="dev-tagline-resources">
           <h2 id="dev-tagline">A living document of my<br />development experience.</h2>
           <section id="document-container">
-          <a href="assets/SethMitchell_EverydayPortfolioProposal.pdf" target="_blank" rel="noreferrer">
-          <div id="project-proposal">
+          <a href="https://github.com/sethayotte/" target="_blank" rel="noreferrer">
+          <div>
             <p>View GitHub Activity</p>
           </div>
           </a>
-          <a href="assets/EverydayPortfolio_DesignBrief.pdf" target="_blank" rel="noreferrer">
-          <div id="design-brief">
+          <Link
+              to="devProject"
+              smooth={true}
+              duration={800}
+          >
+          <div>
             <p>Explore My Development</p>
           </div>
-          </a>
+          </Link>
           </section>
           </section>
 
@@ -40,9 +45,9 @@ const DevelopmentRepository = () => {
             <h4 className="descriptionSubheading" id="devSubheading">My Stats</h4>
             <p className="descriptionBody" id="devDescription">
               <div className="role-timeline">
-              <strong>Current Role:&nbsp;&nbsp;&nbsp;&nbsp; </strong> 
-              Personal Project,<br />
-              &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Lead Developer & Designer 
+              <strong>Current Role:&nbsp;&nbsp;&nbsp;&nbsp;</strong> 
+              Graphic Designer,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compass Group USA 
               <br /><br />
               <strong>Timeline:&nbsp;&nbsp;&nbsp;&nbsp;</strong>
               April 2020 - Present
