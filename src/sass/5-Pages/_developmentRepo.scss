@@ -48,7 +48,7 @@
   
       div {
         margin: 20px;
-        background-color: color(projectButton);
+        background-color: color(white);
         padding: 0px 15px;
         padding-bottom: 0.3px;
         padding-top: 13px;
@@ -80,6 +80,10 @@
 
       #devDescription {
           color: color(black);
+      }
+
+      #devDetails {
+          max-width: 600px;
       }
 
       #devTag {

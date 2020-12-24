@@ -125,8 +125,19 @@
 
 @media only screen and (min-width: 1620px) { 
 
-    #ep-header {
-        font-size: 50px;
+    .epHeaderCard {
+        #ep-header {
+            font-size: 125pt;
+        }
+    }
+    
+
+    #tagline-resources {
+      
+        #ep-tagline {
+            font-size: 65pt;
+            line-height: 80pt;
+        }
     }
 
     .projectDescription {
