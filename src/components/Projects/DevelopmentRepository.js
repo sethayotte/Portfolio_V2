@@ -79,7 +79,6 @@ const DevelopmentRepository = () => {
             <h4 className="descriptionSubheading" id="devSubheading">App Images & Video</h4>
             </div>
           </section>
- 
         </section>
       </React.Fragment>
     );
