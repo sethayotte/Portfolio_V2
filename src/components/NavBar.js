@@ -11,7 +11,7 @@ import {
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
   } from "react-router-dom";
 import navIcon from '../assets/SM2021.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -40,10 +40,10 @@ const NavBar = (props) => {
         <Collapse isOpen={isOpen} id="mobileNav" navbar>
           <Nav className="ml-auto" id="mainNav" navbar>
             <NavItem className="navItem">
-              <NavLink href="/Projects" className="navLinks">Projects</NavLink>
+              <NavLink href="/Projects" className="navLinks" activeClassName="active">Projects</NavLink>
             </NavItem>
             <NavItem className="navItem">
-              <NavLink href="/Resume" className="navLinks">Resume</NavLink>
+              <NavLink href="/Resume" className="navLinks" activeClassName="active">Resume</NavLink>
             </NavItem>
             <NavItem className="navItem">
               <NavLink href="/Contact" className="navLinks">Contact</NavLink>

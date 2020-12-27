@@ -40,11 +40,7 @@
       display: flex;
       align-self: center;
     }
-  
-    .navLinks:hover {
-      color: color(accent);
-    }
-  
+
     .navLinks {
       font-family: 'Heebo';
       font-weight: 700;
@@ -76,26 +72,35 @@
   
   #mainNav {
     margin-right: 0px;
+
+    .active {
+      color: color(accent);
+    }
   
     .navItem {
       margin-left: 10px;
       padding-right: 10px;
       padding-left: 10px;
-      
-    }
-  
-    .navLinks:hover {
-      color: color(accent);
-    }
-  
-    .navLinks {
-      font-family: 'Heebo';
-      font-weight: 500;
-      color: color(black);
+    
+      .navLinks {
+        font-family: 'Heebo';
+        font-weight: 500;
+        color: color(black);
+      }
+
+      .navLinks:hover {
+        color: color(accent);
+        font-weight: 600;
+      }
+
+      .navLinks:target {
+        color: color(accent);
+      }
+
     }
   
   }
-  
+
   a:link {
     text-decoration: none;
   }

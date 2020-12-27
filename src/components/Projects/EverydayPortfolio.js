@@ -2,6 +2,7 @@ import React from "react";
 import TodayMockup from '../../assets/TodayViewMockup.png';
 import ProfileMockup from '../../assets/ProfileViewMockup.png';
 
+import { Link, animateScroll as scroll } from "react-scroll";
 import EPSlider from '../Carousel';
 
 const EverydayPortfolio = () => {
@@ -26,20 +27,24 @@ const EverydayPortfolio = () => {
             <p>View Project Proposal</p>
         </div>
         </a>
+        <Link
+              to="epProject"
+              smooth={true}
+              duration={800}
+          >
+        <div id="see-project">
+            <p>Explore Project</p>
+        </div>
+        </Link>
         <a href="assets/EverydayPortfolio_DesignBrief.pdf" target="_blank" rel="noreferrer">
         <div id="design-brief">
             <p>View Design Brief</p>
         </div>
         </a>
-        <a href="https://github.com/sethayotte/Everyday-Portfolio" target="_blank" rel="noreferrer">
-        <div id="see-project">
-            <p>See Project on GitHub</p>
-        </div>
-        </a>
           </section>
           </section>
 
-          <section className="projectDescription">
+          <section className="projectDescription" id="epProject">
             <div className="objectiveBody"> 
             <h4 className="descriptionSubheading">Project Objective</h4>
             <p className="descriptionBody">With a strong interest in personal investment and finance, I’m interested in developing tools that can help engage individuals and make their lives easier. Across bank accounts, investment platforms, budget tools - nothing seems to have a simple, easy-to-digest solution to watch your performance on a daily basis.<br /> <br />
