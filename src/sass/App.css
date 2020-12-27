@@ -822,6 +822,34 @@ a:hover {
 #tagline-resources {
   background-color: #f4f4f4;
   padding-bottom: 75px;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tagline-resources #WIP {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 50px;
+  font-size: 10pt;
+  font-weight: 600;
+  background-color: #EF0000;
+  color: white;
 }
 
 #tagline-resources #ep-tagline {
@@ -830,7 +858,6 @@ a:hover {
   font-size: 6vw;
   text-align: center;
   line-height: 8vw;
-  padding-top: 100px;
 }
 
 #tagline-resources #document-container {
@@ -1043,6 +1070,34 @@ a:hover {
 #dev-tagline-resources {
   background-color: #2136FF;
   padding-bottom: 75px;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#dev-tagline-resources #WIP {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 50px;
+  font-size: 10pt;
+  font-weight: 600;
+  background-color: #EF0000;
+  color: white;
 }
 
 #dev-tagline-resources #dev-tagline {
@@ -1051,7 +1106,6 @@ a:hover {
   font-size: 6vw;
   text-align: center;
   line-height: 8vw;
-  padding-top: 100px;
   color: white;
 }
 

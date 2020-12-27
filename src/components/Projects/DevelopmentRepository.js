@@ -13,6 +13,7 @@ const DevelopmentRepository = () => {
           </section>
 
           <section id="dev-tagline-resources">
+          <p className="tag" id="WIP">Work In Progress</p>
           <h2 id="dev-tagline">A living document of my<br />development experience.</h2>
           <section id="document-container">
           <a href="https://github.com/sethayotte/" target="_blank" rel="noreferrer">

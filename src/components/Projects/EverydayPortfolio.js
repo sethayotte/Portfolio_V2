@@ -18,6 +18,7 @@ const EverydayPortfolio = () => {
           </section>
 
         <section id="tagline-resources">
+          <p id="WIP">Work In Progress</p>
           <h2 id="ep-tagline">A custom-designed<br />financial utility.</h2>
           <section id="document-container">
           <a href="assets/SethMitchell_EverydayPortfolioProposal.pdf" target="_blank" rel="noreferrer">

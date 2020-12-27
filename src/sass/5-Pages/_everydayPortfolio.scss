@@ -35,6 +35,25 @@
 #tagline-resources {
   background-color: color(nav-bg2);
   padding-bottom: 75px;
+  padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  #WIP {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    width: auto;
+    border-radius: 50px;
+    font-size: 10pt;
+    font-weight: 600;
+    background-color: #EF0000;
+    color: color(white);
+}
 
   #ep-tagline {
     font-family: "Heebo", sans-serif;
@@ -42,7 +61,6 @@
     font-size: 6vw;
     text-align: center;
     line-height: 8vw;
-    padding-top: 100px;
   }
 
   #document-container {
