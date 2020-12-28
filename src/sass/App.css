@@ -179,125 +179,38 @@ a:hover {
   height: 30px;
 }
 
-@media only screen and (max-width: 850px) {
-  #featured .mobile-wrapper {
-    margin-right: 0px;
-  }
-  #featured .mobile-wrapper div:first-child {
-    position: absolute;
-    z-index: 1;
-    padding-left: 75px;
-  }
-  #featured .mobile-wrapper div:nth-child(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media only screen and (max-width: 768px) {
+  .navSocialContainer {
+    height: 175px;
+    width: 45px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 3;
-    -webkit-backdrop-filter: blur(7px);
-            backdrop-filter: blur(7px);
-    height: 90vh;
-    width: 100vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 5px;
   }
-  #projects .mobile-wrapper, #work .mobile-wrapper, #connect .mobile-wrapper {
-    margin-right: 0px;
+  .navSocialContainer .socialNavItem {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: -10px;
   }
-  #projects .mobile-wrapper div:nth-child(3), #work .mobile-wrapper div:nth-child(3), #connect .mobile-wrapper div:nth-child(3) {
-    display: block;
-    position: absolute;
-    z-index: 1;
-  }
-  #projects .mobile-wrapper div:nth-child(3) #projectsImage, #work .mobile-wrapper div:nth-child(3) #projectsImage, #connect .mobile-wrapper div:nth-child(3) #projectsImage {
-    height: 110vw;
-    margin-left: 50px;
-    margin-right: 160px;
-    max-height: none;
-  }
-  #projects .mobile-wrapper div:nth-child(2), #work .mobile-wrapper div:nth-child(2), #connect .mobile-wrapper div:nth-child(2) {
-    display: none;
-  }
-  #projects .mobile-wrapper div:first-child, #work .mobile-wrapper div:first-child, #connect .mobile-wrapper div:first-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 3;
-    -webkit-backdrop-filter: blur(7px);
-            backdrop-filter: blur(7px);
-    height: 90vh;
-    width: 100vw;
-    margin-top: -20px;
-  }
-  #projects .mobile-wrapper #projectsText, #work .mobile-wrapper #projectsText, #connect .mobile-wrapper #projectsText {
-    background-color: #6b738d98;
-    margin-left: -100px;
-  }
-  #projects .mobile-wrapper .workTextBlock, #work .mobile-wrapper .workTextBlock, #connect .mobile-wrapper .workTextBlock {
-    background-color: #ffffff80;
-  }
-  #projects .mobile-wrapper .workTextBlock h3, #work .mobile-wrapper .workTextBlock h3, #connect .mobile-wrapper .workTextBlock h3 {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  #projects .mobile-wrapper .workTextBlock p, #work .mobile-wrapper .workTextBlock p, #connect .mobile-wrapper .workTextBlock p {
-    text-shadow: 0px 2px 10px #FFF;
-  }
-  #projects .mobile-wrapper .workImageBlock img, #work .mobile-wrapper .workImageBlock img, #connect .mobile-wrapper .workImageBlock img {
-    display: none;
-  }
-  #projects .mobile-wrapper #layer-mobile img, #work .mobile-wrapper #layer-mobile img, #connect .mobile-wrapper #layer-mobile img {
-    display: block;
-    height: 110vw;
-    margin-bottom: 50px;
-  }
-  #projects .mobile-wrapper #i1, #projects .mobile-wrapper #i2, #work .mobile-wrapper #i1, #work .mobile-wrapper #i2, #connect .mobile-wrapper #i1, #connect .mobile-wrapper #i2 {
-    display: none;
-  }
-  #projects .mobile-wrapper #lm-text, #work .mobile-wrapper #lm-text, #connect .mobile-wrapper #lm-text {
-    display: block;
-    position: absolute;
-    z-index: 3;
-  }
-  #projects .mobile-wrapper #lm-text h3, #work .mobile-wrapper #lm-text h3, #connect .mobile-wrapper #lm-text h3 {
-    margin-left: 0px;
-  }
-  #projects .mobile-wrapper #mobile-lm-links, #work .mobile-wrapper #mobile-lm-links, #connect .mobile-wrapper #mobile-lm-links {
-    position: absolute;
-    z-index: 3;
-    text-align: center;
-    margin-top: 200px;
-  }
-  #projects .mobile-wrapper #mobile-lm-links #connectLink, #work .mobile-wrapper #mobile-lm-links #connectLink, #connect .mobile-wrapper #mobile-lm-links #connectLink {
-    margin: 0px;
-    padding: 0px;
-    padding-bottom: 10px;
-  }
-  #projects .mobile-wrapper #lm-mobile-hero, #work .mobile-wrapper #lm-mobile-hero, #connect .mobile-wrapper #lm-mobile-hero {
-    display: block;
-    position: absolute;
-    z-index: 1;
-  }
-  #projects .mobile-wrapper #lm-mobile-hero img, #work .mobile-wrapper #lm-mobile-hero img, #connect .mobile-wrapper #lm-mobile-hero img {
-    height: 550px;
-  }
+}
+
+.landingBody {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  -ms-scroll-snap-points-y: repeat(100vh);
+      scroll-snap-points-y: repeat(100vh);
+}
+
+.landingBody section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .cardAlignment .mobile-wrapper {
@@ -474,6 +387,127 @@ a:hover {
           align-items: center;
   margin-right: 75px;
   padding: 15px;
+}
+
+@media only screen and (max-width: 850px) {
+  #featured .mobile-wrapper {
+    margin-right: 0px;
+  }
+  #featured .mobile-wrapper div:first-child {
+    position: absolute;
+    z-index: 1;
+    padding-left: 75px;
+  }
+  #featured .mobile-wrapper div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 3;
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    height: 90vh;
+    width: 100vw;
+  }
+  #projects .mobile-wrapper, #work .mobile-wrapper, #connect .mobile-wrapper {
+    margin-right: 0px;
+  }
+  #projects .mobile-wrapper div:nth-child(3), #work .mobile-wrapper div:nth-child(3), #connect .mobile-wrapper div:nth-child(3) {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+  #projects .mobile-wrapper div:nth-child(3) #projectsImage, #work .mobile-wrapper div:nth-child(3) #projectsImage, #connect .mobile-wrapper div:nth-child(3) #projectsImage {
+    height: 110vw;
+    margin-left: 50px;
+    margin-right: 160px;
+    max-height: none;
+  }
+  #projects .mobile-wrapper div:nth-child(2), #work .mobile-wrapper div:nth-child(2), #connect .mobile-wrapper div:nth-child(2) {
+    display: none;
+  }
+  #projects .mobile-wrapper div:first-child, #work .mobile-wrapper div:first-child, #connect .mobile-wrapper div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 3;
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    height: 90vh;
+    width: 100vw;
+    margin-top: -20px;
+  }
+  #projects .mobile-wrapper #projectsText, #work .mobile-wrapper #projectsText, #connect .mobile-wrapper #projectsText {
+    background-color: #6b738d98;
+    margin-left: -100px;
+  }
+  #projects .mobile-wrapper .workTextBlock, #work .mobile-wrapper .workTextBlock, #connect .mobile-wrapper .workTextBlock {
+    background-color: #ffffff80;
+  }
+  #projects .mobile-wrapper .workTextBlock h3, #work .mobile-wrapper .workTextBlock h3, #connect .mobile-wrapper .workTextBlock h3 {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #projects .mobile-wrapper .workTextBlock p, #work .mobile-wrapper .workTextBlock p, #connect .mobile-wrapper .workTextBlock p {
+    text-shadow: 0px 2px 10px #FFF;
+  }
+  #projects .mobile-wrapper .workImageBlock img, #work .mobile-wrapper .workImageBlock img, #connect .mobile-wrapper .workImageBlock img {
+    display: none;
+  }
+  #projects .mobile-wrapper #layer-mobile img, #work .mobile-wrapper #layer-mobile img, #connect .mobile-wrapper #layer-mobile img {
+    display: block;
+    height: 110vw;
+    margin-bottom: 50px;
+  }
+  #projects .mobile-wrapper #i1, #projects .mobile-wrapper #i2, #work .mobile-wrapper #i1, #work .mobile-wrapper #i2, #connect .mobile-wrapper #i1, #connect .mobile-wrapper #i2 {
+    display: none;
+  }
+  #projects .mobile-wrapper #lm-text, #work .mobile-wrapper #lm-text, #connect .mobile-wrapper #lm-text {
+    display: block;
+    position: absolute;
+    z-index: 3;
+  }
+  #projects .mobile-wrapper #lm-text h3, #work .mobile-wrapper #lm-text h3, #connect .mobile-wrapper #lm-text h3 {
+    margin-left: 0px;
+  }
+  #projects .mobile-wrapper #mobile-lm-links, #work .mobile-wrapper #mobile-lm-links, #connect .mobile-wrapper #mobile-lm-links {
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    margin-top: 200px;
+  }
+  #projects .mobile-wrapper #mobile-lm-links #connectLink, #work .mobile-wrapper #mobile-lm-links #connectLink, #connect .mobile-wrapper #mobile-lm-links #connectLink {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  #projects .mobile-wrapper #lm-mobile-hero, #work .mobile-wrapper #lm-mobile-hero, #connect .mobile-wrapper #lm-mobile-hero {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+  #projects .mobile-wrapper #lm-mobile-hero img, #work .mobile-wrapper #lm-mobile-hero img, #connect .mobile-wrapper #lm-mobile-hero img {
+    height: 550px;
+  }
 }
 
 .about-me {
