@@ -8,24 +8,24 @@ import ConnectCard from './LandingCards/ConnectCard';
 const Landing = () => {
     return (
       <React.Fragment className="landingBody">
-        
-        <section>
+
+        <section className="child">
           <TitleCard />
         </section>
 
-        <section>
+        <section className="child">
         <FeaturedCard />
         </section>
 
-        <section>
+        <section className="child">
         <ProjectsCard />
         </section>
 
-        <section>
+        <section className="child">
         <WorkCard />
         </section>
 
-        <section>
+        <section className="child">
         <ConnectCard />
         </section>   
 

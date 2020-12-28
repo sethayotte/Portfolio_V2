@@ -200,17 +200,15 @@ a:hover {
 }
 
 .landingBody {
+  overflow-y: scroll;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
-  -ms-scroll-snap-points-y: repeat(100vh);
-      scroll-snap-points-y: repeat(100vh);
 }
 
-.landingBody section {
+.child {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .cardAlignment .mobile-wrapper {
