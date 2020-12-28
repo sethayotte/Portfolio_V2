@@ -1243,4 +1243,147 @@ a:hover {
     text-align: center;
   }
 }
+
+#garagePage {
+  margin-left: 0px;
+}
+
+#garageHero {
+  margin-top: 40px;
+  margin-left: 50px;
+  height: auto;
+  width: 100vw;
+  padding: 0px;
+  max-width: 1400px;
+  margin-bottom: 75px;
+}
+
+#garage-tagline-resources {
+  background-color: #f4f4f4;
+  padding-bottom: 75px;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#garage-tagline-resources #WIP {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 50px;
+  font-size: 10pt;
+  font-weight: 600;
+  background-color: #EF0000;
+  color: white;
+}
+
+#garage-tagline-resources #garage-tagline {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: 6vw;
+  text-align: center;
+  line-height: 8vw;
+  color: #313131;
+}
+
+#garage-tagline-resources #document-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#garage-tagline-resources #document-container div {
+  margin: 20px;
+  background-color: #2136FF;
+  padding: 0px 15px;
+  padding-bottom: 0.3px;
+  padding-top: 13px;
+  border-radius: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#garage-tagline-resources #document-container div p {
+  color: white;
+  font-weight: 700;
+}
+
+#garage-tagline-resources #document-container div:hover {
+  background-color: #e9e8e890;
+  cursor: pointer;
+}
+
+#garage-tagline-resources #document-container div:hover p {
+  color: #2136FF;
+}
+
+#garageProject {
+  background-color: white;
+}
+
+#garageProject #garageSubheading {
+  color: black;
+}
+
+#garageProject #garageDescription {
+  color: black;
+}
+
+#garageProject #garageTag {
+  background-color: #2136FF;
+  color: white;
+}
+
+@media only screen and (min-width: 1620px) {
+  #garage-tagline-resources #garage-tagline {
+    font-size: 60pt;
+    line-height: 72pt;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #garage-tagline-resources #garage-tagline {
+    font-size: 8vw;
+    line-height: 11vw;
+    margin-bottom: 25px;
+  }
+  #garage-tagline-resources #document-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+  }
+  #garage-tagline-resources #document-container div {
+    width: 70vw;
+    margin: 10px;
+  }
+  #garage-tagline-resources #document-container div p {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=App.css.map */
