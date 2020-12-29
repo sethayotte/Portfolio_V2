@@ -702,6 +702,7 @@ a:hover {
 
 .downloadButton {
   padding-bottom: 25px;
+  margin-left: -25px;
 }
 
 .downloadButton #resumeDownload {
@@ -758,6 +759,9 @@ a:hover {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-left: 25px;
+  }
+  .downloadButton {
+    padding-bottom: 0px;
   }
 }
 

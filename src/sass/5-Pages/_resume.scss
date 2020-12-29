@@ -175,6 +175,7 @@
 
   .downloadButton {
       padding-bottom: 25px;
+      margin-left: -25px;
       
     #resumeDownload {
         text-align: center;
@@ -243,5 +244,9 @@
               margin-left: 25px;
           }
         }
+    }
+
+    .downloadButton {
+        padding-bottom: 0px;
     }
 }
