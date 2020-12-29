@@ -1,9 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import sethHeadshot from '../assets/SethMitchell_Headshot.jpg';
 import connectIcon from "../assets/connect-icon.png";
 import githubIcon from "../assets/github-icon.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
+import resume from "../assets/Resume_2021.pdf";
 
 
 const Resume = () => {
@@ -245,6 +247,12 @@ const Resume = () => {
 
   </section>
 
+</section>
+
+<section className="downloadButton">
+<h4 className="sectionLink" id="resumeDownload">
+              Looking to save? &nbsp;<a id="downloadLink" href={resume} target="_blank" rel="noreferrer">Download a copy <FontAwesomeIcon icon='arrow-circle-down'/></a>
+          </h4>
 </section>
 
         </section>

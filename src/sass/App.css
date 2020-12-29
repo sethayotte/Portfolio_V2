@@ -700,6 +700,19 @@ a:hover {
   font-style: italic;
 }
 
+.downloadButton {
+  padding-bottom: 25px;
+}
+
+.downloadButton #resumeDownload {
+  text-align: center;
+  font-size: 18px;
+}
+
+.downloadButton #resumeDownload #downloadLink {
+  color: #2136FF;
+}
+
 @media only screen and (max-width: 850px) {
   .resume-body .iblock {
     display: -webkit-box;

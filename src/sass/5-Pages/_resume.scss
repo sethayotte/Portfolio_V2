@@ -173,6 +173,19 @@
   }
   }
 
+  .downloadButton {
+      padding-bottom: 25px;
+      
+    #resumeDownload {
+        text-align: center;
+        font-size: 18px;
+
+        #downloadLink {
+            color: color(accent);
+        }
+    }
+  }
+
 
 @media only screen and (max-width: 850px) {
     
