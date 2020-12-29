@@ -7,21 +7,25 @@ const Contact = () => {
     return (
         <React.Fragment>
         <section className="pageContainer">
-          <h1 className="pageHeader">Let's Connect.</h1>
+          <h1 className="pageHeader" id="contact-header">Let's Connect.</h1>
 
-          <p id="connect-copy">Feel free to check out my GitHub & LinkedIn for additional details about my work, or get in touch through email.</p>
+          <p id="contact-copy">Feel free to check out my GitHub & LinkedIn for additional details about my work, or get in touch through email.</p>
 
           <div>
+          <div className="contact-platform-buttons">
             <div>
-              < a href="https://github.com/sethayotte" target="_blank">
+            < a href="https://github.com/sethayotte" target="_blank">
               <img className="socialConnectIcon" src={githubIcon}/>
-              </a>
-              <a href="https://www.linkedin.com/in/sethayottemitchell/" target="_blank">
-              <img className="socialConnectIcon" src={linkedinIcon}/>
               </a>
             </div>
             <div>
-              <h2 className="socialConnectButton">Send an Email</h2>
+            <a href="https://www.linkedin.com/in/sethayottemitchell/" target="_blank">
+              <img className="socialConnectIcon" src={linkedinIcon}/>
+              </a>
+            </div>
+          </div>
+            <div className="emailConnectContainer">
+              <h2 className="emailConnectButton">Send an Email</h2>
             </div>
           </div>
         

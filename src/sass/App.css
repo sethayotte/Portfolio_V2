@@ -765,6 +765,69 @@ a:hover {
   }
 }
 
+#contact-header {
+  margin-bottom: 50px;
+}
+
+#contact-copy {
+  text-align: center;
+}
+
+.contact-platform-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-platform-buttons div {
+  background-color: #e9e8e890;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.contact-platform-buttons div:hover {
+  background-color: #e2e2e2;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.contact-platform-buttons a img {
+  height: 45px;
+}
+
+.emailConnectContainer {
+  background-color: #e9e8e890;
+  padding: 10px;
+  padding-top: 15px;
+  border-radius: 15px;
+  margin: auto;
+  width: 180px;
+}
+
+.emailConnectContainer .emailConnectButton {
+  font-size: 24px;
+  text-align: center;
+  color: #2136FF;
+  padding: 0px;
+}
+
+.emailConnectContainer:hover {
+  background-color: #e2e2e2;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .pageContainer {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .currentItems {
     margin-top: 30px;

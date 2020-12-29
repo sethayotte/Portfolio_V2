@@ -37,7 +37,9 @@ const SethsGarage = () => {
           <div className="objectiveBody"> 
           <h4 className="descriptionSubheading" id="garageSubheading">Project Objective</h4>
           <p className="descriptionBody" id="garageDescription"> 
-Lorem ipsum...
+            With a passion for cars at a young age, I absolutely love driving and will always take the long winding road home if I can help it.  Each car I’ve owned has run with me through significant moments in my life and I wanted a place to hold a record of these vehicles and the hundreds of thousands of miles they’ve taken me.<br /><br />  
+
+            Seth’s Garage will be an archive of every car I’ve owned with basic specifications and mileage driven.  Down the road, I plan on implementing an OBD integration that will track mileage as I cruise along and will relay back to the site to show total miles driven during the collective lifetime of the fleet.
           </p>
           </div>
           <div className="detailsBody" id="garageDetails">
