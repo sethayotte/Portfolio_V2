@@ -128,13 +128,14 @@ html, body {
 
 #mainNav .navItem .navLinks {
   font-family: 'Heebo';
-  font-weight: 500;
+  font-weight: 600;
   color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #mainNav .navItem .navLinks:hover {
   color: #2136FF;
-  font-weight: 600;
 }
 
 #mainNav .navItem .navLinks:target {
@@ -787,6 +788,8 @@ a:hover {
   padding: 10px;
   border-radius: 15px;
   margin: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact-platform-buttons div:hover {
@@ -807,6 +810,8 @@ a:hover {
   border-radius: 15px;
   margin: auto;
   width: 180px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .emailConnectContainer .emailConnectButton {
@@ -1482,6 +1487,41 @@ a:hover {
   }
   #garage-tagline-resources #document-container div p {
     text-align: center;
+  }
+}
+
+#sproutHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sproutHeader #sprout {
+  color: #29BB86;
+  font-size: 7vw;
+  margin-left: 15px;
+}
+
+#sproutHeader #sproutHero {
+  height: auto;
+  width: 90vw;
+  padding: 0px;
+  max-width: 1200px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: auto;
+}
+
+@media only screen and (min-width: 1620px) {
+  #sproutHeader #sprout {
+    font-size: 80pt;
   }
 }
 /*# sourceMappingURL=App.css.map */

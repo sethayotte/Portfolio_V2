@@ -1,0 +1,39 @@
+
+#sproutHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #sprout {
+        color: color(sprout);
+        font-size: 7vw;
+        margin-left: 15px;
+    }
+    
+    #sproutHero {
+        height: auto;
+        width: 90vw;
+        padding: 0px;
+        max-width: 1200px;
+        justify-self: center;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1620px) { 
+    #sproutHeader {
+
+        #sprout {
+            font-size: 80pt;
+        }
+    }
+
+    // #sprout-tagline-resources {
+      
+    //     #sprout-tagline {
+    //         font-size: 60pt;
+    //         line-height: 72pt;
+    //     }
+    // }
+}
+
