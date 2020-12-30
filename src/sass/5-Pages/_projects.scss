@@ -1,6 +1,6 @@
 @media only screen and (max-width: 850px) {
 
-  .currentItems {
+  .currentItems, .pastItems {
 
     margin-top: 30px;
     
@@ -9,8 +9,12 @@
       min-height: 375px;
     }
 
-    #WebImage, #GarageImage {
+    #WebImage, #GarageImage, #SproutImage {
       min-height: 350px;
+    }
+
+    #HyperloopImage {
+      min-height: 325px;
     }
   
     #EPImage:hover {
@@ -29,8 +33,8 @@
     }
   } 
 }
-   
-  .currentItems {
+  
+  .currentItems, .pastItems {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,4 +67,21 @@
       -webkit-filter: drop-shadow(0px 5px 50px #65fffac0);
       filter: drop-shadow(0px 5px 50px #65fffac0);
     }
+
+    #SproutImage:hover {
+      -webkit-filter: drop-shadow(0px 5px 50px #21c58992);
+      filter: drop-shadow(0px 5px 50px #21c58992);
+    }
+  
+    #MeshImage:hover {
+      -webkit-filter: drop-shadow(0px 5px 50px #ffd000bc);
+      filter: drop-shadow(0px 5px 50px #ffd000bc);
+    }
+  
+    #HyperloopImage:hover {
+      -webkit-filter: drop-shadow(0px 5px 50px #818181c0);
+      filter: drop-shadow(0px 5px 50px #818181c0);
+    }
   }
+
+  

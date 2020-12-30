@@ -829,31 +829,34 @@ a:hover {
 }
 
 @media only screen and (max-width: 850px) {
-  .currentItems {
+  .currentItems, .pastItems {
     margin-top: 30px;
   }
-  .currentItems .projectImage {
+  .currentItems .projectImage, .pastItems .projectImage {
     height: 90vw;
     min-height: 375px;
   }
-  .currentItems #WebImage, .currentItems #GarageImage {
+  .currentItems #WebImage, .currentItems #GarageImage, .currentItems #SproutImage, .pastItems #WebImage, .pastItems #GarageImage, .pastItems #SproutImage {
     min-height: 350px;
   }
-  .currentItems #EPImage:hover {
+  .currentItems #HyperloopImage, .pastItems #HyperloopImage {
+    min-height: 325px;
+  }
+  .currentItems #EPImage:hover, .pastItems #EPImage:hover {
     -webkit-filter: none;
     filter: none;
   }
-  .currentItems #WebImage:hover {
+  .currentItems #WebImage:hover, .pastItems #WebImage:hover {
     -webkit-filter: none;
     filter: none;
   }
-  .currentItems #GarageImage:hover {
+  .currentItems #GarageImage:hover, .pastItems #GarageImage:hover {
     -webkit-filter: none;
     filter: none;
   }
 }
 
-.currentItems {
+.currentItems, .pastItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -871,7 +874,7 @@ a:hover {
           align-items: center;
 }
 
-.currentItems .projectImage {
+.currentItems .projectImage, .pastItems .projectImage {
   height: 45vw;
   max-height: 65vh;
   background: transparent;
@@ -879,24 +882,39 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-.currentItems .projectImage:hover {
+.currentItems .projectImage:hover, .pastItems .projectImage:hover {
   height: 47vw;
   max-height: 67vh;
 }
 
-.currentItems #EPImage:hover {
+.currentItems #EPImage:hover, .pastItems #EPImage:hover {
   -webkit-filter: drop-shadow(0px 5px 50px #0FBE0088);
   filter: drop-shadow(0px 5px 50px #0FBE0088);
 }
 
-.currentItems #WebImage:hover {
+.currentItems #WebImage:hover, .pastItems #WebImage:hover {
   -webkit-filter: drop-shadow(0px 5px 50px #2137ffa1);
   filter: drop-shadow(0px 5px 50px #2136FFa1);
 }
 
-.currentItems #GarageImage:hover {
+.currentItems #GarageImage:hover, .pastItems #GarageImage:hover {
   -webkit-filter: drop-shadow(0px 5px 50px #65fffac0);
   filter: drop-shadow(0px 5px 50px #65fffac0);
+}
+
+.currentItems #SproutImage:hover, .pastItems #SproutImage:hover {
+  -webkit-filter: drop-shadow(0px 5px 50px #21c58992);
+  filter: drop-shadow(0px 5px 50px #21c58992);
+}
+
+.currentItems #MeshImage:hover, .pastItems #MeshImage:hover {
+  -webkit-filter: drop-shadow(0px 5px 50px #ffd000bc);
+  filter: drop-shadow(0px 5px 50px #ffd000bc);
+}
+
+.currentItems #HyperloopImage:hover, .pastItems #HyperloopImage:hover {
+  -webkit-filter: drop-shadow(0px 5px 50px #818181c0);
+  filter: drop-shadow(0px 5px 50px #818181c0);
 }
 
 #epPage {
