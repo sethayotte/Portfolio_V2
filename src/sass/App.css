@@ -1320,6 +1320,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  #devPage {
+    margin-right: 0px;
+  }
   #developmentHeader #dev {
     font-size: 48pt;
   }
@@ -1469,6 +1472,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  #garagePage {
+    margin-right: 0px;
+  }
   #garage-tagline-resources #garage-tagline {
     font-size: 8vw;
     line-height: 11vw;
@@ -1638,6 +1644,42 @@ a:hover {
   color: white;
 }
 
+.design-codeBody {
+  margin-top: 75px;
+}
+
+.design-codeBody h4 {
+  color: #29BB86;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 700;
+  font-size: 24pt;
+}
+
+.design-codeBody .sproutCol1, .design-codeBody .sproutCol2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design-codeBody .sproutCol1 img, .design-codeBody .sproutCol2 img {
+  height: 50vw;
+  max-height: 700px;
+}
+
+.design-codeBody .sproutCol1 {
+  margin-left: 95px;
+}
+
+.design-codeBody .sproutCol2 {
+  margin-right: 50px;
+}
+
 @media only screen and (min-width: 1620px) {
   #sproutHeader #sprout {
     font-size: 80pt;
@@ -1706,6 +1748,32 @@ a:hover {
   }
   #sproutProject #introContainer #sproutCopy p {
     color: white;
+  }
+  .design-codeBody {
+    margin: 25px;
+    margin-top: 75px;
+  }
+  .design-codeBody .sproutCol1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+  }
+  .design-codeBody .sproutCol1 img {
+    height: 80vw;
+    min-width: 300px;
+  }
+  .design-codeBody .sproutCol2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-right: 0px;
+  }
+  .design-codeBody .sproutCol2 img {
+    height: 80vw;
+    min-width: 300px;
   }
 }
 /*# sourceMappingURL=App.css.map */

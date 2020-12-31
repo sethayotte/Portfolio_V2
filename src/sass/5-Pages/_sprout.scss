@@ -114,6 +114,36 @@
       }
   }
 
+  .design-codeBody {
+      margin-top: 75px;
+
+    h4 {
+        color: color(sprout);
+        font-family: 'Heebo', sans-serif;
+        font-weight: 700;
+        font-size: 24pt;
+    }
+
+    .sproutCol1, .sproutCol2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 50vw;
+            max-height: 700px;
+        }
+    }
+
+    .sproutCol1 {
+        margin-left: 95px;
+    }
+
+    .sproutCol2 {
+        margin-right: 50px;
+    }
+  }
+
 @media only screen and (min-width: 1620px) { 
     #sproutHeader {
 
@@ -196,6 +226,31 @@
                     }
                 }
               }
+        }
+
+        .design-codeBody {
+            margin: 25px;
+            margin-top: 75px;
+
+            .sproutCol1 {
+                flex-direction: column;
+                margin-left: 0px;
+
+                img {
+                    height: 80vw;
+                    min-width: 300px;
+                }
+            }
+
+            .sproutCol2 {
+                flex-direction: column-reverse;
+                margin-right: 0px;
+
+                img {
+                    height: 80vw;
+                    min-width: 300px;
+                }
+            }
         }
 
        

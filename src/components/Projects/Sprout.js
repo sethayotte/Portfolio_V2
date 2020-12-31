@@ -3,6 +3,9 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import SproutIntro from '../../assets/Sprout_Mobile.png';
 import SproutHero from '../../assets/sprout_hero.png';
+import SproutTab1 from '../../assets/sprout_tablet.png';
+import SproutTab2 from '../../assets/sprout_tablet2.png';
+
 
 const Sprout = () => {
     return (
@@ -14,7 +17,6 @@ const Sprout = () => {
         </section>
 
         <section id="sprout-tagline-resources">
-        <p className="tag" id="WIP">Work In Progress</p>
         <h2 id="sprout-tagline">Reimagining talent in<br />the wake of COVID-19.</h2>
         <section id="document-container">
         <a href="https://github.com/sethayotte/" target="_blank" rel="noreferrer">
@@ -50,6 +52,29 @@ Seth’s Garage will be an archive of every car I’ve owned with basic specific
                 </div>
             </div>
 
+        </section>
+
+        <section>
+            <div className="design-codeBody">
+                <div className="sproutCol1">
+                    <div>
+                    <h4 className="projectSubheading">Cultivating my development interest.</h4>
+                    <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                    <img src={SproutTab1} alt="Sprout Tablet Mockup 1" />  
+                    </div>
+                </div>
+                <div className="sproutCol2">
+                    <div>
+                    <img src={SproutTab2} alt="Sprout Tablet Mockup 2" />
+                    </div>
+                    <div>
+                    <h4 className="projectSubheading">A turning point for design & code.</h4> 
+                    <p>Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         </section>

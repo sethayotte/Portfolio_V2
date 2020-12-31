@@ -57,8 +57,7 @@ const DevelopmentRepository = () => {
             <p className="descriptionBody" id="devDescription">
               <div className="role-timeline">
               <strong>Current Role:&nbsp;&nbsp;&nbsp;&nbsp;</strong> 
-              Graphic Designer,<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compass Group USA 
+              Graphic Designer, Compass Group USA 
               <br /><br />
               <strong>Interests & Hobbies:&nbsp;&nbsp;&nbsp;&nbsp;</strong>
               Personal Finance, Cooking, Cars, Travel, Skiing, Tennis, Consumer Tech
