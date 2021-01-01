@@ -25,7 +25,6 @@ import SethsGarage from './Projects/SethsGarage';
 import DevelopmentRepository from './Projects/DevelopmentRepository';
 import Sprout from './Projects/Sprout';
 import Mesh from './Projects/Mesh';
-import Hyperloop from './Projects/Hyperloop';
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,9 +78,6 @@ const NavBar = (props) => {
           </Route>
           <Route path='/Mesh'>
               <Mesh />
-          </Route>
-          <Route path='/Hyperloop'>
-              <Hyperloop />
           </Route>
           <Route path='/'>
               <Landing />

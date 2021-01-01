@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import sethHeadshot from '../assets/SethMitchell_Headshot.jpg';
 import connectIcon from "../assets/connect-icon.png";
@@ -18,11 +18,13 @@ const Resume = () => {
 
     <section className="about-me">
       <div className="content-block" id="resume-profile">
+        <div>
         <img src={sethHeadshot} alt="Seth's Headshot"/>
       </div>
-      <div className="content-block" id="name">
+      <div>
         <h1>Seth Mitchell</h1>
         <h3>Software Engineering, Design, Systems</h3>
+      </div>
       </div>
       <div className="content-block" id="contact-resume">
       <div className="connect-blocks">

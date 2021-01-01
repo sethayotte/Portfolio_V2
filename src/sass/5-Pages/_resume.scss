@@ -1,3 +1,7 @@
+#resumePage {
+    margin-right: -10px;
+}
+
 .about-me {
 
     display: flex;
@@ -5,15 +9,15 @@
     justify-content: space-between;
     align-items: center;
 
-    #name {
-        justify-self: start;
-    }
-
     #resume-profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
         img {
             height: 250px;
             border-radius: 10px;
+            margin-right: 50px;
         }
 
         margin-right: 20px;
@@ -73,6 +77,7 @@
             border-radius: 15px;
             margin-top: 10px;
             padding-bottom: 20px;
+            transition: all 0.3s ease-in-out;
         }
 
         a:hover {
@@ -95,6 +100,7 @@
         border-radius: 25px;
         padding: 30px;
         margin-bottom: 25px;
+        max-width: 1200px;
     }
     
     .section-title {
@@ -222,7 +228,11 @@
         }
         .about-me {
             #resume-profile {
-                display: none;
+
+                img {
+                    display: none;
+                }
+                
             }
   
             #contact-resume {

@@ -523,6 +523,10 @@ a:hover {
   }
 }
 
+#resumePage {
+  margin-right: -10px;
+}
+
 .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,18 +543,24 @@ a:hover {
           align-items: center;
 }
 
-.about-me #name {
-  -ms-grid-column-align: start;
-      justify-self: start;
-}
-
 .about-me #resume-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 20px;
 }
 
 .about-me #resume-profile img {
   height: 250px;
   border-radius: 10px;
+  margin-right: 50px;
 }
 
 .about-me h1 {
@@ -621,6 +631,8 @@ a:hover {
   border-radius: 15px;
   margin-top: 10px;
   padding-bottom: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-me .social-buttons a:hover {
@@ -648,6 +660,7 @@ a:hover {
   border-radius: 25px;
   padding: 30px;
   margin-bottom: 25px;
+  max-width: 1200px;
 }
 
 .resume-body .section-title h2 {
@@ -752,7 +765,7 @@ a:hover {
     line-height: 18px;
     text-align: left;
   }
-  .resume-body .about-me #resume-profile {
+  .resume-body .about-me #resume-profile img {
     display: none;
   }
   .resume-body .about-me #contact-resume {
@@ -1658,19 +1671,28 @@ a:hover {
   color: white;
 }
 
-.design-codeBody {
+#sproutProject #introContainer #sproutCopy #readMore {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#sproutSection2 {
   margin-top: 75px;
   margin-bottom: 100px;
 }
 
-.design-codeBody h4 {
+#sproutSection2 .design-codeBody {
+  margin: 15px;
+}
+
+#sproutSection2 .design-codeBody h4 {
   color: #29BB86;
   font-family: 'Heebo', sans-serif;
   font-weight: 700;
   font-size: 24pt;
 }
 
-.design-codeBody .sproutCol1, .design-codeBody .sproutCol2 {
+#sproutSection2 .design-codeBody .sproutCol1, #sproutSection2 .design-codeBody .sproutCol2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1680,23 +1702,21 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 50px;
 }
 
-.design-codeBody .sproutCol1 img, .design-codeBody .sproutCol2 img {
+#sproutSection2 .design-codeBody .sproutCol1 #colCopy, #sproutSection2 .design-codeBody .sproutCol2 #colCopy {
+  max-width: 600px;
+  min-width: 300px;
+}
+
+#sproutSection2 .design-codeBody .sproutCol1 img, #sproutSection2 .design-codeBody .sproutCol2 img {
   height: 50vw;
   max-height: 700px;
 }
 
-.design-codeBody .sproutCol1 {
-  margin-left: 95px;
-}
-
-.design-codeBody .sproutCol1 h4 {
-  margin-right: 50px;
-}
-
-.design-codeBody .sproutCol2 {
-  margin-right: 50px;
+#sproutSection2 .design-codeBody .sproutCol1 img {
+  margin-right: -95px;
 }
 
 @media only screen and (min-width: 1620px) {
@@ -1709,32 +1729,6 @@ a:hover {
   }
   #sproutIntro {
     max-height: 800px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #sproutHeader #sprout {
-    font-size: 12vw;
-    margin-bottom: 25px;
-  }
-  #sprout-tagline-resources #sprout-tagline {
-    font-size: 8vw;
-    line-height: 11vw;
-    margin-bottom: 25px;
-  }
-  #sprout-tagline-resources #document-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 25px;
-  }
-  #sprout-tagline-resources #document-container div {
-    width: 70vw;
-    margin: 10px;
-  }
-  #sprout-tagline-resources #document-container div p {
-    text-align: center;
   }
 }
 
@@ -1768,10 +1762,6 @@ a:hover {
   #sproutProject #introContainer #sproutCopy p {
     color: white;
   }
-  .design-codeBody {
-    margin: 25px;
-    margin-top: 75px;
-  }
   .design-codeBody .sproutCol1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1779,9 +1769,12 @@ a:hover {
             flex-direction: column;
     margin-left: 0px;
   }
+  .design-codeBody .sproutCol1 #colCopy {
+    margin: 15px;
+    min-width: none;
+  }
   .design-codeBody .sproutCol1 img {
-    height: 80vw;
-    min-width: 300px;
+    margin-right: 0px;
   }
   .design-codeBody .sproutCol2 {
     -webkit-box-orient: vertical;
@@ -1790,9 +1783,48 @@ a:hover {
             flex-direction: column-reverse;
     margin-right: 0px;
   }
-  .design-codeBody .sproutCol2 img {
-    height: 80vw;
-    min-width: 300px;
+  .design-codeBody .sproutCol2 #colCopy {
+    margin: 15px;
+    min-width: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #sproutHeader #sprout {
+    font-size: 12vw;
+    margin-bottom: 25px;
+  }
+  #sprout-tagline-resources #sprout-tagline {
+    font-size: 8vw;
+    line-height: 11vw;
+    margin-bottom: 25px;
+  }
+  #sprout-tagline-resources #document-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+  }
+  #sprout-tagline-resources #document-container div {
+    width: 70vw;
+    margin: 10px;
+  }
+  #sprout-tagline-resources #document-container div p {
+    text-align: center;
+  }
+  #sproutSection2 .design-codeBody {
+    margin: 25px;
+  }
+  #sproutSection2 .design-codeBody .sproutCol1, #sproutSection2 .design-codeBody .sproutCol2 {
+    margin: 0px;
+  }
+  #sproutSection2 .design-codeBody .sproutCol1 img, #sproutSection2 .design-codeBody .sproutCol2 img {
+    height: 85vw;
+    margin-left: 5vw;
+  }
+  #sproutSection2 .design-codeBody .sproutCol1 img {
+    margin-right: 0px;
   }
 }
 

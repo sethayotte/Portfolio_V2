@@ -4,7 +4,6 @@ import WebsiteHero from '../assets/Projects_Hero-10.png';
 import GarageHero from '../assets/Projects_Hero-09.png';
 import SproutHero from '../assets/Project_Hero_Tiles-06.png';
 import MeshHero from '../assets/Project_Hero_Tiles-05.png';
-import HyperloopHero from '../assets/Project_Hero_Tiles-07.png';
 
 const Projects = () => {
   return (
@@ -38,11 +37,6 @@ const Projects = () => {
           <div id="Mesh">
           <a href='/Mesh'>
               <img src={MeshHero} className="projectImage" id="MeshImage" alt="Development Site Hero"/>
-          </a>
-          </div>
-          <div id="Hyperloop">
-          <a href='/Hyperloop'>
-              <img src={HyperloopHero} className="projectImage" id="HyperloopImage" alt="Seth's Garage Hero"/>
           </a>
           </div>
         </div>

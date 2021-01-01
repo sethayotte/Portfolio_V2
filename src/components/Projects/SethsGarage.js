@@ -16,7 +16,7 @@ const SethsGarage = () => {
         <p className="tag" id="WIP">Work In Progress</p>
         <h2 id="garage-tagline">An interactive archive of<br />past & present vehicles.</h2>
         <section id="document-container">
-        <a href="https://github.com/sethayotte/" target="_blank" rel="noreferrer">
+        <a href="https://github.com/sethayotte/seths-garage" target="_blank" rel="noreferrer">
         <div>
           <p>View GitHub Repository</p>
         </div>

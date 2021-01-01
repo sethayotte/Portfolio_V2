@@ -110,44 +110,56 @@
             p {
                 color: color(white);
             }
+
+            #readMore {
+                font-weight: 700;
+                cursor: pointer;
+            }
         }
       }
   }
 
-  .design-codeBody {
-      margin-top: 75px;
-      margin-bottom: 100px;
+  #sproutSection2 {
+    margin-top: 75px;
+    margin-bottom: 100px;
 
-    h4 {
-        color: color(sprout);
-        font-family: 'Heebo', sans-serif;
-        font-weight: 700;
-        font-size: 24pt;
-    }
-
-    .sproutCol1, .sproutCol2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            height: 50vw;
-            max-height: 700px;
-        }
-    }
-
-    .sproutCol1 {
-        margin-left: 95px;
+    .design-codeBody {
+        margin: 15px;
 
         h4 {
-            margin-right: 50px;
+            color: color(sprout);
+            font-family: 'Heebo', sans-serif;
+            font-weight: 700;
+            font-size: 24pt;
         }
-    }
+    
+        .sproutCol1, .sproutCol2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+    
+            #colCopy {
+                max-width: 600px;
+                min-width: 300px;
+            }
+    
+            img {
+                height: 50vw;
+                max-height: 700px;
+            }
+        }
 
-    .sproutCol2 {
-        margin-right: 50px;
-    }
+        .sproutCol1 {
+            img {
+                margin-right: -95px;
+            }
+        }
+    
+      }
   }
+
+  
 
 @media only screen and (min-width: 1620px) { 
     #sproutHeader {
@@ -168,6 +180,67 @@
     #sproutIntro {
         max-height: 800px;
     }
+}
+
+    @media only screen and (max-width: 950px) {
+
+        #sproutProject {
+            #introContainer {
+
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+        
+                #sproutIntro {
+                    height: 95vw;
+                    margin-bottom: 50px;
+                }
+        
+                #sproutCopy {
+                    margin-left: 0px;
+                    margin-bottom: 50px;
+                    margin-top: 50px;
+                    max-width: 500px;
+        
+                    p {
+                        color: color(white);
+                    }
+                }
+              }
+        }
+
+        .design-codeBody {
+
+            .sproutCol1 {
+                flex-direction: column;
+                margin-left: 0px;
+
+                #colCopy {
+                    margin: 15px;
+                    min-width: none;
+                }
+
+                img {
+                    margin-right: 0px;
+                }
+
+                
+            }
+
+            .sproutCol2 {
+                flex-direction: column-reverse;
+                margin-right: 0px;
+
+                #colCopy {
+                    margin: 15px;
+                    min-width: none;
+                }
+            }
+        }
+
+       
 }
 
 @media only screen and (max-width: 768px) {
@@ -202,62 +275,27 @@
             }
           }
         }
-    }
 
-    @media only screen and (max-width: 950px) {
+        #sproutSection2 {
+            .design-codeBody {
+                margin: 25px;
+    
+                .sproutCol1, .sproutCol2 {
+                    margin: 0px;
 
-        #sproutProject {
-            #introContainer {
-
-                display: flex;
-                flex-direction: column-reverse;
-                justify-content: center;
-                align-items: center;
-                margin: auto;
-        
-                #sproutIntro {
-                    height: 95vw;
-                    margin-bottom: 50px;
+                    img {
+                        height: 85vw;
+                        margin-left: 5vw;
+                     }
                 }
-        
-                #sproutCopy {
-                    margin-left: 0px;
-                    margin-bottom: 50px;
-                    margin-top: 50px;
-                    max-width: 500px;
-        
-                    p {
-                        color: color(white);
+
+                .sproutCol1 {
+                    img {
+                        margin-right: 0px;
                     }
                 }
-              }
-        }
-
-        .design-codeBody {
-            margin: 25px;
-            margin-top: 75px;
-
-            .sproutCol1 {
-                flex-direction: column;
-                margin-left: 0px;
-
-                img {
-                    height: 80vw;
-                    min-width: 300px;
-                }
-            }
-
-            .sproutCol2 {
-                flex-direction: column-reverse;
-                margin-right: 0px;
-
-                img {
-                    height: 80vw;
-                    min-width: 300px;
-                }
             }
         }
-
-       
-}
+        
+    }
 
