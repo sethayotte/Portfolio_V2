@@ -58,7 +58,7 @@ Seth’s Garage will be an archive of every car I’ve owned with basic specific
             <div className="design-codeBody">
                 <div className="sproutCol1">
                     <div>
-                    <h4 className="projectSubheading">Cultivating my development interest.</h4>
+                    <h4 className="projectSubheading">Cultivating my<br />development interest.</h4>
                     <p>Lorem ipsum</p>
                     </div>
                     <div>
@@ -70,7 +70,7 @@ Seth’s Garage will be an archive of every car I’ve owned with basic specific
                     <img src={SproutTab2} alt="Sprout Tablet Mockup 2" />
                     </div>
                     <div>
-                    <h4 className="projectSubheading">A turning point for design & code.</h4> 
+                    <h4 className="projectSubheading">A turning point for<br />design & code.</h4> 
                     <p>Lorem ipsum</p>
                     </div>
                 </div>
