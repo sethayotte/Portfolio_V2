@@ -1880,9 +1880,9 @@ a:hover {
 #mesh-tagline-resources #mesh-tagline {
   font-family: "Heebo", sans-serif;
   font-weight: 700;
-  font-size: 6vw;
+  font-size: 5vw;
   text-align: center;
-  line-height: 8vw;
+  line-height: 7vw;
   color: #313131;
 }
 
@@ -1924,11 +1924,11 @@ a:hover {
 }
 
 #mesh-tagline-resources #document-container div:hover p {
-  color: white;
+  color: black;
 }
 
 #meshProject {
-  background-color: #29BB86;
+  background-color: #e9e8e890;
 }
 
 #meshProject #projectContainer {
@@ -1953,8 +1953,8 @@ a:hover {
   max-width: 500px;
 }
 
-#meshProject #projectContainer #meshCopy p {
-  color: white;
+#meshProject #projectContainer #meshCopy h4, #meshProject #projectContainer #meshCopy p {
+  color: black;
 }
 
 @media only screen and (min-width: 1620px) {
@@ -2029,9 +2029,6 @@ a:hover {
     margin-bottom: 50px;
     margin-top: 50px;
     max-width: 500px;
-  }
-  #meshProject #projectContainer #meshCopy p {
-    color: white;
   }
 }
 /*# sourceMappingURL=App.css.map */

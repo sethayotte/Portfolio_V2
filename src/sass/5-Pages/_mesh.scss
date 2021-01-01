@@ -63,9 +63,9 @@
     #mesh-tagline {
       font-family: "Heebo", sans-serif;
       font-weight: 700;
-      font-size: 6vw;
+      font-size: 5vw;
       text-align: center;
-      line-height: 8vw;
+      line-height: 7vw;
       color: color(headings);
     }
   
@@ -95,14 +95,14 @@
         cursor: pointer;
   
         p {
-          color: color(white);
+          color: color(black);
         }
       }
     }
   }
 
   #meshProject {
-      background-color: color(sprout);
+      background-color: color(nav-bg);
 
       #projectContainer {
 
@@ -119,8 +119,8 @@
             margin-left: 50px;
             max-width: 500px;
 
-            p {
-                color: color(white);
+            h4, p {
+                color: color(black);
             }
         }
       }
@@ -216,10 +216,6 @@
                     margin-bottom: 50px;
                     margin-top: 50px;
                     max-width: 500px;
-        
-                    p {
-                        color: color(white);
-                    }
                 }
               }
         }
