@@ -18,16 +18,27 @@
     
     #meshHero {
         height: auto;
-        width: 90vw;
+        width: 25vw;
         padding: 0px;
-        max-width: 1200px;
+        padding-bottom: 35px;
+        max-width: 400px;
         justify-self: center;
         margin: auto;
     }
+
+    #meshMobileHero {
+        display: none;
+        height: auto;
+        width: 65vw;
+        justify-self: center;
+        margin: auto;
+        padding: 35px;
+        padding-bottom: 75px;
+    }
 }
 
-#sprout-tagline-resources {
-    background-color: color(nav-bg2);
+#mesh-tagline-resources {
+    background-color: color(white);
     padding-bottom: 75px;
     padding-top: 100px;
     display: flex;
@@ -49,7 +60,7 @@
         color: color(white);
     }
   
-    #sprout-tagline {
+    #mesh-tagline {
       font-family: "Heebo", sans-serif;
       font-weight: 700;
       font-size: 6vw;
@@ -66,7 +77,7 @@
   
       div {
         margin: 20px;
-        background-color: color(projectButton);
+        background-color: color(nav-bg);
         padding: 0px 15px;
         padding-bottom: 0.3px;
         padding-top: 13px;
@@ -74,13 +85,13 @@
         transition: all 0.3s ease-in-out;
   
         p {
-          color: color(sprout);
+          color: color(headings);
           font-weight: 700;
         }
       }
 
       div:hover {
-        background-color: color(sprout);
+        background-color: color(mesh);
         cursor: pointer;
   
         p {
@@ -90,21 +101,21 @@
     }
   }
 
-  #sproutProject {
+  #meshProject {
       background-color: color(sprout);
 
-      #introContainer {
+      #projectContainer {
 
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
 
-        #sproutIntro {
+        #meshIntro {
             height: 55vw;
         }
 
-        #sproutCopy {
+        #meshCopy {
             margin-left: 50px;
             max-width: 500px;
 
@@ -115,77 +126,43 @@
       }
   }
 
-  .design-codeBody {
-      margin-top: 75px;
-      margin-bottom: 100px;
-
-    h4 {
-        color: color(sprout);
-        font-family: 'Heebo', sans-serif;
-        font-weight: 700;
-        font-size: 24pt;
-    }
-
-    .sproutCol1, .sproutCol2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            height: 50vw;
-            max-height: 700px;
-        }
-    }
-
-    .sproutCol1 {
-        margin-left: 95px;
-
-        h4 {
-            margin-right: 50px;
-        }
-    }
-
-    .sproutCol2 {
-        margin-right: 50px;
-    }
-  }
 
 @media only screen and (min-width: 1620px) { 
-    #sproutHeader {
+    #meshHeader {
 
-        #sprout {
+        #mesh {
             font-size: 80pt;
         }
     }
 
-    #sprout-tagline-resources {
+    #mesh-tagline-resources {
       
-        #sprout-tagline {
+        #mesh-tagline {
             font-size: 60pt;
             line-height: 72pt;
         }
     }
 
-    #sproutIntro {
+    #meshIntro {
         max-height: 800px;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
-    #sproutHeader {
+    #meshHeader {
 
-        #sprout {
+        #mesh {
             font-size: 12vw;
             margin-bottom: 25px;
         }
     }
 
-    #sprout-tagline-resources {
+    #mesh-tagline-resources {
 
-        #sprout-tagline {
-            font-size: 8vw;
-            line-height: 11vw;
+        #mesh-tagline {
+            font-size: 5vw;
+            line-height: 7vw;
             margin-bottom: 25px;
         }
 
@@ -207,8 +184,21 @@
 
     @media only screen and (max-width: 950px) {
 
-        #sproutProject {
-            #introContainer {
+        #meshHeader {
+        
+            
+            #meshHero {
+                display: none;
+            }
+        
+            #meshMobileHero {
+                display: block;
+                padding-top: 0px;
+            }
+        }
+
+        #meshProject {
+            #projectContainer {
 
                 display: flex;
                 flex-direction: column-reverse;
@@ -216,12 +206,12 @@
                 align-items: center;
                 margin: auto;
         
-                #sproutIntro {
+                #meshIntro {
                     height: 95vw;
                     margin-bottom: 50px;
                 }
         
-                #sproutCopy {
+                #meshCopy {
                     margin-left: 0px;
                     margin-bottom: 50px;
                     margin-top: 50px;
@@ -233,32 +223,6 @@
                 }
               }
         }
-
-        .design-codeBody {
-            margin: 25px;
-            margin-top: 75px;
-
-            .sproutCol1 {
-                flex-direction: column;
-                margin-left: 0px;
-
-                img {
-                    height: 80vw;
-                    min-width: 300px;
-                }
-            }
-
-            .sproutCol2 {
-                flex-direction: column-reverse;
-                margin-right: 0px;
-
-                img {
-                    height: 80vw;
-                    min-width: 300px;
-                }
-            }
-        }
-
        
 }
 

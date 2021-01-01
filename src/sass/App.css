@@ -1824,16 +1824,28 @@ a:hover {
 
 #meshHeader #meshHero {
   height: auto;
-  width: 90vw;
+  width: 25vw;
   padding: 0px;
-  max-width: 1200px;
+  padding-bottom: 35px;
+  max-width: 400px;
   -ms-grid-column-align: center;
       justify-self: center;
   margin: auto;
 }
 
-#sprout-tagline-resources {
-  background-color: #f4f4f4;
+#meshHeader #meshMobileHero {
+  display: none;
+  height: auto;
+  width: 65vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: auto;
+  padding: 35px;
+  padding-bottom: 75px;
+}
+
+#mesh-tagline-resources {
+  background-color: white;
   padding-bottom: 75px;
   padding-top: 100px;
   display: -webkit-box;
@@ -1851,7 +1863,7 @@ a:hover {
           align-items: center;
 }
 
-#sprout-tagline-resources #WIP {
+#mesh-tagline-resources #WIP {
   margin-top: 10px;
   margin-bottom: 25px;
   margin-right: 10px;
@@ -1865,7 +1877,7 @@ a:hover {
   color: white;
 }
 
-#sprout-tagline-resources #sprout-tagline {
+#mesh-tagline-resources #mesh-tagline {
   font-family: "Heebo", sans-serif;
   font-weight: 700;
   font-size: 6vw;
@@ -1874,7 +1886,7 @@ a:hover {
   color: #313131;
 }
 
-#sprout-tagline-resources #document-container {
+#mesh-tagline-resources #document-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1890,9 +1902,9 @@ a:hover {
           justify-content: center;
 }
 
-#sprout-tagline-resources #document-container div {
+#mesh-tagline-resources #document-container div {
   margin: 20px;
-  background-color: #e2e2e2;
+  background-color: #e9e8e890;
   padding: 0px 15px;
   padding-bottom: 0.3px;
   padding-top: 13px;
@@ -1901,25 +1913,25 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-#sprout-tagline-resources #document-container div p {
-  color: #29BB86;
+#mesh-tagline-resources #document-container div p {
+  color: #313131;
   font-weight: 700;
 }
 
-#sprout-tagline-resources #document-container div:hover {
-  background-color: #29BB86;
+#mesh-tagline-resources #document-container div:hover {
+  background-color: #F6CD0B;
   cursor: pointer;
 }
 
-#sprout-tagline-resources #document-container div:hover p {
+#mesh-tagline-resources #document-container div:hover p {
   color: white;
 }
 
-#sproutProject {
+#meshProject {
   background-color: #29BB86;
 }
 
-#sproutProject #introContainer {
+#meshProject #projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1932,101 +1944,67 @@ a:hover {
   margin: auto;
 }
 
-#sproutProject #introContainer #sproutIntro {
+#meshProject #projectContainer #meshIntro {
   height: 55vw;
 }
 
-#sproutProject #introContainer #sproutCopy {
+#meshProject #projectContainer #meshCopy {
   margin-left: 50px;
   max-width: 500px;
 }
 
-#sproutProject #introContainer #sproutCopy p {
+#meshProject #projectContainer #meshCopy p {
   color: white;
 }
 
-.design-codeBody {
-  margin-top: 75px;
-  margin-bottom: 100px;
-}
-
-.design-codeBody h4 {
-  color: #29BB86;
-  font-family: 'Heebo', sans-serif;
-  font-weight: 700;
-  font-size: 24pt;
-}
-
-.design-codeBody .sproutCol1, .design-codeBody .sproutCol2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.design-codeBody .sproutCol1 img, .design-codeBody .sproutCol2 img {
-  height: 50vw;
-  max-height: 700px;
-}
-
-.design-codeBody .sproutCol1 {
-  margin-left: 95px;
-}
-
-.design-codeBody .sproutCol1 h4 {
-  margin-right: 50px;
-}
-
-.design-codeBody .sproutCol2 {
-  margin-right: 50px;
-}
-
 @media only screen and (min-width: 1620px) {
-  #sproutHeader #sprout {
+  #meshHeader #mesh {
     font-size: 80pt;
   }
-  #sprout-tagline-resources #sprout-tagline {
+  #mesh-tagline-resources #mesh-tagline {
     font-size: 60pt;
     line-height: 72pt;
   }
-  #sproutIntro {
+  #meshIntro {
     max-height: 800px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #sproutHeader #sprout {
+  #meshHeader #mesh {
     font-size: 12vw;
     margin-bottom: 25px;
   }
-  #sprout-tagline-resources #sprout-tagline {
-    font-size: 8vw;
-    line-height: 11vw;
+  #mesh-tagline-resources #mesh-tagline {
+    font-size: 5vw;
+    line-height: 7vw;
     margin-bottom: 25px;
   }
-  #sprout-tagline-resources #document-container {
+  #mesh-tagline-resources #document-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 25px;
   }
-  #sprout-tagline-resources #document-container div {
+  #mesh-tagline-resources #document-container div {
     width: 70vw;
     margin: 10px;
   }
-  #sprout-tagline-resources #document-container div p {
+  #mesh-tagline-resources #document-container div p {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 950px) {
-  #sproutProject #introContainer {
+  #meshHeader #meshHero {
+    display: none;
+  }
+  #meshHeader #meshMobileHero {
+    display: block;
+    padding-top: 0px;
+  }
+  #meshProject #projectContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2042,44 +2020,18 @@ a:hover {
             align-items: center;
     margin: auto;
   }
-  #sproutProject #introContainer #sproutIntro {
+  #meshProject #projectContainer #meshIntro {
     height: 95vw;
     margin-bottom: 50px;
   }
-  #sproutProject #introContainer #sproutCopy {
+  #meshProject #projectContainer #meshCopy {
     margin-left: 0px;
     margin-bottom: 50px;
     margin-top: 50px;
     max-width: 500px;
   }
-  #sproutProject #introContainer #sproutCopy p {
+  #meshProject #projectContainer #meshCopy p {
     color: white;
-  }
-  .design-codeBody {
-    margin: 25px;
-    margin-top: 75px;
-  }
-  .design-codeBody .sproutCol1 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 0px;
-  }
-  .design-codeBody .sproutCol1 img {
-    height: 80vw;
-    min-width: 300px;
-  }
-  .design-codeBody .sproutCol2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin-right: 0px;
-  }
-  .design-codeBody .sproutCol2 img {
-    height: 80vw;
-    min-width: 300px;
   }
 }
 /*# sourceMappingURL=App.css.map */
