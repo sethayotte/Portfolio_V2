@@ -31,6 +31,7 @@ const EverydayPortfolio = () => {
               to="epProject"
               smooth={true}
               duration={800}
+              offset={-75}
           >
         <div id="see-project">
             <p>Explore Project</p>

@@ -4,8 +4,10 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import SproutIntro from '../../assets/Sprout_Mobile.png';
 import MeshHero from '../../assets/MeshMockup.png';
 import MeshMobileHero from '../../assets/MeshMobileHero.png';
-import SproutTab1 from '../../assets/sprout_tablet.png';
-import SproutTab2 from '../../assets/sprout_tablet2.png';
+import Mesh1 from '../../assets/mesh_1.png';
+import Mesh2 from '../../assets/mesh_2.png';
+import Mesh3 from '../../assets/mesh_3.png';
+import Mesh4 from '../../assets/mesh_4.png';
 
 
 const Sprout = () => {
@@ -21,11 +23,6 @@ const Sprout = () => {
         <section id="mesh-tagline-resources">
         <h2 id="mesh-tagline">A collaborative space for creatives.<br />Prototype created at VCU.</h2>
         <section id="document-container">
-        <a href="https://github.com/sethayotte/" target="_blank" rel="noreferrer">
-        <div>
-          <p>View CodePen Components</p>
-        </div>
-        </a>
         <Link
             to="meshProject"
             smooth={true}
@@ -41,12 +38,12 @@ const Sprout = () => {
         <section className="projectDescription" id="meshProject">
             
             <div id="projectContainer">
-                <div id="item1">
+                <div className="projectPoint" id="item1">
                     <div>
-                    <img id="meshIntro" src={SproutIntro} alt="Sprout Intro Mobile Mockup" />
+                    <img id="meshIntro" src={Mesh1} alt="Sprout Intro Mobile Mockup" />
                     </div>
                     <div id="meshCopy">
-                        <h4 className="descriptionSubheading">About the Sprout Project</h4>
+                        <h4 className="descriptionSubheading">Communication</h4>
                         <p>
                         With a passion for cars at a young age, I absolutely love driving and will always take the long winding road home if I can help it.  Each car I’ve owned has run with me through significant moments in my life and I wanted a place to hold a record of these vehicles and the hundreds of thousands of miles they’ve taken me.<br /><br />  
 
@@ -54,9 +51,9 @@ const Sprout = () => {
                         </p>
                     </div>
                 </div>
-                <div id="item2">
+                <div className="projectPoint" id="item2">
                     <div id="meshCopy">
-                        <h4 className="descriptionSubheading">About the Sprout Project</h4>
+                        <h4 className="descriptionSubheading">Collaboration</h4>
                         <p>
                         With a passion for cars at a young age, I absolutely love driving and will always take the long winding road home if I can help it.  Each car I’ve owned has run with me through significant moments in my life and I wanted a place to hold a record of these vehicles and the hundreds of thousands of miles they’ve taken me.<br /><br />  
 
@@ -64,15 +61,15 @@ const Sprout = () => {
                         </p>
                     </div>
                     <div>
-                        <img id="meshIntro" src={SproutIntro} alt="Sprout Intro Mobile Mockup" />
+                        <img id="meshIntro" src={Mesh2} alt="Sprout Intro Mobile Mockup" />
                     </div>
                 </div>
-                <div id="item3">
+                <div className="projectPoint" id="item3">
                     <div>
-                        <img id="meshIntro" src={SproutIntro} alt="Sprout Intro Mobile Mockup" />
+                        <img id="meshIntro" src={Mesh3} alt="Sprout Intro Mobile Mockup" />
                     </div>
                     <div id="meshCopy">
-                        <h4 className="descriptionSubheading">About the Sprout Project</h4>
+                        <h4 className="descriptionSubheading">Resources</h4>
                         <p>
                         With a passion for cars at a young age, I absolutely love driving and will always take the long winding road home if I can help it.  Each car I’ve owned has run with me through significant moments in my life and I wanted a place to hold a record of these vehicles and the hundreds of thousands of miles they’ve taken me.<br /><br />  
 
@@ -80,9 +77,9 @@ const Sprout = () => {
                         </p>
                     </div>
                 </div>
-                <div id="item4">
+                <div className="projectPoint" id="item4">
                     <div id="meshCopy">
-                        <h4 className="descriptionSubheading">About the Sprout Project</h4>
+                        <h4 className="descriptionSubheading">Arts & Design Focused</h4>
                         <p>
                         With a passion for cars at a young age, I absolutely love driving and will always take the long winding road home if I can help it.  Each car I’ve owned has run with me through significant moments in my life and I wanted a place to hold a record of these vehicles and the hundreds of thousands of miles they’ve taken me.<br /><br />  
 
@@ -90,7 +87,7 @@ const Sprout = () => {
                         </p>
                     </div>
                     <div>
-                        <img id="meshIntro" src={SproutIntro} alt="Sprout Intro Mobile Mockup" />
+                        <img id="meshIntro" src={Mesh4} alt="Sprout Intro Mobile Mockup" />
                     </div>
                 </div>
             </div>

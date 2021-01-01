@@ -39,8 +39,8 @@
 
 #mesh-tagline-resources {
     background-color: color(white);
-    padding-bottom: 75px;
-    padding-top: 100px;
+    padding-bottom: 125px;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,20 +107,36 @@
       #projectContainer {
 
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto;
 
-        #meshIntro {
-            height: 55vw;
+        .projectPoint {
+
+            display: flex;
+            justify-content: center;
+        align-items: center;
+        margin: auto;
+
+            #meshIntro {
+                height: 55vw;
+            }
+    
+            #meshCopy {
+                margin-left: 50px;
+                max-width: 500px;
+    
+                h4, p {
+                    color: color(black);
+                }
+            }
         }
 
-        #meshCopy {
-            margin-left: 50px;
-            max-width: 500px;
+        #item2, #item4 {
 
-            h4, p {
-                color: color(black);
+            img {
+                margin-left: 75px;
             }
         }
       }
@@ -201,21 +217,33 @@
             #projectContainer {
 
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 margin: auto;
-        
-                #meshIntro {
-                    height: 95vw;
-                    margin-bottom: 50px;
+
+                .projectPoint {
+                    flex-direction: column;
+
+                    #meshIntro {
+                        height: 95vw;
+                        margin-bottom: 50px;
+                    }
+            
+                    #meshCopy {
+                        margin-left: 0px;
+                        margin-bottom: 50px;
+                        margin-top: 50px;
+                        max-width: 500px;
+                    }
                 }
-        
-                #meshCopy {
-                    margin-left: 0px;
-                    margin-bottom: 50px;
-                    margin-top: 50px;
-                    max-width: 500px;
+
+                #item2, #item4 {
+                    flex-direction: column-reverse;
+
+                    img {
+                        margin: 0px;
+                    }
                 }
               }
         }

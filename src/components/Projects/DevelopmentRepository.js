@@ -25,6 +25,7 @@ const DevelopmentRepository = () => {
               to="devProject"
               smooth={true}
               duration={800}
+              offset={-75}
           >
           <div>
             <p>Explore My Development</p>

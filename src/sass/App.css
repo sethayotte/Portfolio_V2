@@ -194,26 +194,6 @@ a:hover {
   height: 30px;
 }
 
-@media only screen and (max-width: 768px) {
-  .navSocialContainer {
-    height: 175px;
-    width: 45px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-right: 5px;
-  }
-  .navSocialContainer .socialNavItem {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: -10px;
-  }
-}
-
 .landingBody {
   overflow-y: scroll;
   -ms-scroll-snap-type: y mandatory;
@@ -525,6 +505,7 @@ a:hover {
 
 #resumePage {
   margin-right: -10px;
+  margin-bottom: 100px;
 }
 
 .about-me {
@@ -1878,8 +1859,8 @@ a:hover {
 
 #mesh-tagline-resources {
   background-color: white;
-  padding-bottom: 75px;
-  padding-top: 100px;
+  padding-bottom: 125px;
+  padding-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1967,6 +1948,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1976,17 +1961,34 @@ a:hover {
   margin: auto;
 }
 
-#meshProject #projectContainer #meshIntro {
+#meshProject #projectContainer .projectPoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+#meshProject #projectContainer .projectPoint #meshIntro {
   height: 55vw;
 }
 
-#meshProject #projectContainer #meshCopy {
+#meshProject #projectContainer .projectPoint #meshCopy {
   margin-left: 50px;
   max-width: 500px;
 }
 
-#meshProject #projectContainer #meshCopy h4, #meshProject #projectContainer #meshCopy p {
+#meshProject #projectContainer .projectPoint #meshCopy h4, #meshProject #projectContainer .projectPoint #meshCopy p {
   color: black;
+}
+
+#meshProject #projectContainer #item2 img, #meshProject #projectContainer #item4 img {
+  margin-left: 75px;
 }
 
 @media only screen and (min-width: 1620px) {
@@ -2041,9 +2043,9 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2052,15 +2054,30 @@ a:hover {
             align-items: center;
     margin: auto;
   }
-  #meshProject #projectContainer #meshIntro {
+  #meshProject #projectContainer .projectPoint {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #meshProject #projectContainer .projectPoint #meshIntro {
     height: 95vw;
     margin-bottom: 50px;
   }
-  #meshProject #projectContainer #meshCopy {
+  #meshProject #projectContainer .projectPoint #meshCopy {
     margin-left: 0px;
     margin-bottom: 50px;
     margin-top: 50px;
     max-width: 500px;
+  }
+  #meshProject #projectContainer #item2, #meshProject #projectContainer #item4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #meshProject #projectContainer #item2 img, #meshProject #projectContainer #item4 img {
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=App.css.map */
