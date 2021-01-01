@@ -134,6 +134,20 @@ html, body {
   transition: all 0.3s ease-in-out;
 }
 
+#mainNav .navItem .navbar__link {
+  font-family: 'Heebo';
+  font-weight: 600;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#mainNav .navItem .navbar__link--active {
+  border-bottom: 3px solid #29b6f6;
+  -webkit-transition: border-bottom .5s ease-in-out;
+  transition: border-bottom .5s ease-in-out;
+}
+
 #mainNav .navItem .navLinks:hover {
   color: #2136FF;
 }

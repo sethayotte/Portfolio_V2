@@ -125,21 +125,6 @@ const Resume = () => {
       <div className="iblock">
       <div className="resume-detail">
         <div className="detail-title">
-          <p>Sprout Talent Platform</p>
-        </div>
-        <div>
-          <p>Charlotte, NC</p>
-          <p>Lead Designer, Front-End Developer</p>
-        </div>
-      </div>
-      <div className="resume-date">
-        <p>April 2020 - September 2020</p>
-      </div>
-      </div>
-
-      <div className="iblock">
-      <div className="resume-detail">
-        <div className="detail-title">
           <p>Tesla, Inc.</p>
         </div>
         <div>
