@@ -14,7 +14,8 @@ import {
     Route,
   } from "react-router-dom";
 import navIcon from '../assets/SM2021.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ScrollToTop from './ScrollToTop';
 
 import Projects from './Projects';
 import Contact from './Contact';
@@ -34,6 +35,7 @@ const NavBar = (props) => {
   return (
     <div>
       <Router>
+      <ScrollToTop />
       <Navbar className="navbar navContainer" expand="md" fixed='top'>
         <NavbarBrand href="/" className="navIcon"><img src={navIcon} id="navIcon" /></NavbarBrand>
         <NavbarToggler onClick={toggle} className="navbarTogglerIcon">
@@ -45,10 +47,10 @@ const NavBar = (props) => {
               <NavLink href="/#/Projects" className="navLinks" activeClassName="active">Projects</NavLink>
             </NavItem>
             <NavItem className="navItem">
-              <NavLink href="/Resume" className="navLinks" activeClassName="active">Resume</NavLink>
+              <NavLink href="/#/Resume" className="navLinks" activeClassName="active">Resume</NavLink>
             </NavItem>
             <NavItem className="navItem">
-              <NavLink href="/Contact" className="navLinks">Contact</NavLink>
+              <NavLink href="/#/Contact" className="navLinks">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

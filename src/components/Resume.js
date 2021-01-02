@@ -40,7 +40,7 @@ const Resume = () => {
             </a>
           </div>
           <div>
-            <a className="social-icon" href="/Contact">
+            <a className="social-icon" href="/#/Contact">
               <img src={connectIcon} height="30" alt="connect" />
             </a>
           </div>

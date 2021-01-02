@@ -32,7 +32,7 @@ const SocialNavBar = (props) => {
             </a>
           </NavItem>
           <NavItem className="socialNavItem">
-            <a href="/contact">
+            <a href="/#/contact">
               <img src={connectIcon} className="socialNavLinks" />
             </a>
           </NavItem>

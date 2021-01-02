@@ -11,7 +11,7 @@ const ProjectsCard = () => {
       <div id="projectsText">
           <h3 className="sectionText">
           Skilled with modern <br/>front-end frameworks <br/>& continually learning <br/>new technologies.</h3>
-          <a href='/Projects'>
+          <a href='/#/Projects'>
           <h4 className="sectionLink" id="projectsLink">
               View All Projects &nbsp;<FontAwesomeIcon icon='arrow-circle-right'/>
           </h4>

@@ -21,7 +21,7 @@ const ConnectCard = () => {
             </a>
           </div>
           <div className="connectAlignment" id="i2">
-          <a href='/Contact'>
+          <a href='/#/Contact'>
             <h4 className="sectionLink" id="connectLink">
               Get in touch &nbsp;
               <FontAwesomeIcon icon="arrow-circle-right" />
@@ -45,7 +45,7 @@ const ConnectCard = () => {
               <FontAwesomeIcon icon="arrow-circle-right" />
             </h4>
             </a>
-            <a href='/Contact'>
+            <a href='/#/Contact'>
             <h4 className="sectionLink" id="connectLink">
               Get in touch &nbsp;
               <FontAwesomeIcon icon="arrow-circle-right" />

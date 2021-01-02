@@ -12,7 +12,7 @@ const WorkCard = () => {
           <h3 className="sectionText">
             Diverse role & industry experience. <br/>Passion for social + environmental good.
           </h3>
-          <a href='/Resume'>
+          <a href='/#/Resume'>
           <h4 className="sectionLink" id="workLink">
               View current & past roles &nbsp;<FontAwesomeIcon icon='arrow-circle-right'/>
           </h4>
