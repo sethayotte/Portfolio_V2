@@ -37,7 +37,7 @@
   
     #navIcon {
       height: 32px;
-      margin-top: -10px;
+      margin-top: 0px;
       display: flex;
       align-self: center;
     }
@@ -57,7 +57,7 @@
   }
   
   .navbarTogglerIcon {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border-width: 0px;
     padding: 5px;
     padding-left: 10px;
@@ -126,19 +126,19 @@
     text-decoration: none;
   }
 
-  @media not all and (min-resolution:.001dpcm) and (max-width: 767px)
-  { @supports (-webkit-appearance:none) {
+  // @media not all and (min-resolution:.001dpcm) and (max-width: 767px)
+  // { @supports (-webkit-appearance:none) {
   
-    #navIcon {
-      height: 32px;
-      margin-top: 0px;
-      display: flex;
-      align-self: center;
-    }
+  //   #navIcon {
+  //     height: 32px;
+  //     margin-top: 0px;
+  //     display: flex;
+  //     align-self: center;
+  //   }
     
-    .navbarTogglerIcon {
-      margin-bottom: 0px;
-    }
+  //   .navbarTogglerIcon {
+  //     margin-bottom: 0px;
+  //   }
 
-  }}
+  // }}
 

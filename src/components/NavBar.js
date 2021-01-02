@@ -33,7 +33,7 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
       <Navbar className="navbar navContainer" expand="md" fixed='top'>
         <NavbarBrand href="/" className="navIcon"><img src={navIcon} id="navIcon" /></NavbarBrand>
         <NavbarToggler onClick={toggle} className="navbarTogglerIcon">
