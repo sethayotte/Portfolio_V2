@@ -17,6 +17,7 @@
       scroll-snap-align: start;
     }
   }
+
   
   
   @media only screen and (max-width: 767px) {
@@ -25,7 +26,7 @@
       height: 130px;
       // background-color: #f1f1f1;
       background-color: color(nav-bg);
-    backdrop-filter: blur(3px);
+      backdrop-filter: blur(3px);
       padding: 5px;
       margin-top: 5px;
       margin-left: -15px;
@@ -124,3 +125,20 @@
   a:hover {
     text-decoration: none;
   }
+
+  @media not all and (min-resolution:.001dpcm) and (max-width: 767px)
+  { @supports (-webkit-appearance:none) {
+  
+    #navIcon {
+      height: 32px;
+      margin-top: 0px;
+      display: flex;
+      align-self: center;
+    }
+    
+    .navbarTogglerIcon {
+      margin-bottom: 0px;
+    }
+
+  }}
+

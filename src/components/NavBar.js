@@ -9,7 +9,7 @@ import {
   NavLink
 } from 'reactstrap';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
   } from "react-router-dom";
@@ -33,7 +33,7 @@ const NavBar = (props) => {
 
   return (
     <div>
-        <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <Navbar className="navbar navContainer" expand="md" fixed='top'>
         <NavbarBrand href="/" className="navIcon"><img src={navIcon} id="navIcon" /></NavbarBrand>
         <NavbarToggler onClick={toggle} className="navbarTogglerIcon">

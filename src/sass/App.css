@@ -168,6 +168,23 @@ a:hover {
   text-decoration: none;
 }
 
+@media not all and (min-resolution: 0.001dpcm) and (max-width: 767px) {
+  @supports (-webkit-appearance: none) {
+    #navIcon {
+      height: 32px;
+      margin-top: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: center;
+          align-self: center;
+    }
+    .navbarTogglerIcon {
+      margin-bottom: 0px;
+    }
+  }
+}
+
 .navSocialContainer {
   height: 45px;
   width: 175px;
@@ -195,14 +212,16 @@ a:hover {
 }
 
 .landingBody {
-  overflow-y: scroll;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 100vh;
+  scroll-snap-stop: always;
+  overflow-y: scroll;
 }
 
-.child {
-  height: 100vh;
-  width: 100vw;
+.landingBody section {
   scroll-snap-align: start;
 }
 
@@ -1848,8 +1867,8 @@ a:hover {
 
 #meshHeader #meshMobileHero {
   display: none;
-  height: auto;
-  width: 65vw;
+  height: 35vw;
+  width: auto;
   -ms-grid-column-align: center;
       justify-self: center;
   margin: auto;

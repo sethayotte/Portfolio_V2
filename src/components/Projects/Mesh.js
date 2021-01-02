@@ -45,9 +45,7 @@ const Sprout = () => {
                     <div id="meshCopy">
                         <h4 className="descriptionSubheading">Communication</h4>
                         <p>
-                        With a passion for cars at a young age, I absolutely love driving and will always take the long winding road home if I can help it.  Each car I’ve owned has run with me through significant moments in my life and I wanted a place to hold a record of these vehicles and the hundreds of thousands of miles they’ve taken me.<br /><br />  
-
-                        Seth’s Garage will be an archive of every car I’ve owned with basic specifications and mileage driven.  Down the road, I plan on implementing an OBD integration that will track mileage as I cruise along and will relay back to the site to show total miles driven during the collective lifetime of the fleet.
+                        Built as a tool to allow multidisciplinary communication, students have access to easily chat with other majors and departments.  Creating group threads and tagging conversations for specific projects is very easy to do.
                         </p>
                     </div>
                 </div>
@@ -55,9 +53,7 @@ const Sprout = () => {
                     <div id="meshCopy">
                         <h4 className="descriptionSubheading">Collaboration</h4>
                         <p>
-                        With a passion for cars at a young age, I absolutely love driving and will always take the long winding road home if I can help it.  Each car I’ve owned has run with me through significant moments in my life and I wanted a place to hold a record of these vehicles and the hundreds of thousands of miles they’ve taken me.<br /><br />  
-
-                        Seth’s Garage will be an archive of every car I’ve owned with basic specifications and mileage driven.  Down the road, I plan on implementing an OBD integration that will track mileage as I cruise along and will relay back to the site to show total miles driven during the collective lifetime of the fleet.
+                        With this communication and collaboration hub, Mesh makes it easy to share and post content and materials.  If you have books, materials, or services that you would like to sell or give away - Mesh gives you a platform that shares your content with an engaged community.
                         </p>
                     </div>
                     <div>
@@ -71,9 +67,7 @@ const Sprout = () => {
                     <div id="meshCopy">
                         <h4 className="descriptionSubheading">Resources</h4>
                         <p>
-                        With a passion for cars at a young age, I absolutely love driving and will always take the long winding road home if I can help it.  Each car I’ve owned has run with me through significant moments in my life and I wanted a place to hold a record of these vehicles and the hundreds of thousands of miles they’ve taken me.<br /><br />  
-
-                        Seth’s Garage will be an archive of every car I’ve owned with basic specifications and mileage driven.  Down the road, I plan on implementing an OBD integration that will track mileage as I cruise along and will relay back to the site to show total miles driven during the collective lifetime of the fleet.
+                        A problem Mesh sets out to solve is making all of the resources the university offers accessible to all.  A large number of students come into VCU and work through their whole program without learning about what faculty, services, or equipment the school has for them.  By making all of this content within reach to the Arts community creates opportunity to add a whole new dimension to students’ work.
                         </p>
                     </div>
                 </div>
@@ -81,9 +75,7 @@ const Sprout = () => {
                     <div id="meshCopy">
                         <h4 className="descriptionSubheading">Arts & Design Focused</h4>
                         <p>
-                        With a passion for cars at a young age, I absolutely love driving and will always take the long winding road home if I can help it.  Each car I’ve owned has run with me through significant moments in my life and I wanted a place to hold a record of these vehicles and the hundreds of thousands of miles they’ve taken me.<br /><br />  
-
-                        Seth’s Garage will be an archive of every car I’ve owned with basic specifications and mileage driven.  Down the road, I plan on implementing an OBD integration that will track mileage as I cruise along and will relay back to the site to show total miles driven during the collective lifetime of the fleet.
+                        Initially designing Mesh, my idea included the entire university.  I quickly realized that this would require to include way too many department and resources and would lose its effectiveness for the target audience - the art & design students.  By narrowing the scope of which areas of the school would be included, the tools and functionality became much easier to access.  This also allowed for the vision of more interdisciplinary communication to become real.  Common interest and focus provides a platform for more meaningful discussion and collaboration.
                         </p>
                     </div>
                     <div>
