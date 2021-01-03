@@ -8,7 +8,7 @@ import MeshHero from '../assets/Project_Hero_Tiles-05.png';
 const Projects = () => {
   return (
     <React.Fragment>
-      <section className="pageContainer">
+      <section className="pageContainer" id="projectsPage">
         <h1 className="pageHeader">Current Projects</h1>
         <div className="currentItems">
           <div id="EP">

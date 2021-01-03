@@ -6,7 +6,7 @@ import linkedinIcon from "../assets/linkedin-icon.png";
 const Contact = () => {
     return (
         <React.Fragment>
-        <section className="pageContainer">
+        <section className="pageContainer" id="contactPageContainer">
           <h1 className="pageHeader" id="contact-header">Let's Connect.</h1>
 
           <p id="contact-copy">Feel free to check out my GitHub & LinkedIn for additional details about my work, or get in touch through email.</p>

@@ -41,20 +41,6 @@
     justify-content: center;
     align-items: center;
 
-  #WIP {
-    margin-top: 10px;
-    margin-bottom: 25px;
-    margin-right: 10px;
-    display: inline-block;
-    padding: 5px 10px;
-    width: auto;
-    border-radius: 50px;
-    font-size: 10pt;
-    font-weight: 600;
-    background-color: #EF0000;
-    color: color(white);
-}
-
   #ep-tagline {
     font-family: "Heebo", sans-serif;
     font-weight: 700;
@@ -103,6 +89,20 @@
     background-color: color(black);
     padding: 100px;
 
+    #WIP {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      margin-right: 10px;
+      display: inline-block;
+      padding: 5px 10px;
+      width: auto;
+      border-radius: 50px;
+      font-size: 10pt;
+      font-weight: 600;
+      background-color: color(nav-bg);
+      color: color(white);
+  }
+
     .objectiveBody {
         .descriptionBody {
             max-width: 815px;
@@ -115,6 +115,7 @@
         font-family: 'Heebo', sans-serif;
         font-size: 22pt;
         font-weight: 600;
+        
     }
 
     .descriptionBody {

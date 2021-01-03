@@ -13,7 +13,6 @@ const SethsGarage = () => {
         </section>
 
         <section id="garage-tagline-resources">
-        <p className="tag" id="WIP">Work In Progress</p>
         <h2 id="garage-tagline">An interactive archive of<br />past & present vehicles.</h2>
         <section id="document-container">
         <a href="https://github.com/sethayotte/seths-garage" target="_blank" rel="noreferrer">
@@ -51,7 +50,7 @@ const SethsGarage = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lead Developer & Designer
             <br /><br />
             <strong>Timeline:&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-            October 2020 - Present
+            October 2020 - Present &nbsp;&nbsp;<span id="WIP">Work In Progress</span>
             <br /><br />
             </div>
             <div className="technology-skills">

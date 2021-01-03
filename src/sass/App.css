@@ -77,7 +77,7 @@ html, body {
   }
   #navIcon {
     height: 32px;
-    margin-top: 0px;
+    margin-top: -10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -94,12 +94,12 @@ html, body {
 
 #navIcon {
   height: 32px;
-  padding-bottom: 1px;
+  padding-bottom: 0px;
   margin-left: 10px;
 }
 
 .navbarTogglerIcon {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   border-width: 0px;
   padding: 5px;
   padding-left: 10px;
@@ -168,6 +168,23 @@ a:hover {
   text-decoration: none;
 }
 
+@media not all and (min-resolution: 0.001dpcm) and (max-width: 767px) {
+  @supports (-webkit-appearance: none) {
+    #navIcon {
+      height: 32px;
+      margin-top: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: center;
+          align-self: center;
+    }
+    .navbarTogglerIcon {
+      margin-bottom: 0px;
+    }
+  }
+}
+
 .navSocialContainer {
   height: 45px;
   width: 175px;
@@ -223,6 +240,10 @@ a:hover {
 
 .cardAlignment .mobile-wrapper .mobile-hero {
   display: none;
+}
+
+#titleContainer {
+  background-color: white;
 }
 
 #landing {
@@ -511,6 +532,7 @@ a:hover {
 }
 
 #resumePage {
+  background-color: white;
   margin-right: -10px;
   margin-bottom: 100px;
 }
@@ -781,6 +803,10 @@ a:hover {
   }
 }
 
+#contactPageContainer {
+  background-color: white;
+}
+
 #contact-header {
   margin-bottom: 50px;
 }
@@ -846,6 +872,10 @@ a:hover {
     margin-left: 25px;
     margin-right: 25px;
   }
+}
+
+#projectsPage {
+  background-color: white;
 }
 
 @media only screen and (max-width: 850px) {
@@ -991,20 +1021,6 @@ a:hover {
           align-items: center;
 }
 
-#tagline-resources #WIP {
-  margin-top: 10px;
-  margin-bottom: 25px;
-  margin-right: 10px;
-  display: inline-block;
-  padding: 5px 10px;
-  width: auto;
-  border-radius: 50px;
-  font-size: 10pt;
-  font-weight: 600;
-  background-color: #EF0000;
-  color: white;
-}
-
 #tagline-resources #ep-tagline {
   font-family: "Heebo", sans-serif;
   font-weight: 700;
@@ -1066,6 +1082,20 @@ a:hover {
       flex-wrap: wrap;
   background-color: black;
   padding: 100px;
+}
+
+.projectDescription #WIP {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 50px;
+  font-size: 10pt;
+  font-weight: 600;
+  background-color: #e9e8e890;
+  color: white;
 }
 
 .projectDescription .objectiveBody .descriptionBody {
@@ -1405,20 +1435,6 @@ a:hover {
           align-items: center;
 }
 
-#garage-tagline-resources #WIP {
-  margin-top: 10px;
-  margin-bottom: 25px;
-  margin-right: 10px;
-  display: inline-block;
-  padding: 5px 10px;
-  width: auto;
-  border-radius: 50px;
-  font-size: 10pt;
-  font-weight: 600;
-  background-color: #EF0000;
-  color: white;
-}
-
 #garage-tagline-resources #garage-tagline {
   font-family: "Heebo", sans-serif;
   font-weight: 700;
@@ -1471,6 +1487,20 @@ a:hover {
 
 #garageProject {
   background-color: white;
+}
+
+#garageProject #WIP {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 50px;
+  font-size: 10pt;
+  font-weight: 600;
+  background-color: #e2e2e2;
+  color: black;
 }
 
 #garageProject #garageSubheading {

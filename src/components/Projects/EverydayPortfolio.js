@@ -19,7 +19,6 @@ const EverydayPortfolio = () => {
           </section>
 
         <section id="tagline-resources">
-          <p id="WIP">Work In Progress</p>
           <h2 id="ep-tagline">A custom-designed<br />financial utility.</h2>
           <section id="document-container">
           <a href="assets/SethMitchell_EverydayPortfolioProposal.pdf" target="_blank" rel="noreferrer">
@@ -63,7 +62,7 @@ const EverydayPortfolio = () => {
               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Lead Developer & Designer 
               <br /><br />
               <strong>Timeline:&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-              August 2020 - Present
+              August 2020 - Present &nbsp;&nbsp;<span id="WIP">Work In Progress</span>
               <br /><br />
               </div>
               <div className="technology-skills">

@@ -20,20 +20,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    #WIP {
-        margin-top: 10px;
-        margin-bottom: 25px;
-        margin-right: 10px;
-        display: inline-block;
-        padding: 5px 10px;
-        width: auto;
-        border-radius: 50px;
-        font-size: 10pt;
-        font-weight: 600;
-        background-color: #EF0000;
-        color: color(white);
-    }
   
     #garage-tagline {
       font-family: "Heebo", sans-serif;
@@ -78,6 +64,20 @@
 
   #garageProject {
     background-color: color(white);
+
+    #WIP {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      margin-right: 10px;
+      display: inline-block;
+      padding: 5px 10px;
+      width: auto;
+      border-radius: 50px;
+      font-size: 10pt;
+      font-weight: 600;
+      background-color: color(projectButton);
+      color: color(black);
+  }
 
     #garageSubheading {
         color: color(black);
