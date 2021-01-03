@@ -8,6 +8,7 @@ import ConnectCard from './LandingCards/ConnectCard';
 const Landing = () => {
     return (
       <React.Fragment className="landingBody">
+        <section className="landingContainer">
 
         <section className="child">
           <TitleCard />
@@ -29,6 +30,7 @@ const Landing = () => {
         <ConnectCard />
         </section>   
 
+        </section>
       </React.Fragment>
     );
 }

@@ -44,13 +44,13 @@ const NavBar = (props) => {
         <Collapse isOpen={isOpen} id="mobileNav" navbar>
           <Nav className="ml-auto" id="mainNav" navbar>
             <NavItem className="navItem">
-              <NavLink href="/#/Projects" className="navLinks" activeClassName="active">Projects</NavLink>
+              <NavLink href="/#/Projects" onClick={toggle} className="navLinks" activeClassName="active">Projects</NavLink>
             </NavItem>
             <NavItem className="navItem">
-              <NavLink href="/#/Resume" className="navLinks" activeClassName="active">Resume</NavLink>
+              <NavLink href="/#/Resume" onClick={toggle} className="navLinks" activeClassName="active">Resume</NavLink>
             </NavItem>
             <NavItem className="navItem">
-              <NavLink href="/#/Contact" className="navLinks">Contact</NavLink>
+              <NavLink href="/#/Contact" onClick={toggle} className="navLinks">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

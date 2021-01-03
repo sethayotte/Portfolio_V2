@@ -99,12 +99,24 @@
 
       #devDescription {
           color: color(black);
+
+        #ep-proj-link {
+            color: color(ep);
+            font-weight: 600;
+        }
+
+        #sprout-proj-link {
+            color: color(sprout);
+            font-weight: 600;
+        }
       }
 
       #devTag {
           background-color: color(accent);
           color: color(white);
       }
+
+     
   }
   
 

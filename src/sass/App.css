@@ -195,17 +195,15 @@ a:hover {
 }
 
 .landingBody {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  height: 100vh;
-  scroll-snap-stop: always;
-  overflow-y: scroll;
+  margin: 0px;
+  width: 100vw;
 }
 
-.landingBody section {
-  scroll-snap-align: start;
+.landingContainer {
+  margin: 0px;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
 }
 
 .cardAlignment .mobile-wrapper {
@@ -267,6 +265,7 @@ a:hover {
   font-family: 'Heebo';
   font-weight: 700;
   font-size: 36pt;
+  padding-left: 25px;
 }
 
 .titleSubheader {
@@ -274,6 +273,7 @@ a:hover {
   font-weight: 400;
   font-size: 16pt;
   color: #3d3d3d;
+  padding-left: 25px;
 }
 
 .exploreButton {
@@ -287,7 +287,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80vh;
+  margin-top: 90vh;
   cursor: pointer;
 }
 
@@ -385,6 +385,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 850px) {
+  .landingContainer .exploreButton {
+    margin-top: 70vh;
+  }
   #featured .mobile-wrapper {
     margin-right: 0px;
   }
@@ -849,13 +852,10 @@ a:hover {
   }
   .currentItems .projectImage, .pastItems .projectImage {
     height: 90vw;
-    min-height: 375px;
+    min-height: 300px;
   }
   .currentItems #WebImage, .currentItems #GarageImage, .currentItems #SproutImage, .pastItems #WebImage, .pastItems #GarageImage, .pastItems #SproutImage {
-    min-height: 350px;
-  }
-  .currentItems #HyperloopImage, .pastItems #HyperloopImage {
-    min-height: 325px;
+    min-height: 275px;
   }
   .currentItems #EPImage:hover, .pastItems #EPImage:hover {
     -webkit-filter: none;
@@ -1312,6 +1312,16 @@ a:hover {
 
 #devProject #devDescription {
   color: black;
+}
+
+#devProject #devDescription #ep-proj-link {
+  color: #0FBE00;
+  font-weight: 600;
+}
+
+#devProject #devDescription #sprout-proj-link {
+  color: #29BB86;
+  font-weight: 600;
 }
 
 #devProject #devTag {
