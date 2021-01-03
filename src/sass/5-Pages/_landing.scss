@@ -306,7 +306,8 @@
                 z-index: 1;
   
                 img {
-                    height: 550px;
+                    height: 100vw;
+                    filter: opacity(40%);
                 }
             }
         }

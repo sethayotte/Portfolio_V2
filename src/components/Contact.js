@@ -24,9 +24,11 @@ const Contact = () => {
               </a>
             </div>
           </div>
+            <a href="mailto:sayotte.mitchell@gmail.com?subject=Howdy!">
             <div className="emailConnectContainer">
               <h2 className="emailConnectButton">Send an Email</h2>
             </div>
+            </a>
           </div>
         
           {/* <div id="connect-copy">

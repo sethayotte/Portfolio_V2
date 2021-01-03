@@ -504,7 +504,9 @@ a:hover {
     z-index: 1;
   }
   #projects .mobile-wrapper #lm-mobile-hero img, #work .mobile-wrapper #lm-mobile-hero img, #connect .mobile-wrapper #lm-mobile-hero img {
-    height: 550px;
+    height: 100vw;
+    -webkit-filter: opacity(40%);
+            filter: opacity(40%);
   }
 }
 
