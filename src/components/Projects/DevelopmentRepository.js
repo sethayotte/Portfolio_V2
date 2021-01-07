@@ -2,6 +2,7 @@ import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import devHero from '../../assets/PortfolioHero.png';
+import nucampCert from '../../assets/SethMitchell_NucampHonorsCertificate.pdf';
 
 const DevelopmentRepository = () => {
     return (
@@ -66,7 +67,7 @@ const DevelopmentRepository = () => {
               <div className="technology-skills">
               <strong>Technologies & Skills:</strong><br />
               <p className="tag" id="devTag">ES6+ JS</p>
-              <p className="tag" id="devTag">React</p>
+              <a href={nucampCert} target="_blank" rel="noreferrer"><p className="tag" id="devTag">React</p></a>
               <p className="tag" id="devTag">React Native</p>
               <p className="tag" id="devTag">HTML5</p>
               <p className="tag" id="devTag">CSS3</p>
