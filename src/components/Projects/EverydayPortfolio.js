@@ -65,6 +65,8 @@ const EverydayPortfolio = () => {
               August 2020 - Present &nbsp;&nbsp;<span id="WIP">Work In Progress</span>
               <br /><br />
               </div>
+
+              
               <div className="technology-skills">
               <strong>Technologies & Skills Used:</strong><br />
               <p className="tag" id="epTag">React Native</p>
