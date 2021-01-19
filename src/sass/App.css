@@ -108,7 +108,7 @@ html, body {
 
 .navbarTogglerIcon #navToggle {
   border: none;
-  color: #2136FF;
+  color: #2136ff;
   font-size: 22px;
 }
 
@@ -117,7 +117,7 @@ html, body {
 }
 
 #mainNav .active {
-  color: #2136FF;
+  color: #2136ff;
 }
 
 #mainNav .navItem {
@@ -149,11 +149,11 @@ html, body {
 }
 
 #mainNav .navItem .navLinks:hover {
-  color: #2136FF;
+  color: #2136ff;
 }
 
 #mainNav .navItem .navLinks:target {
-  color: #2136FF;
+  color: #2136ff;
 }
 
 a:link {
@@ -576,7 +576,7 @@ a:hover {
 .about-me h1 {
   font-family: 'Heebo';
   font-weight: 700;
-  color: #2136FF;
+  color: #2136ff;
 }
 
 .about-me h3 {
@@ -749,7 +749,7 @@ a:hover {
 }
 
 .downloadButton #resumeDownload #downloadLink {
-  color: #2136FF;
+  color: #2136ff;
 }
 
 @media only screen and (max-width: 850px) {
@@ -858,7 +858,7 @@ a:hover {
 .emailConnectContainer .emailConnectButton {
   font-size: 24px;
   text-align: center;
-  color: #2136FF;
+  color: #2136ff;
   padding: 0px;
 }
 
@@ -879,31 +879,42 @@ a:hover {
 }
 
 @media only screen and (max-width: 850px) {
-  .currentItems, .pastItems {
+  .currentItems,
+  .pastItems {
     margin-top: 30px;
   }
-  .currentItems .projectImage, .pastItems .projectImage {
+  .currentItems .projectImage,
+  .pastItems .projectImage {
     height: 90vw;
     min-height: 300px;
   }
-  .currentItems #WebImage, .currentItems #GarageImage, .currentItems #SproutImage, .pastItems #WebImage, .pastItems #GarageImage, .pastItems #SproutImage {
+  .currentItems #WebImage,
+  .currentItems #GarageImage,
+  .currentItems #SproutImage,
+  .pastItems #WebImage,
+  .pastItems #GarageImage,
+  .pastItems #SproutImage {
     min-height: 275px;
   }
-  .currentItems #EPImage:hover, .pastItems #EPImage:hover {
+  .currentItems #EPImage:hover,
+  .pastItems #EPImage:hover {
     -webkit-filter: none;
     filter: none;
   }
-  .currentItems #WebImage:hover, .pastItems #WebImage:hover {
+  .currentItems #WebImage:hover,
+  .pastItems #WebImage:hover {
     -webkit-filter: none;
     filter: none;
   }
-  .currentItems #GarageImage:hover, .pastItems #GarageImage:hover {
+  .currentItems #GarageImage:hover,
+  .pastItems #GarageImage:hover {
     -webkit-filter: none;
     filter: none;
   }
 }
 
-.currentItems, .pastItems {
+.currentItems,
+.pastItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -921,7 +932,8 @@ a:hover {
           align-items: center;
 }
 
-.currentItems .projectImage, .pastItems .projectImage {
+.currentItems .projectImage,
+.pastItems .projectImage {
   height: 45vw;
   max-height: 65vh;
   background: transparent;
@@ -929,37 +941,50 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-.currentItems .projectImage:hover, .pastItems .projectImage:hover {
+.currentItems .projectImage:hover,
+.pastItems .projectImage:hover {
   height: 47vw;
   max-height: 67vh;
 }
 
-.currentItems #EPImage:hover, .pastItems #EPImage:hover {
-  -webkit-filter: drop-shadow(0px 5px 50px #0FBE0088);
-  filter: drop-shadow(0px 5px 50px #0FBE0088);
+.currentItems #EPImage:hover,
+.pastItems #EPImage:hover {
+  -webkit-filter: drop-shadow(0px 5px 50px #0fbe0088);
+  filter: drop-shadow(0px 5px 50px #0fbe0088);
 }
 
-.currentItems #WebImage:hover, .pastItems #WebImage:hover {
+.currentItems #RunAwayImage:hover,
+.pastItems #RunAwayImage:hover {
+  -webkit-filter: drop-shadow(0px 5px 50px #ff9b25);
+  filter: drop-shadow(0px 5px 50px #ff9b25);
+}
+
+.currentItems #WebImage:hover,
+.pastItems #WebImage:hover {
   -webkit-filter: drop-shadow(0px 5px 50px #2137ffa1);
-  filter: drop-shadow(0px 5px 50px #2136FFa1);
+  filter: drop-shadow(0px 5px 50px #2136ffa1);
 }
 
-.currentItems #GarageImage:hover, .pastItems #GarageImage:hover {
+.currentItems #GarageImage:hover,
+.pastItems #GarageImage:hover {
   -webkit-filter: drop-shadow(0px 5px 50px #65fffac0);
   filter: drop-shadow(0px 5px 50px #65fffac0);
 }
 
-.currentItems #SproutImage:hover, .pastItems #SproutImage:hover {
+.currentItems #SproutImage:hover,
+.pastItems #SproutImage:hover {
   -webkit-filter: drop-shadow(0px 5px 50px #21c58992);
   filter: drop-shadow(0px 5px 50px #21c58992);
 }
 
-.currentItems #MeshImage:hover, .pastItems #MeshImage:hover {
+.currentItems #MeshImage:hover,
+.pastItems #MeshImage:hover {
   -webkit-filter: drop-shadow(0px 5px 50px #ffd000bc);
   filter: drop-shadow(0px 5px 50px #ffd000bc);
 }
 
-.currentItems #HyperloopImage:hover, .pastItems #HyperloopImage:hover {
+.currentItems #HyperloopImage:hover,
+.pastItems #HyperloopImage:hover {
   -webkit-filter: drop-shadow(0px 5px 50px #818181c0);
   filter: drop-shadow(0px 5px 50px #818181c0);
 }
@@ -969,7 +994,7 @@ a:hover {
 }
 
 .epHeaderCard {
-  background-color: #0FBE00;
+  background-color: #0fbe00;
   padding-top: 150px;
 }
 
@@ -1057,12 +1082,12 @@ a:hover {
 }
 
 #tagline-resources #document-container div p {
-  color: #0FBE00;
+  color: #0fbe00;
   font-weight: 700;
 }
 
 #tagline-resources #document-container div:hover {
-  background-color: #0FBE00;
+  background-color: #0fbe00;
   cursor: pointer;
 }
 
@@ -1135,7 +1160,7 @@ a:hover {
 }
 
 .projectDescription #epTag {
-  background-color: #0FBE00;
+  background-color: #0fbe00;
 }
 
 @media only screen and (min-width: 1620px) {
@@ -1214,6 +1239,313 @@ a:hover {
   }
 }
 
+#runAwayPage {
+  margin: 0px;
+}
+
+#runAwayHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+  margin: 0px;
+  background-color: #ff9b25;
+}
+
+#runAwayHeader #runAway {
+  color: white;
+  font-size: 7vw;
+  margin-left: 15px;
+}
+
+#runAwayHeader #runAwayHero {
+  height: auto;
+  width: 85vw;
+  padding: 0px;
+  padding-bottom: 35px;
+  max-width: 1200px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: auto;
+}
+
+#runAway-tagline-resources {
+  background-color: white;
+  padding-bottom: 125px;
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#runAway-tagline-resources #WIP {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 50px;
+  font-size: 10pt;
+  font-weight: 600;
+  background-color: #ef0000;
+  color: white;
+}
+
+#runAway-tagline-resources #runAway-tagline {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: 5vw;
+  text-align: center;
+  line-height: 7vw;
+  color: #313131;
+}
+
+#runAway-tagline-resources #document-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#runAway-tagline-resources #document-container div {
+  margin: 20px;
+  background-color: #e9e8e890;
+  padding: 0px 15px;
+  padding-bottom: 0.3px;
+  padding-top: 13px;
+  border-radius: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#runAway-tagline-resources #document-container div p {
+  color: #313131;
+  font-weight: 700;
+}
+
+#runAway-tagline-resources #document-container div:hover {
+  background-color: #ff9b25;
+  cursor: pointer;
+}
+
+#runAway-tagline-resources #document-container div:hover p {
+  color: white;
+}
+
+#runAwayProject {
+  background-color: #e9e8e890;
+  padding-bottom: 150px;
+}
+
+#runAwayProject #projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+#runAwayProject #projectContainer .projectPoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+#runAwayProject #projectContainer .projectPoint #runAwayIntro {
+  height: 25vw;
+}
+
+#runAwayProject #projectContainer .projectPoint #runAwayCopy {
+  margin-left: 50px;
+  max-width: 500px;
+}
+
+#runAwayProject #projectContainer .projectPoint #runAwayCopy h4,
+#runAwayProject #projectContainer .projectPoint #runAwayCopy p {
+  color: black;
+}
+
+#runAwayProject #projectContainer .projectPoint #descriptionCopyLink {
+  color: #ff9b25;
+}
+
+#runAwayProject #projectContainer #item2 img,
+#runAwayProject #projectContainer #item4 img {
+  margin-left: 75px;
+}
+
+#runAwayProject {
+  background-color: #f4f4f4;
+}
+
+#runAwayProject #WIP {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 50px;
+  font-size: 10pt;
+  font-weight: 600;
+  background-color: #e2e2e2;
+  color: black;
+}
+
+#runAwayProject #runAwaySubheading {
+  color: black;
+}
+
+#runAwayProject #runAwayDescription {
+  color: black;
+}
+
+#runAwayProject #runAwayTag {
+  background-color: #ff9b25;
+  color: white;
+}
+
+@media only screen and (min-width: 1620px) {
+  #runAwayHeader #runAway {
+    font-size: 80pt;
+  }
+  #runAway-tagline-resources #runAway-tagline {
+    font-size: 60pt;
+    line-height: 72pt;
+  }
+  #runAwayIntro {
+    max-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #runAwayHeader #runAway {
+    font-size: 12vw;
+    margin-bottom: 25px;
+  }
+  #runAway-tagline-resources #runAway-tagline {
+    font-size: 8vw;
+    line-height: 10vw;
+    margin-bottom: 25px;
+  }
+  #runAway-tagline-resources #document-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+  }
+  #runAway-tagline-resources #document-container div {
+    width: 70vw;
+    margin: 10px;
+  }
+  #runAway-tagline-resources #document-container div p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #runAwayHeader #runAwayHero {
+    width: 115vw;
+    margin-left: -30px;
+    padding-bottom: 15px;
+  }
+  #runAwayProject #projectContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  #runAwayProject #projectContainer .projectPoint {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #runAwayProject #projectContainer .projectPoint #runAwayIntro {
+    height: 65vw;
+    margin-bottom: 0px;
+  }
+  #runAwayProject #projectContainer .projectPoint img {
+    margin-left: -80px;
+  }
+  #runAwayProject #projectContainer .projectPoint #runAwayCopy {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    margin-right: 50px;
+    max-width: 500px;
+  }
+  #runAwayProject #projectContainer #item1 img {
+    padding-left: 25px;
+  }
+  #runAwayProject #projectContainer #item2,
+  #runAwayProject #projectContainer #item4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #runAwayProject #projectContainer #item2 img,
+  #runAwayProject #projectContainer #item4 img {
+    margin: 0px;
+    margin-left: -60px;
+  }
+}
+
 #devPage {
   margin-left: 0px;
 }
@@ -1252,7 +1584,7 @@ a:hover {
 }
 
 #dev-tagline-resources {
-  background-color: #2136FF;
+  background-color: #2136ff;
   padding-bottom: 75px;
   padding-top: 100px;
   display: -webkit-box;
@@ -1321,7 +1653,7 @@ a:hover {
 }
 
 #dev-tagline-resources #document-container div p {
-  color: #2136FF;
+  color: #2136ff;
   font-weight: 700;
 }
 
@@ -1347,17 +1679,17 @@ a:hover {
 }
 
 #devProject #devDescription #ep-proj-link {
-  color: #0FBE00;
+  color: #0fbe00;
   font-weight: 600;
 }
 
 #devProject #devDescription #sprout-proj-link {
-  color: #29BB86;
+  color: #29bb86;
   font-weight: 600;
 }
 
 #devProject #devTag {
-  background-color: #2136FF;
+  background-color: #2136ff;
   color: white;
 }
 
@@ -1462,7 +1794,7 @@ a:hover {
 
 #garage-tagline-resources #document-container div {
   margin: 20px;
-  background-color: #2136FF;
+  background-color: #2136ff;
   padding: 0px 15px;
   padding-bottom: 0.3px;
   padding-top: 13px;
@@ -1482,7 +1814,7 @@ a:hover {
 }
 
 #garage-tagline-resources #document-container div:hover p {
-  color: #2136FF;
+  color: #2136ff;
 }
 
 #garageProject {
@@ -1512,7 +1844,7 @@ a:hover {
 }
 
 #garageProject #garageTag {
-  background-color: #2136FF;
+  background-color: #2136ff;
   color: white;
 }
 
@@ -1568,7 +1900,7 @@ a:hover {
 }
 
 #sproutHeader #sprout {
-  color: #29BB86;
+  color: #29bb86;
   font-size: 7vw;
   margin-left: 15px;
 }
@@ -1653,12 +1985,12 @@ a:hover {
 }
 
 #sprout-tagline-resources #document-container div p {
-  color: #29BB86;
+  color: #29bb86;
   font-weight: 700;
 }
 
 #sprout-tagline-resources #document-container div:hover {
-  background-color: #29BB86;
+  background-color: #29bb86;
   cursor: pointer;
 }
 
@@ -1667,7 +1999,7 @@ a:hover {
 }
 
 #sproutProject {
-  background-color: #29BB86;
+  background-color: #29bb86;
 }
 
 #sproutProject #introContainer {
@@ -1711,7 +2043,7 @@ a:hover {
 }
 
 #sproutSection2 .design-codeBody h4 {
-  color: #29BB86;
+  color: #29bb86;
   font-family: 'Heebo', sans-serif;
   font-weight: 700;
   font-size: 24pt;
@@ -1870,7 +2202,7 @@ a:hover {
           justify-content: center;
   padding-top: 100px;
   margin: 0px;
-  background-color: #F6CD0B;
+  background-color: #f6cd0b;
 }
 
 #meshHeader #mesh {
@@ -1976,7 +2308,7 @@ a:hover {
 }
 
 #mesh-tagline-resources #document-container div:hover {
-  background-color: #F6CD0B;
+  background-color: #f6cd0b;
   cursor: pointer;
 }
 

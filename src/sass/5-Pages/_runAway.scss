@@ -1,0 +1,275 @@
+#runAwayPage {
+  margin: 0px;
+}
+
+#runAwayHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  margin: 0px;
+  background-color: color(runAway);
+
+  #runAway {
+    color: color(white);
+    font-size: 7vw;
+    margin-left: 15px;
+  }
+
+  #runAwayHero {
+    height: auto;
+    width: 85vw;
+    padding: 0px;
+    padding-bottom: 35px;
+    max-width: 1200px;
+    justify-self: center;
+    margin: auto;
+  }
+}
+
+#runAway-tagline-resources {
+  background-color: color(white);
+  padding-bottom: 125px;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #WIP {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    width: auto;
+    border-radius: 50px;
+    font-size: 10pt;
+    font-weight: 600;
+    background-color: #ef0000;
+    color: color(white);
+  }
+
+  #runAway-tagline {
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 7vw;
+    color: color(headings);
+  }
+
+  #document-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      margin: 20px;
+      background-color: color(nav-bg);
+      padding: 0px 15px;
+      padding-bottom: 0.3px;
+      padding-top: 13px;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+
+      p {
+        color: color(headings);
+        font-weight: 700;
+      }
+    }
+
+    div:hover {
+      background-color: color(runAway);
+      cursor: pointer;
+
+      p {
+        color: color(white);
+      }
+    }
+  }
+}
+
+#runAwayProject {
+  background-color: color(nav-bg);
+  padding-bottom: 150px;
+
+  #projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    .projectPoint {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+      #runAwayIntro {
+        height: 25vw;
+      }
+
+      #runAwayCopy {
+        margin-left: 50px;
+        max-width: 500px;
+
+        h4,
+        p {
+          color: color(black);
+        }
+      }
+
+      #descriptionCopyLink {
+        color: color(runAway);
+      }
+    }
+
+    #item2,
+    #item4 {
+      img {
+        margin-left: 75px;
+      }
+    }
+  }
+}
+
+#runAwayProject {
+  background-color: color(nav-bg2);
+
+  #WIP {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    width: auto;
+    border-radius: 50px;
+    font-size: 10pt;
+    font-weight: 600;
+    background-color: color(projectButton);
+    color: color(black);
+  }
+
+  #runAwaySubheading {
+    color: color(black);
+  }
+
+  #runAwayDescription {
+    color: color(black);
+  }
+
+  #runAwayTag {
+    background-color: color(runAway);
+    color: color(white);
+  }
+}
+
+@media only screen and (min-width: 1620px) {
+  #runAwayHeader {
+    #runAway {
+      font-size: 80pt;
+    }
+  }
+
+  #runAway-tagline-resources {
+    #runAway-tagline {
+      font-size: 60pt;
+      line-height: 72pt;
+    }
+  }
+
+  #runAwayIntro {
+    max-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #runAwayHeader {
+    #runAway {
+      font-size: 12vw;
+      margin-bottom: 25px;
+    }
+  }
+
+  #runAway-tagline-resources {
+    #runAway-tagline {
+      font-size: 8vw;
+      line-height: 10vw;
+      margin-bottom: 25px;
+    }
+
+    #document-container {
+      flex-direction: column;
+      margin-bottom: 25px;
+
+      div {
+        width: 70vw;
+        margin: 10px;
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #runAwayHeader {
+    #runAwayHero {
+      width: 115vw;
+      margin-left: -30px;
+      padding-bottom: 15px;
+    }
+  }
+
+  #runAwayProject {
+    #projectContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+      .projectPoint {
+        flex-direction: column;
+
+        #runAwayIntro {
+          height: 65vw;
+          margin-bottom: 0px;
+        }
+
+        img {
+          margin-left: -80px;
+        }
+
+        #runAwayCopy {
+          margin-left: 0px;
+          margin-bottom: 0px;
+          margin-top: 50px;
+          margin-right: 50px;
+          max-width: 500px;
+        }
+      }
+
+      #item1 {
+        img {
+          padding-left: 25px;
+        }
+      }
+
+      #item2,
+      #item4 {
+        flex-direction: column-reverse;
+
+        img {
+          margin: 0px;
+          margin-left: -60px;
+        }
+      }
+    }
+  }
+}
