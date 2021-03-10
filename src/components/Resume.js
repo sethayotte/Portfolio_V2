@@ -194,9 +194,12 @@ const Resume = () => {
                       <li>HTML</li>
                       <li>Bootstrap</li>
                       <li>CSS / SCSS</li>
-                      <li>JavaScript</li>
+                      <li>JavaScript (ES6+)</li>
                       <li id="indent">React</li>
                       <li id="indent">React Native</li>
+                      <li>Node</li>
+                      <li>Express</li>
+                      <li>MongoDB</li>
                     </ul>
                   </div>
                 </div>
@@ -229,10 +232,11 @@ const Resume = () => {
                   <div className="skills-list">
                     <ul>
                       <li>VS Code</li>
-                      <li>Design Thinking</li>
                       <li>Agile</li>
                       <li id="indent">Jira</li>
                       <li id="indent">Confluence</li>
+                      <li id="indent">Notion</li>
+                      <li>Design Thinking</li>
                     </ul>
                   </div>
                 </div>
