@@ -12,6 +12,16 @@ const Projects = () => {
       <section className="pageContainer" id="projectsPage">
         <h1 className="pageHeader">Current Projects</h1>
         <div className="currentItems">
+          <div id="RunAway">
+            <a href="/#/SpaceX-Dashboard">
+              <img
+                src={RunAwayHero}
+                className="projectImage"
+                id="RunAwayImage"
+                alt="Everyday Portfolio Hero"
+              />
+            </a>
+          </div>
           <div id="EP">
             <a href="/#/Everyday-Portfolio">
               <img

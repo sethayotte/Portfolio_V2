@@ -17,6 +17,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Resume from "./Resume";
 import Landing from "./Landing";
+import SpaceX from "./Projects/SpaceXDashboard";
 import EverydayPortfolio from "./Projects/EverydayPortfolio";
 import RunAway from "./Projects/RunAway";
 import SethsGarage from "./Projects/SethsGarage";
@@ -84,6 +85,9 @@ const NavBar = (props) => {
           </Route>
           <Route path="/Contact">
             <Contact />
+          </Route>
+          <Route path="/SpaceX-Dashboard">
+            <SpaceX />
           </Route>
           <Route path="/Everyday-Portfolio">
             <EverydayPortfolio />
