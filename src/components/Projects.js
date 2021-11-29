@@ -32,16 +32,6 @@ const Projects = () => {
               />
             </a>
           </div>
-          <div id="RunAway">
-            <a href="/#/Run-Away">
-              <img
-                src={RunAwayHero}
-                className="projectImage"
-                id="RunAwayImage"
-                alt="Everyday Portfolio Hero"
-              />
-            </a>
-          </div>
           <div id="Website">
             <a href="/#/Development-Repository">
               <img

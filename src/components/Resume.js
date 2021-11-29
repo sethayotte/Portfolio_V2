@@ -81,21 +81,6 @@ const Resume = () => {
               <div className="iblock">
                 <div className="resume-detail">
                   <div className="detail-title">
-                    <p>freeCodeCamp</p>
-                  </div>
-                  <div>
-                    <p>Foundations in Full Stack Web Development,</p>
-                    <p>Computer Software Engineering</p>
-                  </div>
-                </div>
-                <div className="resume-date">
-                  <p>April 2020 - Present</p>
-                </div>
-              </div>
-
-              <div className="iblock">
-                <div className="resume-detail">
-                  <div className="detail-title">
                     <p>Virginia Commonwealth University</p>
                   </div>
                   <div>
@@ -116,6 +101,22 @@ const Resume = () => {
             </div>
 
             <div className="content-block">
+
+              <div className="iblock">
+                <div className="resume-detail">
+                  <div className="detail-title">
+                    <p>General Motors</p>
+                  </div>
+                  <div>
+                    <p>Atlanta, GA</p>
+                    <p>Software Engineering, UI Development</p>
+                  </div>
+                </div>
+                <div className="resume-date">
+                  <p>June 2021 - Present</p>
+                </div>
+              </div>
+  
               <div className="iblock">
                 <div className="resume-detail">
                   <div className="detail-title">
@@ -127,7 +128,7 @@ const Resume = () => {
                   </div>
                 </div>
                 <div className="resume-date">
-                  <p>November 2019 - Present</p>
+                  <p>November 2019 - June 2021</p>
                 </div>
               </div>
 
@@ -195,6 +196,7 @@ const Resume = () => {
                       <li>Bootstrap</li>
                       <li>CSS / SCSS</li>
                       <li>JavaScript (ES6+)</li>
+                      <li id="indent">Angular</li>
                       <li id="indent">React</li>
                       <li id="indent">React Native</li>
                       <li>Node</li>
@@ -213,6 +215,8 @@ const Resume = () => {
                   <div className="skills-list">
                     <ul>
                       <li>Sketch</li>
+                      <li>Figma</li>
+                      <li>Material UI</li>
                       <li>Adobe Creative Suite</li>
                       <li id="indent">Illustrator</li>
                       <li id="indent">InDesign</li>
@@ -232,7 +236,9 @@ const Resume = () => {
                   <div className="skills-list">
                     <ul>
                       <li>VS Code</li>
+                      <li>JetBrains IntelliJ</li>
                       <li>Agile</li>
+                      <li id="indent">Azure DevOps</li>
                       <li id="indent">Jira</li>
                       <li id="indent">Confluence</li>
                       <li id="indent">Notion</li>
