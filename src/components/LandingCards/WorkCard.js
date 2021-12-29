@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import workLogos from '../../assets/experience-graphic.png';
-import workMobile from '../../assets/Experience-Mobile-Tile.png';
+import workLogos from '../../assets/experience-graphic-gm2.png';
+import workMobile from '../../assets/Experience-Mobile-Tile-GM.png';
 
 const WorkCard = () => {
   return (
