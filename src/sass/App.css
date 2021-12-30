@@ -223,6 +223,16 @@ html, body {
   color: #2136ff;
 }
 
+.mobileOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+  z-index: 95;
+}
+
 @media only screen and (max-width: 767px) {
   #mainNav {
     display: none;
@@ -232,6 +242,9 @@ html, body {
   }
   #mobileNavContainer {
     top: 0;
+  }
+  #mobileOverlayContainer {
+    display: block;
   }
 }
 

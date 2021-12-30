@@ -17,7 +17,7 @@ import DevelopmentRepository from "./Projects/DevelopmentRepository";
 import Sprout from "./Projects/Sprout";
 import Mesh from "./Projects/Mesh";
 
-const NavBar = (props) => {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -118,6 +118,7 @@ const NavBar = (props) => {
           </ul>
           </div>
         </nav>
+        <div className='mobileOverlay' id={`mobileOverlayContainer${isOpen ? "" : "Hidden"}`} onClick={toggle}></div>
 
 
         <Switch>
