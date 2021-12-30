@@ -49,111 +49,190 @@ html, body {
   margin: 20px;
   border-radius: 10px;
   z-index: 100;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.landingBody {
+.navContainer .mobileToggle {
+  display: none;
+  font-size: 20pt;
+  padding-right: 15px;
+  padding-bottom: 7px;
+}
+
+.navContainer .mobileToggle a {
+  color: #2136ff;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.navContainer .mobileToggle a:hover {
+  color: #8e99ff;
+}
+
+.navContainer #navIcon {
+  height: 32px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.navContainer .navLinks {
+  font-family: 'Heebo';
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+.navContainer .navItem {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.navContainer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+
+.navContainer ul li {
+  border-radius: 10px;
+}
+
+.navContainer ul li a {
+  color: black;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.navContainer ul li a:hover {
+  color: #2136ff;
+  font-weight: 600;
+}
+
+.mobileNav {
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+  height: 65vh;
+  background-color: #e9e8e890;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: 100;
+  position: fixed;
+  top: -70vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobileNav .mobileMenuClose {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 24pt;
+}
+
+.mobileNav .mobileMenuClose a {
+  padding: 20px;
+  padding-right: 25px;
+  color: #2136ff;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.mobileNav .mobileMenuClose a:hover {
+  color: #8e99ff;
+}
+
+.mobileNav .mobileMenuItems {
+  height: calc(100% - 150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobileNav .mobileMenuItems ul {
   margin: 0;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  padding: 0;
+  list-style: none;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
-.landingBody .landingCard {
-  scroll-snap-align: start;
+.mobileNav .mobileMenuItems ul li {
+  padding-bottom: 30px;
+  font-size: 20pt;
+  font-weight: 700;
+  font-family: 'Heebo', sans-serif;
+}
+
+.mobileNav .mobileMenuItems ul li a {
+  color: black;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.mobileNav .mobileMenuItems ul li a:hover {
+  color: #2136ff;
 }
 
 @media only screen and (max-width: 767px) {
-  #mobileNav {
-    height: 130px;
-    background-color: #e9e8e890;
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-    padding: 5px;
-    margin-top: 5px;
-    margin-left: -15px;
-    margin-right: -15px;
-    border-radius: 10px;
-    z-index: 100;
+  #mainNav {
+    display: none;
   }
-  #navIcon {
-    height: 32px;
-    margin-top: -10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
+  #mobileNavToggle {
+    display: block;
   }
-  .navLinks {
-    font-family: 'Heebo';
-    font-weight: 700;
-    color: black;
-    text-align: center;
+  #mobileNavContainer {
+    top: 0;
   }
-}
-
-#navIcon {
-  height: 32px;
-  padding-bottom: 0px;
-  margin-left: 10px;
-}
-
-.navbarTogglerIcon {
-  margin-bottom: 10px;
-  border-width: 0px;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.navbarTogglerIcon #navToggle {
-  border: none;
-  color: #2136ff;
-  font-size: 22px;
-}
-
-#mainNav {
-  margin-right: 0px;
-}
-
-#mainNav .active {
-  color: #2136ff;
-}
-
-#mainNav .navItem {
-  margin-left: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#mainNav .navItem .navLinks {
-  font-family: 'Heebo';
-  font-weight: 600;
-  color: black;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#mainNav .navItem .navbar__link {
-  font-family: 'Heebo';
-  font-weight: 600;
-  color: black;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#mainNav .navItem .navbar__link--active {
-  border-bottom: 3px solid #29b6f6;
-  -webkit-transition: border-bottom .5s ease-in-out;
-  transition: border-bottom .5s ease-in-out;
-}
-
-#mainNav .navItem .navLinks:hover {
-  color: #2136ff;
-}
-
-#mainNav .navItem .navLinks:target {
-  color: #2136ff;
 }
 
 a:link {
@@ -168,21 +247,15 @@ a:hover {
   text-decoration: none;
 }
 
-@media not all and (min-resolution: 0.001dpcm) and (max-width: 767px) {
-  @supports (-webkit-appearance: none) {
-    #navIcon {
-      height: 32px;
-      margin-top: 0px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-item-align: center;
-          align-self: center;
-    }
-    .navbarTogglerIcon {
-      margin-bottom: 0px;
-    }
-  }
+.landingBody {
+  margin: 0;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.landingBody .landingCard {
+  scroll-snap-align: start;
 }
 
 .navSocialContainer {

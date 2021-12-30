@@ -1,16 +1,8 @@
 import React, { useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import navIcon from "../assets/SM2021.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { HiOutlineMenuAlt4, HiX } from "react-icons/hi";
 import ScrollToTop from "./ScrollToTop";
 
 import Projects from "./Projects";
@@ -34,47 +26,99 @@ const NavBar = (props) => {
     <div>
       <Router>
         <ScrollToTop />
-        <Navbar className="navbar navContainer" expand="md" fixed="top">
-          <NavbarBrand href="/" className="navIcon">
+        <nav className="navContainer">
+          <a href="/" className="navIcon">
             <img src={navIcon} id="navIcon" />
-          </NavbarBrand>
-          <NavbarToggler onClick={toggle} className="navbarTogglerIcon">
-            <FontAwesomeIcon icon="stream" id="navToggle" />
-          </NavbarToggler>
-          <Collapse isOpen={isOpen} id="mobileNav" navbar>
-            <Nav className="ml-auto" id="mainNav" navbar>
-              <NavItem className="navItem">
-                <NavLink
-                  href="/#/Projects"
-                  onClick={toggle}
-                  className="navLinks"
-                  activeClassName="active"
-                >
-                  Projects
-                </NavLink>
-              </NavItem>
-              <NavItem className="navItem">
-                <NavLink
-                  href="/#/Resume"
-                  onClick={toggle}
-                  className="navLinks"
-                  activeClassName="active"
-                >
-                  Resume
-                </NavLink>
-              </NavItem>
-              <NavItem className="navItem">
-                <NavLink
-                  href="/#/Contact"
-                  onClick={toggle}
-                  className="navLinks"
-                >
-                  Contact
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+          </a>
+          <ul className="ml-auto" id="mainNav" navbar>
+            <li className="navItem">
+              <a
+                href="/#/Projects"
+                onClick={toggle}
+                className="navLinks"
+                activeClassName="active"
+              >
+                Projects
+              </a>
+            </li>
+            <li className="navItem">
+              <a
+                href="/#/Resume"
+                onClick={toggle}
+                className="navLinks"
+                activeClassName="active"
+              >
+                Resume
+              </a>
+            </li>
+            {/* <li className="navItem">
+              <a
+                href="https://www.sethmitchell.co"
+                target="_blank"
+                onClick={toggle}
+                className="navLinks"
+              >
+                Blog
+              </a>
+            </li> */}
+            <li className="navItem">
+              <a
+                href="/#/Contact"
+                onClick={toggle}
+                className="navLinks"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+          <div className="mobileToggle" id='mobileNavToggle'>
+            <a onClick={toggle}><HiOutlineMenuAlt4 /></a>
+          </div>
+        </nav>
+
+        <nav className='mobileNav' id={`mobileNavContainer${isOpen ? "" : "Hidden"}`}>
+          <div className='mobileMenuClose'>
+            <a onClick={toggle}><HiX /></a>
+          </div>
+          <div className='mobileMenuItems'>
+          <ul id='mobileList'>
+            <li>
+              <a
+                href="/#/Projects"
+                onClick={toggle}
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#/Resume"
+                onClick={toggle}
+              >
+                Resume
+              </a>
+            </li>
+            {/* <li>
+              <a
+                href="https://www.sethmitchell.co"
+                target="_blank"
+                onClick={toggle}
+              >
+                Blog
+              </a>
+            </li> */}
+            <li>
+              <a
+                href="/#/Contact"
+                onClick={toggle}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+          </div>
+        </nav>
+
 
         <Switch>
           <Route path="/Projects">
