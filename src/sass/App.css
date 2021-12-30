@@ -67,7 +67,7 @@ html, body {
   display: none;
   font-size: 20pt;
   padding-right: 15px;
-  padding-bottom: 7px;
+  padding-bottom: 4px;
 }
 
 .navContainer .mobileToggle a {
@@ -140,12 +140,12 @@ html, body {
   background-color: #e9e8e890;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  border-radius: 50px;
+  border-radius: 25px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   z-index: 100;
   position: fixed;
-  top: -70vh;
+  top: -65vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
