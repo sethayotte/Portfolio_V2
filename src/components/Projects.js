@@ -12,13 +12,33 @@ const Projects = () => {
       <section className="pageContainer" id="projectsPage">
         <h1 className="pageHeader">Current Projects</h1>
         <div className="currentItems">
-          <div id="RunAway">
-            <a href="/#/SpaceX-Dashboard">
+          {/* <div id="TheBlocks">
+            <a href="/#/The-Blocks">
               <img
-                src={RunAwayHero}
+                src={WebsiteHero}
                 className="projectImage"
-                id="RunAwayImage"
-                alt="Everyday Portfolio Hero"
+                id="BlocksImage"
+                alt="The Blocks Hero"
+              />
+            </a>
+          </div>
+          <div id="Compound">
+            <a href="/#/Compound">
+              <img
+                src={WebsiteHero}
+                className="projectImage"
+                id="CompoundImage"
+                alt="Compound Calculator Hero"
+              />
+            </a>
+          </div> */}
+          <div id="Website">
+            <a href="/#/Development-Repository">
+              <img
+                src={WebsiteHero}
+                className="projectImage"
+                id="WebImage"
+                alt="Development Site Hero"
               />
             </a>
           </div>
@@ -32,29 +52,19 @@ const Projects = () => {
               />
             </a>
           </div>
-          <div id="Website">
-            <a href="/#/Development-Repository">
-              <img
-                src={WebsiteHero}
-                className="projectImage"
-                id="WebImage"
-                alt="Development Site Hero"
-              />
-            </a>
-          </div>
-          <div id="Garage">
-            <a href="/#/Seths-Garage">
-              <img
-                src={GarageHero}
-                className="projectImage"
-                id="GarageImage"
-                alt="Seth's Garage Hero"
-              />
-            </a>
-          </div>
         </div>
         <h1 className="pageHeader">Past Projects</h1>
         <div className="pastItems">
+          <div id="RunAway">
+            <a href="/#/SpaceX-Dashboard">
+              <img
+                src={RunAwayHero}
+                className="projectImage"
+                id="RunAwayImage"
+                alt="Everyday Portfolio Hero"
+              />
+            </a>
+          </div>
           <div id="Sprout">
             <a href="/#/Sprout">
               <img

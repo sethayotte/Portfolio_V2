@@ -999,6 +999,10 @@ a:hover {
   }
 }
 
+.currentItems {
+  margin-bottom: 75px;
+}
+
 .currentItems,
 .pastItems {
   display: -webkit-box;

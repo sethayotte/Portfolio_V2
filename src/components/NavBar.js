@@ -51,16 +51,15 @@ const NavBar = () => {
                 Resume
               </a>
             </li>
-            {/* <li className="navItem">
+            <li className="navItem">
               <a
-                href="https://www.sethmitchell.co"
-                target="_blank"
+                href="https://blog.sethmitchell.dev"
                 onClick={toggle}
                 className="navLinks"
               >
                 Blog
               </a>
-            </li> */}
+            </li>
             <li className="navItem">
               <a
                 href="/#/Contact"
@@ -98,15 +97,14 @@ const NavBar = () => {
                 Resume
               </a>
             </li>
-            {/* <li>
+            <li>
               <a
-                href="https://www.sethmitchell.co"
-                target="_blank"
+                href="https://blog.sethmitchell.dev"
                 onClick={toggle}
               >
                 Blog
               </a>
-            </li> */}
+            </li>
             <li>
               <a
                 href="/#/Contact"
@@ -136,6 +134,12 @@ const NavBar = () => {
           </Route>
           <Route path="/Everyday-Portfolio">
             <EverydayPortfolio />
+          </Route>
+          <Route path="/Compound">
+            <Contact />
+          </Route>
+          <Route path="/The-Blocks">
+            <Contact />
           </Route>
           <Route path="/Run-Away">
             <RunAway />
