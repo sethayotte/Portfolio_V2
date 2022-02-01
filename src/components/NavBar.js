@@ -51,15 +51,15 @@ const NavBar = () => {
                 Resume
               </a>
             </li>
-            <li className="navItem">
+            {/* <li className="navItem">
               <a
-                href="https://blog.sethmitchell.dev"
+                href="https://theblocks.space"
                 onClick={toggle}
                 className="navLinks"
               >
                 Blog
               </a>
-            </li>
+            </li> */}
             <li className="navItem">
               <a
                 href="/#/Contact"
@@ -97,14 +97,14 @@ const NavBar = () => {
                 Resume
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
-                href="https://blog.sethmitchell.dev"
+                href="https://theblocks.space"
                 onClick={toggle}
               >
                 Blog
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="/#/Contact"
