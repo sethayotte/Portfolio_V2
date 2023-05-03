@@ -1,0 +1,36 @@
+.navSocialContainer {
+    height: 45px;
+    width: 175px;
+    display: flex;
+    flex-direction: row;
+    background-color: color(nav-bg);
+    backdrop-filter: blur(3px);
+    margin: 20px;
+    border-radius: 10px;
+    z-index: 100;
+  
+    .socialNavItem {
+      list-style: none;
+  
+      .socialNavLinks {
+        height: 30px;
+      }
+    }
+  }
+
+  // @media only screen and (max-width: 768px) {
+  //   .navSocialContainer {
+  //     height: 175px;
+  //     width: 45px;
+  //     flex-direction: column;
+  //     justify-content: space-between;
+  //     padding-right: 5px;
+
+  //     .socialNavItem {
+  //       padding-top: 5px;
+  //       padding-bottom: 5px;
+  //       margin-left: -10px;
+        
+  //     }
+  //   }
+  // }

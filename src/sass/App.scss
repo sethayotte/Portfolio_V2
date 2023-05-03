@@ -1,0 +1,27 @@
+//Imports for master App styling:
+
+//1-Helpers
+@import "1-Helpers/carousel";
+
+//2-Basics
+@import "2-Basics/fonts";
+@import "2-Basics/page";
+@import "2-Basics/colors";
+
+//3-Layout
+@import "3-Layout/mainNav";
+@import "3-Layout/socialNav";
+
+//4-Modules
+
+//5-Pages
+@import "5-Pages/landing";
+@import "5-Pages/resume";
+@import "5-Pages/contact";
+@import "5-Pages/projects";
+@import "5-Pages/everydayPortfolio";
+@import "5-Pages/runAway";
+@import "5-Pages/developmentRepo";
+@import "5-Pages/sethsGarage";
+@import "5-Pages/sprout";
+@import "5-Pages/mesh";

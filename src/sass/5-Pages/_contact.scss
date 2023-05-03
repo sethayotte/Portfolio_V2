@@ -1,0 +1,66 @@
+#contactPageContainer {
+    background-color: color(white);
+}
+
+#contact-header {
+    margin-bottom: 50px;
+}
+
+#contact-copy {
+    text-align: center;
+}
+
+.contact-platform-buttons {
+    display: flex;
+    justify-content: center;
+
+    div {
+        background-color: color(nav-bg);
+        padding: 10px;
+        border-radius: 15px;
+        margin: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    div:hover {
+        background-color: color(projectButton);
+        padding: 10px;
+        border-radius: 15px;
+        margin: 20px;
+    }
+
+    a {
+        img {
+            height: 45px;
+        }
+    }
+}
+
+.emailConnectContainer {
+    background-color: color(nav-bg);
+    padding: 10px;
+    padding-top: 15px;
+    border-radius: 15px;
+    margin: auto;
+    width: 180px;
+    transition: all 0.3s ease-in-out;
+
+    .emailConnectButton {
+        font-size: 24px;
+        text-align: center;
+        color: color(accent);
+        padding: 0px;
+    }
+}
+
+.emailConnectContainer:hover {
+    background-color: color(projectButton);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .pageContainer {
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+}

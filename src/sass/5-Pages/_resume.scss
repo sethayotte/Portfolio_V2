@@ -1,0 +1,264 @@
+#resumePage {
+    background-color: color(white);
+    margin-right: -10px;
+    margin-bottom: 100px;
+}
+
+.about-me {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    #resume-profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            height: 250px;
+            border-radius: 10px;
+            margin-right: 50px;
+        }
+
+        margin-right: 20px;
+        
+    }
+
+    h1 {
+        
+        font-family: 'Heebo';
+        font-weight: 700;
+        color: color(accent);
+    }
+
+    h3 {
+        font-family: 'Chakra Petch';
+        font-weight: 400;
+        font-size: 18pt;
+        color: color(black);
+    }
+  
+    #contact-resume {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+        margin-left: 5px;
+  
+        .social-buttons {
+            margin-top: 35px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+    }
+
+    #connect-social-buttons {
+        a {
+            background-color: color(nav-bg);
+            padding: 20px;
+            border-radius: 60px;
+            margin-right: 15px;
+            padding-bottom: 25px;
+        }
+    }
+    .social-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        div {
+            margin-bottom: 40px;
+        }
+        
+        a {
+            background-color: #eaeaea;
+            padding: 15px;
+            border-radius: 15px;
+            margin-top: 10px;
+            padding-bottom: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #d7d7d7;
+        }
+    }
+
+}
+
+.resume-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+    margin-left: -40px;
+  
+    section {
+        width: 85%;
+        background-color: #f3f3f3;
+        border-radius: 25px;
+        padding: 30px;
+        margin-bottom: 25px;
+        max-width: 1200px;
+    }
+    
+    .section-title {
+        h2 {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    
+    .content-block {
+        display: flex;
+        flex-direction: column;
+        
+        p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            line-height: .5rem;
+        }
+  
+        .iblock {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+    
+            .resume-detail {
+    
+                .detail-title {
+        
+                    p {
+                        font-weight: 700;
+                    }
+                    
+                }
+            }
+        }
+    
+    
+    }
+  
+  
+  
+  .proficiencies {
+    
+    .content-block {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+  
+    .iblock {
+  
+        margin-top: 25px;
+  
+        .skills-title {
+            p {
+                font-size: 1.1rem;
+                font-weight: 700;
+            }
+        }
+  
+        .skills-list {
+  
+  
+            li {
+                list-style-type: round($number: 1);
+                font-size: 1.1rem;
+                font-weight: 300;
+                margin-left: -20px;
+            }
+  
+            #indent {
+                margin-left: 20px;
+                font-style: italic;
+            }
+        }
+    }
+  }
+  }
+
+  .downloadButton {
+      padding-bottom: 25px;
+      margin-left: -25px;
+      
+    #resumeDownload {
+        text-align: center;
+        font-size: 18px;
+
+        #downloadLink {
+            color: color(accent);
+        }
+    }
+  }
+
+
+@media only screen and (max-width: 850px) {
+    
+    .resume-body {
+        .iblock {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: left;
+  
+            .detail-title {
+              p {
+                line-height: 20px;
+            }
+            }
+            .resume-detail {
+  
+                div:nth-child(2) {
+                    p {
+                        line-height: 20px;
+                    }
+                }
+            }
+  
+            .resume-date {
+                p {
+                    font-style: italic;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: left;
+                }
+            }
+  
+        }
+        .about-me {
+            #resume-profile {
+
+                img {
+                    display: none;
+                }
+                
+            }
+  
+            #contact-resume {
+                margin-right: 10px;
+                margin-left: 5px;
+            }
+   
+            .section-title {
+                display: none;
+            }  
+        }
+
+        .proficiencies {
+    
+          .content-block {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              margin-left: 25px;
+          }
+        }
+    }
+
+    .downloadButton {
+        padding-bottom: 0px;
+    }
+}

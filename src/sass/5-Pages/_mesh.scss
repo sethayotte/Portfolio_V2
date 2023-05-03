@@ -1,0 +1,252 @@
+#meshPage {
+   margin: 0px;
+}
+
+#meshHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    margin: 0px;
+    background-color: color(mesh);
+
+    #mesh {
+        color: color(headings);
+        font-size: 7vw;
+        margin-left: 15px;
+    }
+    
+    #meshHero {
+        height: auto;
+        width: 25vw;
+        padding: 0px;
+        padding-bottom: 35px;
+        max-width: 400px;
+        justify-self: center;
+        margin: auto;
+    }
+
+    #meshMobileHero {
+        display: none;
+        height: 35vw;
+        width: auto;
+        justify-self: center;
+        margin: auto;
+        padding: 35px;
+        padding-bottom: 75px;
+    }
+}
+
+#mesh-tagline-resources {
+    background-color: color(white);
+    padding-bottom: 125px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #WIP {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        margin-right: 10px;
+        display: inline-block;
+        padding: 5px 10px;
+        width: auto;
+        border-radius: 50px;
+        font-size: 10pt;
+        font-weight: 600;
+        background-color: #EF0000;
+        color: color(white);
+    }
+  
+    #mesh-tagline {
+      font-family: "Heebo", sans-serif;
+      font-weight: 700;
+      font-size: 5vw;
+      text-align: center;
+      line-height: 7vw;
+      color: color(headings);
+    }
+  
+    #document-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  
+      div {
+        margin: 20px;
+        background-color: color(nav-bg);
+        padding: 0px 15px;
+        padding-bottom: 0.3px;
+        padding-top: 13px;
+        border-radius: 15px;
+        transition: all 0.3s ease-in-out;
+  
+        p {
+          color: color(headings);
+          font-weight: 700;
+        }
+      }
+
+      div:hover {
+        background-color: color(mesh);
+        cursor: pointer;
+  
+        p {
+          color: color(black);
+        }
+      }
+    }
+  }
+
+  #meshProject {
+      background-color: color(nav-bg);
+
+      #projectContainer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        .projectPoint {
+
+            display: flex;
+            justify-content: center;
+        align-items: center;
+        margin: auto;
+
+            #meshIntro {
+                height: 55vw;
+            }
+    
+            #meshCopy {
+                margin-left: 50px;
+                max-width: 500px;
+    
+                h4, p {
+                    color: color(black);
+                }
+            }
+        }
+
+        #item2, #item4 {
+
+            img {
+                margin-left: 75px;
+            }
+        }
+      }
+  }
+
+
+@media only screen and (min-width: 1620px) { 
+    #meshHeader {
+
+        #mesh {
+            font-size: 80pt;
+        }
+    }
+
+    #mesh-tagline-resources {
+      
+        #mesh-tagline {
+            font-size: 60pt;
+            line-height: 72pt;
+        }
+    }
+
+    #meshIntro {
+        max-height: 800px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #meshHeader {
+
+        #mesh {
+            font-size: 12vw;
+            margin-bottom: 25px;
+        }
+    }
+
+    #mesh-tagline-resources {
+
+        #mesh-tagline {
+            font-size: 5vw;
+            line-height: 7vw;
+            margin-bottom: 25px;
+        }
+
+        #document-container {
+            flex-direction: column;
+            margin-bottom: 25px;
+        
+            div {
+              width: 70vw;
+              margin: 10px;
+      
+              p {
+                  text-align: center;
+              }
+            }
+          }
+        }
+    }
+
+    @media only screen and (max-width: 950px) {
+
+        #meshHeader {
+        
+            
+            #meshHero {
+                display: none;
+            }
+        
+            #meshMobileHero {
+                display: block;
+                padding-top: 0px;
+            }
+        }
+
+        #meshProject {
+            #projectContainer {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+
+                .projectPoint {
+                    flex-direction: column;
+
+                    #meshIntro {
+                        height: 95vw;
+                        margin-bottom: 50px;
+                    }
+            
+                    #meshCopy {
+                        margin-left: 0px;
+                        margin-bottom: 50px;
+                        margin-top: 50px;
+                        max-width: 500px;
+                    }
+                }
+
+                #item2, #item4 {
+                    flex-direction: column-reverse;
+
+                    img {
+                        margin: 0px;
+                    }
+                }
+              }
+        }
+       
+}
+

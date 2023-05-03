@@ -1,0 +1,241 @@
+#epPage {
+  margin: 0;
+}
+
+.epHeaderCard {
+  background-color: color(ep);
+  padding-top: 150px;
+
+  #ep-header {
+    color: color(white);
+    font-size: 10vw;
+    padding-bottom: 50px;
+  }
+
+  #ep-header-wrapped {
+    display: none;
+    color: color(white);
+    font-size: 10vw;
+    padding-bottom: 50px;
+  }
+
+  #epHeros {
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 45vw;
+      margin: 30px;
+      margin-bottom: 0px;
+      max-height: 700px;
+    }
+  }
+}
+
+#tagline-resources {
+  background-color: color(nav-bg2);
+  padding-bottom: 75px;
+  padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  #ep-tagline {
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: 6vw;
+    text-align: center;
+    line-height: 8vw;
+  }
+
+  #document-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      margin: 20px;
+      background-color: color(projectButton);
+      padding: 0px 15px;
+      padding-bottom: 0.3px;
+      padding-top: 13px;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+      
+
+      p {
+        color: color(ep);
+        font-weight: 700;
+      }
+    }
+
+    div:hover {
+      background-color: color(ep);
+      cursor: pointer;
+
+      p {
+        color: color(white);
+      }
+    }
+  }
+}
+
+.projectDescription {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: color(black);
+    padding: 100px;
+
+    #WIP {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      margin-right: 10px;
+      display: inline-block;
+      padding: 5px 10px;
+      width: auto;
+      border-radius: 50px;
+      font-size: 10pt;
+      font-weight: 600;
+      background-color: color(nav-bg);
+      color: color(white);
+  }
+
+    .objectiveBody {
+        .descriptionBody {
+            max-width: 815px;
+        }
+        
+    }
+
+    .descriptionSubheading {
+        color: color(white);
+        font-family: 'Heebo', sans-serif;
+        font-size: 22pt;
+        font-weight: 600;
+        
+    }
+
+    .descriptionBody {
+        color: color(white);
+        margin-bottom: 50px;
+    }
+
+    .detailsBody {
+        max-width: 500px;
+    }
+
+    .technology-skills {
+        text-align: left;
+      }
+
+    .tag {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        display: inline-block;
+        padding: 5px 10px;
+        width: auto;
+        border-radius: 50px;
+        font-size: 10pt;
+        font-weight: 600;
+    }
+
+    #epTag {
+        background-color: color(ep);
+    }
+}
+
+@media only screen and (min-width: 1620px) { 
+
+    .epHeaderCard {
+        #ep-header {
+            font-size: 125pt;
+        }
+    }
+    
+
+    #tagline-resources {
+      
+        #ep-tagline {
+            font-size: 65pt;
+            line-height: 80pt;
+        }
+    }
+
+    .projectDescription {
+        justify-content: center;
+        .detailsBody {
+            margin-left: 100px;
+        }
+        
+    }
+    
+    
+
+    
+}
+
+@media only screen and (max-width: 768px) {
+  .epHeaderCard {
+    width: 100vw;
+    padding-top: 100px;
+
+    #ep-header {
+      display: none;
+    }
+
+    #ep-header-wrapped {
+      display: block;
+      color: color(white);
+      font-size: 16vw;
+      padding-bottom: 0px;
+      text-align: center;
+      margin-left: 5px;
+    }
+
+    #epHeros {
+      img {
+        height: 85vw;
+        margin: 10px;
+        margin-bottom: 0px;
+      }
+
+      #profileView {
+        display: none;
+      }
+    }
+  }
+
+  #tagline-resources {
+    padding-bottom: 100px;
+
+    #ep-tagline {
+      font-size: 9vw;
+      line-height: 11vw;
+    }
+  
+    #document-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      div {
+        width: 70vw;
+        margin: 10px;
+
+        p {
+            text-align: center;
+        }
+      }
+    }
+}
+.projectDescription {
+    padding: 40px;
+}
+
+}
+

@@ -1,0 +1,136 @@
+#garagePage {
+    margin-left: 0px;
+}
+
+#garageHero {
+    margin-top: 40px;
+    margin-left: 50px;
+    height: auto;
+    width: 100vw;
+    padding: 0px;
+    max-width: 1400px;
+    margin-bottom: 75px;
+}
+
+#garage-tagline-resources {
+    background-color: color(nav-bg2);
+    padding-bottom: 75px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    #garage-tagline {
+      font-family: "Heebo", sans-serif;
+      font-weight: 700;
+      font-size: 6vw;
+      text-align: center;
+      line-height: 8vw;
+      color: color(headings);
+    }
+  
+    #document-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  
+      div {
+        margin: 20px;
+        background-color: color(accent);
+        padding: 0px 15px;
+        padding-bottom: 0.3px;
+        padding-top: 13px;
+        border-radius: 15px;
+        transition: all 0.3s ease-in-out;
+  
+        p {
+          color: color(white);
+          font-weight: 700;
+        }
+      }
+
+      div:hover {
+        background-color: color(nav-bg);
+        cursor: pointer;
+  
+        p {
+          color: color(accent);
+        }
+      }
+    }
+  }
+
+  #garageProject {
+    background-color: color(white);
+
+    #WIP {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      margin-right: 10px;
+      display: inline-block;
+      padding: 5px 10px;
+      width: auto;
+      border-radius: 50px;
+      font-size: 10pt;
+      font-weight: 600;
+      background-color: color(projectButton);
+      color: color(black);
+  }
+
+    #garageSubheading {
+        color: color(black);
+    }
+
+    #garageDescription {
+        color: color(black);
+    }
+
+    #garageTag {
+        background-color: color(accent);
+        color: color(white);
+    }
+}
+
+  @media only screen and (min-width: 1620px) { 
+
+    #garage-tagline-resources {
+      
+        #garage-tagline {
+            font-size: 60pt;
+            line-height: 72pt;
+        }
+    }
+}
+
+
+  @media only screen and (max-width: 768px) {
+
+    #garagePage {
+      margin-right: 0px;
+    }
+
+    #garage-tagline-resources {
+
+        #garage-tagline {
+            font-size: 8vw;
+            line-height: 11vw;
+            margin-bottom: 25px;
+        }
+
+        #document-container {
+            flex-direction: column;
+            margin-bottom: 25px;
+        
+            div {
+              width: 70vw;
+              margin: 10px;
+      
+              p {
+                  text-align: center;
+              }
+            }
+          }
+    }
+}
